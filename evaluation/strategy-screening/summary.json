@@ -1,0 +1,203 @@
+[
+  {
+    "variant": "castle",
+    "description": "Enable existing Castle passage",
+    "seeds": [
+      6,
+      8,
+      10,
+      14,
+      1,
+      5,
+      7
+    ],
+    "n": 7,
+    "parent_mean": 0.6073369908353619,
+    "candidate_mean": 0.5873735082326477,
+    "gains": 0,
+    "losses": 1,
+    "errors": 0
+  },
+  {
+    "variant": "wand",
+    "description": "Independent probability-weighted wand branches (final)",
+    "seeds": [
+      10,
+      12,
+      14,
+      0,
+      3,
+      6,
+      8,
+      5,
+      7,
+      9,
+      11,
+      1,
+      2,
+      4,
+      13
+    ],
+    "n": 15,
+    "parent_mean": 0.48754987757483376,
+    "candidate_mean": 0.4843767681677441,
+    "gains": 0,
+    "losses": 1,
+    "errors": 0
+  },
+  {
+    "variant": "speed",
+    "description": "Use species movement speed",
+    "seeds": [
+      2,
+      4,
+      6,
+      13
+    ],
+    "n": 4,
+    "parent_mean": 0.3092700497425145,
+    "candidate_mean": 0.3092700497425145,
+    "gains": 0,
+    "losses": 0,
+    "errors": 0
+  },
+  {
+    "variant": "tool6",
+    "description": "Begin digging-tool trip at XL6",
+    "seeds": [
+      0,
+      1,
+      11,
+      12,
+      2,
+      4,
+      6,
+      13
+    ],
+    "n": 8,
+    "parent_mean": 0.40020420074924656,
+    "candidate_mean": 0.27598457178256985,
+    "gains": 2,
+    "losses": 3,
+    "errors": 0
+  },
+  {
+    "variant": "protection",
+    "description": "Emergency exception after damage through intact Elbereth",
+    "seeds": [
+      1,
+      4,
+      6,
+      9,
+      2,
+      3,
+      11,
+      13
+    ],
+    "n": 8,
+    "parent_mean": 0.4263849030111597,
+    "candidate_mean": 0.4138519424535385,
+    "gains": 0,
+    "losses": 1,
+    "errors": 0
+  },
+  {
+    "variant": "loot",
+    "description": "Cooldown all monster-blocked item inspection trips",
+    "seeds": [
+      0,
+      1,
+      3,
+      12,
+      2,
+      4,
+      6,
+      13
+    ],
+    "n": 8,
+    "parent_mean": 0.40525223171515296,
+    "candidate_mean": 0.2778016380776834,
+    "gains": 2,
+    "losses": 4,
+    "errors": 0
+  },
+  {
+    "variant": "dive-loot",
+    "description": "Cooldown during any descent",
+    "seeds": [
+      10,
+      11,
+      14,
+      0,
+      1,
+      4,
+      13,
+      5,
+      7,
+      8,
+      9,
+      2,
+      3,
+      6,
+      12
+    ],
+    "n": 15,
+    "parent_mean": 0.48754987757483376,
+    "candidate_mean": 0.4735415960538167,
+    "gains": 1,
+    "losses": 4,
+    "errors": 0
+  },
+  {
+    "variant": "repeated-loot",
+    "description": "Cooldown after three failures during descent",
+    "seeds": [
+      1,
+      2,
+      6,
+      11
+    ],
+    "n": 4,
+    "parent_mean": 0.42949920824337035,
+    "candidate_mean": 0.24469238230581825,
+    "gains": 0,
+    "losses": 2,
+    "errors": 0
+  },
+  {
+    "variant": "rescue-loot",
+    "description": "Cooldown during failed-prayer rescue",
+    "seeds": [
+      0,
+      3,
+      4,
+      9,
+      1,
+      2,
+      6,
+      11
+    ],
+    "n": 8,
+    "parent_mean": 0.4538483438264991,
+    "candidate_mean": 0.4535120552334,
+    "gains": 1,
+    "losses": 3,
+    "errors": 0
+  },
+  {
+    "variant": "stalled-loot",
+    "description": "Cooldown during rescue after 500 turns on level",
+    "seeds": [
+      1,
+      2,
+      9,
+      11
+    ],
+    "n": 4,
+    "parent_mean": 0.42949920824337035,
+    "candidate_mean": 0.4013708531532059,
+    "gains": 1,
+    "losses": 2,
+    "errors": 0
+  }
+]
