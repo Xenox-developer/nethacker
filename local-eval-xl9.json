@@ -1,0 +1,47 @@
+[
+  {
+    "trajectory_id": 3,
+    "status": "completed",
+    "progress": 0.20612854836308672,
+    "ascended": false,
+    "steps": 179870,
+    "turns": 38103,
+    "max_depth": 12,
+    "end_status": "1",
+    "error": null,
+    "wall_seconds": 252.366128,
+    "character": "val-dwa-law-fem",
+    "milestone": "Dlvl:12",
+    "cause_of_death": "killed by a winter wolf"
+  },
+  {
+    "trajectory_id": 5,
+    "status": "completed",
+    "progress": 0.20612854836308672,
+    "ascended": false,
+    "steps": 42776,
+    "turns": 27243,
+    "max_depth": 12,
+    "end_status": "1",
+    "error": null,
+    "wall_seconds": 114.267724,
+    "character": "val-dwa-law-fem",
+    "milestone": "Dlvl:12",
+    "cause_of_death": "killed by a Grey-elf"
+  },
+  {
+    "trajectory_id": 11,
+    "status": "completed",
+    "progress": 0.46637631565303056,
+    "ascended": false,
+    "steps": 63268,
+    "turns": 40739,
+    "max_depth": 25,
+    "end_status": "1",
+    "error": null,
+    "wall_seconds": 159.883702,
+    "character": "val-dwa-law-fem",
+    "milestone": "Dlvl:25",
+    "cause_of_death": "killed by a vampire bat"
+  }
+]
