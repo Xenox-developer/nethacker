@@ -1,0 +1,2 @@
+{"trace": "535-137120720122942", "event": "start", "sequence": 0, "association": "unmapped"}
+{"trace": "535-137120720122942", "event": "end", "sequence": 1, "dropped": 0, "write_failures": 388}

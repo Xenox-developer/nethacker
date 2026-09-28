@@ -1,0 +1,32 @@
+{
+  "frozen_artifact_checks": {
+    "source-verification.json": true,
+    "baseline-diagnostic.diff": true,
+    "fixture-candidate-unwritable.stderr": true,
+    "fixture-baseline-on.json": true,
+    "baseline-manifest.json": true,
+    "validation.stdout": false,
+    "fixture-baseline-unwritable.json": true,
+    "fixture-candidate-off.stderr": true,
+    "candidate-diagnostic.diff": true,
+    "fixture-candidate-off.json": true,
+    "diagnostics.py": true,
+    "candidate-manifest.diff": true,
+    "validate_freeze.py": true,
+    "fixture-baseline-on.stderr": true,
+    "fixture-baseline-unwritable.stderr": true,
+    "setup.py": true,
+    "candidate-manifest.json": true,
+    "fixture-baseline-off.json": true,
+    "fixture-candidate-on.json": true,
+    "fixture-candidate-on.stderr": true,
+    "incoming-manifest.json": true,
+    "fixture-baseline-off.stderr": true,
+    "instrument.py": true,
+    "fixture-candidate-unwritable.json": true,
+    "fixtures.py": true,
+    "policy.diff": true
+  },
+  "runtime_arms_unchanged": true,
+  "checked_at": "2026-09-28T10:28:30.781004+00:00"
+}

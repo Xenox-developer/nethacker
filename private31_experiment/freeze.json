@@ -1,0 +1,31 @@
+{
+  "frozen_at": "2026-09-28T10:00:15.718605+00:00",
+  "artifacts": {
+    "source-verification.json": "bed6db33d8211d188f4e6dd322b896d46dba59905482549c2be22da12591f9a8",
+    "baseline-diagnostic.diff": "25d600db76873176ad80ccc5c9bcb25002ccb31b5d62adf0f1775da62c403d85",
+    "fixture-candidate-unwritable.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fixture-baseline-on.json": "a49c1f673a4322cfc30124493daa63896d975ca2e5511e55dba770021ead1ef6",
+    "baseline-manifest.json": "e485352b432ac51c665d07c26090071c8f6cee347a17eee1fc173c7900f5d0d5",
+    "validation.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fixture-baseline-unwritable.json": "a49c1f673a4322cfc30124493daa63896d975ca2e5511e55dba770021ead1ef6",
+    "fixture-candidate-off.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "candidate-diagnostic.diff": "13d5e12938b69ac9c91680bd92c6206c27f65dc9b864ca652806e9362fd7c427",
+    "fixture-candidate-off.json": "231d647c10a3c1dda94962941af9a6aaf7e019d613631e37c8d20c3e8c03399b",
+    "diagnostics.py": "ab0f515334c364bd142fd1f9cf342e3182eb08b6c9ccc5bea85e25d8df5cfafb",
+    "candidate-manifest.diff": "477b9c412911a7fd207c0834be584c692cca4f70d2d61bef9c3f02feb13ed188",
+    "validate_freeze.py": "d122cbcbd0784dca6200df189edce461afb1505eb448a0fde64f16f62e1c3790",
+    "fixture-baseline-on.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fixture-baseline-unwritable.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "setup.py": "293bf03023c9666cd7619833b5d71ddfad7c81ba64e8c98f4b854856e8594655",
+    "candidate-manifest.json": "b4b6fb5beef606f60e2dafabbe2a767971aea2aa5bb0e949c63584f7fc1c706e",
+    "fixture-baseline-off.json": "a49c1f673a4322cfc30124493daa63896d975ca2e5511e55dba770021ead1ef6",
+    "fixture-candidate-on.json": "231d647c10a3c1dda94962941af9a6aaf7e019d613631e37c8d20c3e8c03399b",
+    "fixture-candidate-on.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "incoming-manifest.json": "4f743377092845e5285818e3214a5ea1a0bb8133e55dcbaa9c50a8dd38cf4163",
+    "fixture-baseline-off.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "instrument.py": "9047481223d9d0cdc2bdb87be2e072b831615b22748fe8e66e06e61e231eb118",
+    "fixture-candidate-unwritable.json": "231d647c10a3c1dda94962941af9a6aaf7e019d613631e37c8d20c3e8c03399b",
+    "fixtures.py": "eeaca13aa975ec8ca3826947f58a6d9129cd859f221d23d32b22d653b9fe96a1",
+    "policy.diff": "81596214d35eb631b4cefbba474b555ba1428b8176a654e95287fcf54c88ffb7"
+  }
+}

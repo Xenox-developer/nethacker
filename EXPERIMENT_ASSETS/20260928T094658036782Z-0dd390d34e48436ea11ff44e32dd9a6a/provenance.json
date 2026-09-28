@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-09-28T09:44:30.818933+00:00",
+  "baseline": {
+    "program_id": "prog_64e10a9e6ae1e9aa93ffcdca5dc14e17",
+    "reference": "github.com/Xenox-developer/nethacker@56cd7f631d7a2400ec3366aa2d7f539524829572",
+    "full_historical_digest": "sha256:1e2f694943be0b87314c48f014bb290a26f836957193130ca90e319899552230",
+    "runtime_files": 51,
+    "runtime_hashes": "base31-runtime-hashes.json"
+  },
+  "mechanism_source": {
+    "program_id": "prog_cbd8377702ca06ae133736523ded47b5",
+    "reference": {
+      "commit": "52613eaea15fbf5eb836bf20f69ac083775edcbe",
+      "repo": "github.com/Xenox-developer/nethacker"
+    },
+    "full_digest": "sha256:4f6cf4fbf168f8d9095faf4261b53b04170add636be5fd07b2c29e0b15ed8a77",
+    "source_file_hashes": {
+      "autoascend/agent.py": "fbf5213ccfd323f3754629901bbfbff12a6d073111c0d842347fe8877e836408",
+      "autoascend/item/inventory.py": "8fb2462d1de69219a05740d0848bacc1dfbb451b254873eb6de6a5773a905b56",
+      "LICENSE": "8c6bb7b6b705d8808fccf4ab244582217b88dd9fa3e02daa34d130be74ce76a6"
+    }
+  },
+  "scope": "Both connected attempt44 policy hunks only; no replacement files, no attempt40 healing or attempt37 armor, no adapter/caps/other31 changes. Example diff transplanted to exact31 and syntax-compiled only; not gameplay-tested.",
+  "license": "MIT; original full notice preserved in baseline and reference44."
+}

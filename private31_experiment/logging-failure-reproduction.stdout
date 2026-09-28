@@ -1,0 +1,1 @@
+Reproduced: NumPy level keys suppress detailed events; terminal failure count is retained. Real generator/parser action outputs remain identical across off/on/unwritable modes. Runtime arms untouched.

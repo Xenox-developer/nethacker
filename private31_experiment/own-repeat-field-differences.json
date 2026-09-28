@@ -1,0 +1,149 @@
+{
+  "baseline": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {},
+    "5": {},
+    "6": {},
+    "7": {},
+    "8": {},
+    "9": {},
+    "10": {},
+    "11": {
+      "progress": {
+        "primary": 0.6015648510382184,
+        "repeat": 0.46637631565303056
+      },
+      "cause_of_death": {
+        "primary": "killed by a minotaur",
+        "repeat": "drowned in deep water"
+      },
+      "steps": {
+        "primary": 18124,
+        "repeat": 17995
+      },
+      "max_depth": {
+        "primary": 28,
+        "repeat": 25
+      },
+      "milestone": {
+        "primary": "Dlvl:28",
+        "repeat": "Dlvl:25"
+      },
+      "turns": {
+        "primary": 13537,
+        "repeat": 13519
+      }
+    },
+    "12": {},
+    "13": {},
+    "14": {
+      "progress": {
+        "primary": 0.5067605633802816,
+        "repeat": 0.5543572044866264
+      },
+      "cause_of_death": {
+        "primary": "killed by a cobra",
+        "repeat": "killed by a shark"
+      },
+      "steps": {
+        "primary": 14915,
+        "repeat": 15732
+      },
+      "max_depth": {
+        "primary": 26,
+        "repeat": 27
+      },
+      "milestone": {
+        "primary": "Dlvl:26",
+        "repeat": "Dlvl:27"
+      },
+      "turns": {
+        "primary": 10037,
+        "repeat": 10300
+      }
+    }
+  },
+  "candidate": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {},
+    "5": {},
+    "6": {
+      "progress": {
+        "primary": 0.5543572044866264,
+        "repeat": 0.46637631565303056
+      },
+      "cause_of_death": {
+        "primary": "killed by a xorn",
+        "repeat": "killed by a pit viper"
+      },
+      "steps": {
+        "primary": 22490,
+        "repeat": 22079
+      },
+      "max_depth": {
+        "primary": 27,
+        "repeat": 25
+      },
+      "milestone": {
+        "primary": "Dlvl:27",
+        "repeat": "Dlvl:25"
+      },
+      "turns": {
+        "primary": 11186,
+        "repeat": 11124
+      }
+    },
+    "7": {},
+    "8": {},
+    "9": {
+      "cause_of_death": {
+        "primary": "killed by an invisible lich",
+        "repeat": "killed by a minotaur"
+      },
+      "steps": {
+        "primary": 20264,
+        "repeat": 20134
+      },
+      "turns": {
+        "primary": 15718,
+        "repeat": 15660
+      }
+    },
+    "10": {},
+    "11": {},
+    "12": {},
+    "13": {},
+    "14": {
+      "progress": {
+        "primary": 0.5543572044866264,
+        "repeat": 0.5067605633802816
+      },
+      "cause_of_death": {
+        "primary": "killed by a shark",
+        "repeat": "killed by a cobra"
+      },
+      "steps": {
+        "primary": 15732,
+        "repeat": 14691
+      },
+      "max_depth": {
+        "primary": 27,
+        "repeat": 26
+      },
+      "milestone": {
+        "primary": "Dlvl:27",
+        "repeat": "Dlvl:26"
+      },
+      "turns": {
+        "primary": 10300,
+        "repeat": 10002
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{"trace": "185-135762758285781", "event": "start", "sequence": 0, "association": "unmapped"}
+{"trace": "185-135762758285781", "event": "attempt", "sequence": 1, "requested": "Elbereth", "requested_length": 8, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "emission_start", "sequence": 2, "requested": "Elbereth", "blind": true, "planned_payload": "Elbereth Elbereth\r", "payload_length": 18, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "emission_end", "sequence": 3, "emitted_payload": "Elbereth Elbereth\r", "emitted_length": 18, "completed": true, "interrupted": false, "truncated": false, "turn": 13, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt_return", "sequence": 4, "result": true, "turn": 13, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt", "sequence": 5, "requested": "eLbErEtH", "requested_length": 8, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "emission_start", "sequence": 6, "requested": "eLbErEtH", "blind": true, "planned_payload": "Elbereth Elbereth\r", "payload_length": 18, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "emission_end", "sequence": 7, "emitted_payload": "Elbereth Elbereth\r", "emitted_length": 18, "completed": true, "interrupted": false, "truncated": false, "turn": 13, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt_return", "sequence": 8, "result": true, "turn": 13, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt", "sequence": 9, "requested": "Elbereth", "requested_length": 8, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "emission_start", "sequence": 10, "requested": "Elbereth", "blind": false, "planned_payload": "Elbereth\r", "payload_length": 9, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "emission_end", "sequence": 11, "emitted_payload": "Elbereth\r", "emitted_length": 9, "completed": true, "interrupted": false, "truncated": false, "turn": 13, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt_return", "sequence": 12, "result": true, "turn": 13, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt", "sequence": 13, "requested": "other", "requested_length": 5, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "emission_start", "sequence": 14, "requested": "other", "blind": true, "planned_payload": "other\r", "payload_length": 6, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "emission_end", "sequence": 15, "emitted_payload": "other\r", "emitted_length": 6, "completed": true, "interrupted": false, "truncated": false, "turn": 13, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt_return", "sequence": 16, "result": true, "turn": 13, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt", "sequence": 17, "requested": "Elbereth", "requested_length": 8, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "emission_start", "sequence": 18, "requested": "Elbereth", "blind": true, "planned_payload": "Elbereth Elbereth\r", "payload_length": 18, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "emission_end", "sequence": 19, "emitted_payload": "Elbereth Elbereth\r", "emitted_length": 18, "completed": true, "interrupted": false, "truncated": false, "turn": 13, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt_return", "sequence": 20, "result": true, "turn": 13, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt", "sequence": 21, "requested": "Elbereth", "requested_length": 8, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt_return", "sequence": 22, "result": false, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt", "sequence": 23, "requested": "Elbereth", "requested_length": 8, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt_return", "sequence": 24, "result": false, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt", "sequence": 25, "requested": "Elbereth", "requested_length": 8, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "emission_start", "sequence": 26, "requested": "Elbereth", "blind": true, "planned_payload": "Elbereth Elbereth\r", "payload_length": 18, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "emission_end", "sequence": 27, "emitted_payload": "El", "emitted_length": 2, "completed": false, "interrupted": true, "truncated": false, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "attempt_error", "sequence": 28, "error": "RuntimeError", "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "reading", "sequence": 29, "raw": "Elbereth", "raw_length": 8, "stored": "Elbereth", "truncated": false, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "reading", "sequence": 30, "raw": "eLbErEtH", "raw_length": 8, "stored": "Elbereth", "truncated": false, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "reading", "sequence": 31, "raw": "Elbereth Elbereth", "raw_length": 17, "stored": "Elbereth", "truncated": false, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "reading", "sequence": 32, "raw": "El?ere?h Elbereth", "raw_length": 17, "stored": "Elbereth", "truncated": false, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "reading", "sequence": 33, "raw": "El?ere?h", "raw_length": 8, "stored": "El?ere?h", "truncated": false, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "reading", "sequence": 34, "raw": "hello", "raw_length": 5, "stored": "hello", "truncated": false, "turn": 10, "position": [3, 4], "level": [0, 1]}
+{"trace": "185-135762758285781", "event": "end", "sequence": 35, "dropped": 0, "write_failures": 0}

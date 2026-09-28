@@ -1,0 +1,26 @@
+--- a/autoascend/agent.py
++++ b/autoascend/agent.py
+@@ -1830,7 +1830,11 @@
+                 self._forbidden_engrave_position = (self.blstats.y, self.blstats.x)
+                 yield A.Command.ESC
+                 return
+-            yield from text
++            # Preserve attempt44 redundant blind inscription behavior.
++            inscription = text
++            if text.lower() == 'elbereth' and self.character.prop.blind:
++                inscription = 'Elbereth Elbereth'
++            yield from inscription
+             yield '\r'
+             ret = True
+ 
+--- a/autoascend/item/inventory.py
++++ b/autoascend/item/inventory.py
+@@ -546,7 +546,7 @@
+                     index = self.agent.message.index('You read: "') + len('You read: "')
+                     assert '"' in self.agent.message[index:]
+                     engraving = self.agent.message[index: index + self.agent.message[index:].index('"')]
+-                    self.engraving_below_me = engraving
++                    self.engraving_below_me = 'Elbereth' if 'elbereth' in engraving.lower() else engraving
+                 else:
+                     self.engraving_below_me = ''
+ 

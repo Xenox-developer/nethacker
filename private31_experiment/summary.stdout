@@ -1,0 +1,104 @@
+{
+  "primary_public": {
+    "n": 15,
+    "baseline_mean": 0.4324612999251177,
+    "candidate_mean": 0.4356344093322074,
+    "gains": 1,
+    "ties": 14,
+    "losses": 0
+  },
+  "development": {
+    "n": 12,
+    "baseline_mean": 0.34929305700212104,
+    "candidate_mean": 0.36487239239967034,
+    "gains": 2,
+    "ties": 10,
+    "losses": 0
+  },
+  "repeat_public": {
+    "n": 15,
+    "baseline_mean": 0.42662184030652817,
+    "candidate_mean": 0.42659590733621133,
+    "gains": 1,
+    "ties": 12,
+    "losses": 2
+  },
+  "baseline_own_repeat": {
+    "n": 15,
+    "baseline_mean": 0.4324612999251177,
+    "candidate_mean": 0.42662184030652817,
+    "gains": 1,
+    "ties": 13,
+    "losses": 1
+  },
+  "candidate_own_repeat": {
+    "n": 15,
+    "baseline_mean": 0.4356344093322074,
+    "candidate_mean": 0.42659590733621133,
+    "gains": 0,
+    "ties": 13,
+    "losses": 2
+  },
+  "diagnostics": {
+    "baseline-primary": {
+      "streams": 27,
+      "events": {
+        "start": 27,
+        "end": 27
+      },
+      "write_failures": 16352,
+      "dropped_by_cap": 0,
+      "missing_terminal": 0,
+      "malformed_rows": 0,
+      "association": "unmapped",
+      "statuses": {
+        "completed": 27
+      }
+    },
+    "candidate-primary": {
+      "streams": 27,
+      "events": {
+        "start": 27,
+        "end": 27
+      },
+      "write_failures": 16350,
+      "dropped_by_cap": 0,
+      "missing_terminal": 0,
+      "malformed_rows": 0,
+      "association": "unmapped",
+      "statuses": {
+        "completed": 27
+      }
+    },
+    "baseline-repeat": {
+      "streams": 15,
+      "events": {
+        "start": 15,
+        "end": 15
+      },
+      "write_failures": 6767,
+      "dropped_by_cap": 0,
+      "missing_terminal": 0,
+      "malformed_rows": 0,
+      "association": "unmapped",
+      "statuses": {
+        "completed": 15
+      }
+    },
+    "candidate-repeat": {
+      "streams": 15,
+      "events": {
+        "start": 15,
+        "end": 15
+      },
+      "write_failures": 6375,
+      "dropped_by_cap": 0,
+      "missing_terminal": 0,
+      "malformed_rows": 0,
+      "association": "unmapped",
+      "statuses": {
+        "completed": 15
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "source_run": "/Users/nikchin/Desktop/codexProjects/NetHackers/.nethackers-lab/val-dwa-law-fem/engine/runs/20260927-182426-participant-0017-2388013e",
+  "status": "interrupted_before_native_outer_evaluation",
+  "published": false,
+  "validated": false,
+  "parent_source_sha256": "555ec8258228b8cbdcf589ce7e917d2ecdf601d1902ae8689f0fbb277c0e5980",
+  "candidate_source_sha256": "3c9e76a77186e76375113b357a171f8dfaae8cc94cb774a3ddab2e876475225f",
+  "files": {
+    "dig-repeat-confirm.json": "ae8787927441c9a19cbbffe3d6179ccaebe04c91e2ee4998f333bb18c3022e9d",
+    "dig-repeat-parent-control.json": "f1b8c1c6cfb41b2014f553a47b6d87cdb18ee44bd5460dbad66247809784eea4",
+    "dig-repeat.json": "c6415445619b2c04b064f04e41e6621ca9eb47e58a06a3c8a81d75f60222c3dc",
+    "dig-repeat.patch": "f75d3c8a532dea25623538b49ecb347de7b7de3403c6b825c1947ca72e624dc7",
+    "parent-eval.json": "fe88a0e9106e5f4a8c1ab215f8ea2d4f826140614d288b78de221da46a60d4f0"
+  }
+}

@@ -1,0 +1,208 @@
+[
+  {
+    "kind": "write",
+    "text": "Elbereth",
+    "blind": true,
+    "append": false,
+    "denial": 0,
+    "actions": [
+      69,
+      "-",
+      "E",
+      "l",
+      "b",
+      "e",
+      "r",
+      "e",
+      "t",
+      "h",
+      " ",
+      "E",
+      "l",
+      "b",
+      "e",
+      "r",
+      "e",
+      "t",
+      "h",
+      "\r"
+    ],
+    "result": true
+  },
+  {
+    "kind": "write",
+    "text": "eLbErEtH",
+    "blind": true,
+    "append": false,
+    "denial": 0,
+    "actions": [
+      69,
+      "-",
+      "E",
+      "l",
+      "b",
+      "e",
+      "r",
+      "e",
+      "t",
+      "h",
+      " ",
+      "E",
+      "l",
+      "b",
+      "e",
+      "r",
+      "e",
+      "t",
+      "h",
+      "\r"
+    ],
+    "result": true
+  },
+  {
+    "kind": "write",
+    "text": "Elbereth",
+    "blind": false,
+    "append": false,
+    "denial": 0,
+    "actions": [
+      69,
+      "-",
+      "E",
+      "l",
+      "b",
+      "e",
+      "r",
+      "e",
+      "t",
+      "h",
+      "\r"
+    ],
+    "result": true
+  },
+  {
+    "kind": "write",
+    "text": "other",
+    "blind": true,
+    "append": false,
+    "denial": 0,
+    "actions": [
+      69,
+      "-",
+      "o",
+      "t",
+      "h",
+      "e",
+      "r",
+      "\r"
+    ],
+    "result": true
+  },
+  {
+    "kind": "write",
+    "text": "Elbereth",
+    "blind": true,
+    "append": true,
+    "denial": 0,
+    "actions": [
+      69,
+      "-",
+      "n",
+      "E",
+      "l",
+      "b",
+      "e",
+      "r",
+      "e",
+      "t",
+      "h",
+      " ",
+      "E",
+      "l",
+      "b",
+      "e",
+      "r",
+      "e",
+      "t",
+      "h",
+      "\r"
+    ],
+    "result": true
+  },
+  {
+    "kind": "write",
+    "text": "Elbereth",
+    "blind": true,
+    "append": false,
+    "denial": 1,
+    "actions": [
+      69,
+      27
+    ],
+    "result": false
+  },
+  {
+    "kind": "write",
+    "text": "Elbereth",
+    "blind": true,
+    "append": false,
+    "denial": 2,
+    "actions": [
+      69,
+      "-",
+      27
+    ],
+    "result": false
+  },
+  {
+    "kind": "interruption",
+    "actions": [
+      69,
+      "-",
+      "E",
+      "l"
+    ]
+  },
+  {
+    "kind": "parse",
+    "raw": "Elbereth",
+    "stored": "Elbereth",
+    "actions": []
+  },
+  {
+    "kind": "parse",
+    "raw": "eLbErEtH",
+    "stored": "Elbereth",
+    "actions": []
+  },
+  {
+    "kind": "parse",
+    "raw": "Elbereth Elbereth",
+    "stored": "Elbereth",
+    "actions": []
+  },
+  {
+    "kind": "parse",
+    "raw": "El?ere?h Elbereth",
+    "stored": "Elbereth",
+    "actions": []
+  },
+  {
+    "kind": "parse",
+    "raw": "El?ere?h",
+    "stored": "El?ere?h",
+    "actions": []
+  },
+  {
+    "kind": "parse",
+    "raw": "hello",
+    "stored": "hello",
+    "actions": []
+  },
+  {
+    "kind": "parse",
+    "raw": null,
+    "stored": "",
+    "actions": []
+  }
+]
