@@ -1,0 +1,31 @@
+arena · running 8 episode(s)…
+/workspace/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 3/8 (val-dwa-law-fem): progress=0.507 completed turns=10740 depth=26
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 2/8 (val-dwa-law-fem): progress=0.554 completed turns=9280 depth=27
+/workspace/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+/workspace/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+arena · episode 4/8 (val-dwa-law-fem): progress=0.466 completed turns=10852 depth=25
+/workspace/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 5/8 (val-dwa-law-fem): progress=0.554 completed turns=11671 depth=27
+Warning: NetHack asked for env variable ROGUEOPTS
+/workspace/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+arena · episode 6/8 (val-dwa-law-fem): progress=0.466 completed turns=10641 depth=25
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 7/8 (val-dwa-law-fem): progress=0.393 completed turns=11751 depth=21
+arena · episode 8/8 (val-dwa-law-fem): progress=0.024 completed turns=11345 depth=1
+arena · episode 1/8 (val-dwa-law-fem): progress=0.117 completed turns=23624 depth=3

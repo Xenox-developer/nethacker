@@ -1,0 +1,34 @@
+{
+  "incoming-public15": {
+    "count": 15,
+    "mean": 0.4809840847749231,
+    "errors": 0,
+    "statuses": {
+      "completed": 15
+    }
+  },
+  "candidate-public15": {
+    "count": 15,
+    "mean": 0.4283560229465442,
+    "errors": 0,
+    "statuses": {
+      "completed": 15
+    }
+  },
+  "incoming-panel": {
+    "count": 8,
+    "mean": 0.28195535364305296,
+    "errors": 0,
+    "statuses": {
+      "completed": 8
+    }
+  },
+  "candidate-panel": {
+    "count": 8,
+    "mean": 0.3852968977178186,
+    "errors": 0,
+    "statuses": {
+      "completed": 8
+    }
+  }
+}

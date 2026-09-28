@@ -1,0 +1,44 @@
+{
+  "hypothesis": "Whole-policy pinned-peer baseline; no optimization or combination",
+  "namespace": "local",
+  "secret": "public (native default)",
+  "identity": "val-dwa-law-fem",
+  "max_steps": 1000000,
+  "no_progress_timeout": 10000,
+  "action_timeout": 120,
+  "max_parallel_evals": 4,
+  "public15": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "additional_panel": [
+    3000,
+    3001,
+    3002,
+    3003,
+    3004,
+    3005,
+    3006,
+    3007
+  ],
+  "batch_order": [
+    "incoming-public15",
+    "candidate-public15",
+    "incoming-panel",
+    "candidate-panel"
+  ],
+  "runtime_mutation_after_measurement": false
+}

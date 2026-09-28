@@ -1,0 +1,98 @@
+[
+  {
+    "argv": [
+      "python",
+      "-m",
+      "nethackers.arena.run",
+      "--solution",
+      "/tmp/peer-baseline-incoming",
+      "--batch",
+      "[[0,\"val-dwa-law-fem\"],[1,\"val-dwa-law-fem\"],[2,\"val-dwa-law-fem\"],[3,\"val-dwa-law-fem\"],[4,\"val-dwa-law-fem\"],[5,\"val-dwa-law-fem\"],[6,\"val-dwa-law-fem\"],[7,\"val-dwa-law-fem\"],[8,\"val-dwa-law-fem\"],[9,\"val-dwa-law-fem\"],[10,\"val-dwa-law-fem\"],[11,\"val-dwa-law-fem\"],[12,\"val-dwa-law-fem\"],[13,\"val-dwa-law-fem\"],[14,\"val-dwa-law-fem\"]]",
+      "--evaluation-id",
+      "local",
+      "--max-steps",
+      "1000000",
+      "--no-progress-timeout",
+      "10000",
+      "--action-timeout",
+      "120",
+      "--max-parallel-evals",
+      "4",
+      "--out",
+      "/workspace/PEER_BASELINE_ASSETS/incoming-public15.json"
+    ],
+    "stdout_stderr": "/workspace/PEER_BASELINE_ASSETS/incoming-public15.log"
+  },
+  {
+    "argv": [
+      "python",
+      "-m",
+      "nethackers.arena.run",
+      "--solution",
+      "/workspace",
+      "--batch",
+      "[[0,\"val-dwa-law-fem\"],[1,\"val-dwa-law-fem\"],[2,\"val-dwa-law-fem\"],[3,\"val-dwa-law-fem\"],[4,\"val-dwa-law-fem\"],[5,\"val-dwa-law-fem\"],[6,\"val-dwa-law-fem\"],[7,\"val-dwa-law-fem\"],[8,\"val-dwa-law-fem\"],[9,\"val-dwa-law-fem\"],[10,\"val-dwa-law-fem\"],[11,\"val-dwa-law-fem\"],[12,\"val-dwa-law-fem\"],[13,\"val-dwa-law-fem\"],[14,\"val-dwa-law-fem\"]]",
+      "--evaluation-id",
+      "local",
+      "--max-steps",
+      "1000000",
+      "--no-progress-timeout",
+      "10000",
+      "--action-timeout",
+      "120",
+      "--max-parallel-evals",
+      "4",
+      "--out",
+      "/workspace/PEER_BASELINE_ASSETS/candidate-public15.json"
+    ],
+    "stdout_stderr": "/workspace/PEER_BASELINE_ASSETS/candidate-public15.log"
+  },
+  {
+    "argv": [
+      "python",
+      "-m",
+      "nethackers.arena.run",
+      "--solution",
+      "/tmp/peer-baseline-incoming",
+      "--batch",
+      "[[3000,\"val-dwa-law-fem\"],[3001,\"val-dwa-law-fem\"],[3002,\"val-dwa-law-fem\"],[3003,\"val-dwa-law-fem\"],[3004,\"val-dwa-law-fem\"],[3005,\"val-dwa-law-fem\"],[3006,\"val-dwa-law-fem\"],[3007,\"val-dwa-law-fem\"]]",
+      "--evaluation-id",
+      "local",
+      "--max-steps",
+      "1000000",
+      "--no-progress-timeout",
+      "10000",
+      "--action-timeout",
+      "120",
+      "--max-parallel-evals",
+      "4",
+      "--out",
+      "/workspace/PEER_BASELINE_ASSETS/incoming-panel.json"
+    ],
+    "stdout_stderr": "/workspace/PEER_BASELINE_ASSETS/incoming-panel.log"
+  },
+  {
+    "argv": [
+      "python",
+      "-m",
+      "nethackers.arena.run",
+      "--solution",
+      "/workspace",
+      "--batch",
+      "[[3000,\"val-dwa-law-fem\"],[3001,\"val-dwa-law-fem\"],[3002,\"val-dwa-law-fem\"],[3003,\"val-dwa-law-fem\"],[3004,\"val-dwa-law-fem\"],[3005,\"val-dwa-law-fem\"],[3006,\"val-dwa-law-fem\"],[3007,\"val-dwa-law-fem\"]]",
+      "--evaluation-id",
+      "local",
+      "--max-steps",
+      "1000000",
+      "--no-progress-timeout",
+      "10000",
+      "--action-timeout",
+      "120",
+      "--max-parallel-evals",
+      "4",
+      "--out",
+      "/workspace/PEER_BASELINE_ASSETS/candidate-panel.json"
+    ],
+    "stdout_stderr": "/workspace/PEER_BASELINE_ASSETS/candidate-panel.log"
+  }
+]
