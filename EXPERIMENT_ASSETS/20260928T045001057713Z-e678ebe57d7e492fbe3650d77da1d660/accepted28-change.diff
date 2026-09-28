@@ -1,0 +1,16 @@
+--- a/autoascend/dive_logic.py
++++ b/autoascend/dive_logic.py
+@@ -3065,8 +3065,11 @@
+         # even if out of sight now (base-public s14: an invisible ogre king hit us in the fresh pit; s1: a
+         # chameleon)
+         rewrite = spot[3] and tries.get(spot[:3] + (False,), 0) > 0
+-        if not near and not (ELBERETH_ALWAYS or self.on_medusa_level() or bl.hunger_state >= Hunger.WEAK or
+-                             rewrite):
++        # hypothesis: preemptive protection on deep levels lets digging finish
++        # before unseen arrivals attack, without slowing early dungeon travel.
++        deep_dig = bl.depth >= 20
++        if not near and not (ELBERETH_ALWAYS or deep_dig or self.on_medusa_level() or
++                             bl.hunger_state >= Hunger.WEAK or rewrite):
+             return False
+         if blind:
+             # can't read it back: the only sign it didn't take (a blind dust Elbereth keeps all 8 letters ~1 time
