@@ -1,0 +1,26 @@
+{
+  "baseline": {
+    "bot.py": true,
+    "arena_adapter.py": true,
+    "LICENSE": true,
+    "nethackers.solution.json": true
+  },
+  "A": {
+    "bot.py": true,
+    "arena_adapter.py": true,
+    "LICENSE": true,
+    "nethackers.solution.json": true
+  },
+  "B": {
+    "bot.py": true,
+    "arena_adapter.py": true,
+    "LICENSE": true,
+    "nethackers.solution.json": true
+  },
+  "C": {
+    "bot.py": true,
+    "arena_adapter.py": true,
+    "LICENSE": true,
+    "nethackers.solution.json": true
+  }
+}

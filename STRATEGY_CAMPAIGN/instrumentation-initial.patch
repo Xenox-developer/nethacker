@@ -1,0 +1,118 @@
+--- a/autoascend/agent.py
++++ b/autoascend/agent.py
+@@ -1,3 +1,4 @@
++import campaign_events as ce
+ import contextlib
+ import re
+ import sys
+--- a/autoascend/combat/fight_heur.py
++++ b/autoascend/combat/fight_heur.py
+@@ -1,3 +1,4 @@
++import campaign_events as ce
+ from collections import defaultdict
+ from itertools import product
+ 
+@@ -209,6 +210,7 @@
+ def simulate_wand_path(agent, wand, monsters, dy, dx):
+     """ Returns list of tuples (y, x, hit_object, expected_hit_count).
+     """
++    ce.hit("A.evaluations")
+     y, x = agent.blstats.y, agent.blstats.x
+ 
+     # TODO: random range left from 6 or 7 to 13
+--- a/autoascend/dive_logic.py
++++ b/autoascend/dive_logic.py
+@@ -1,3 +1,4 @@
++import campaign_events as ce
+ """Depth-first plan for the BALROG progression score.
+ 
+ The episode score is the best milestone ever reached (death costs nothing):
+@@ -553,6 +554,7 @@
+     # ------------------------------------------------------------------ state
+ 
+     def update(self):
++        ce.hit("C.observations")
+         agent = self.agent
+         level = agent.current_level()
+         key = level.key()
+--- a/autoascend/item/inventory.py
++++ b/autoascend/item/inventory.py
+@@ -1,3 +1,4 @@
++import campaign_events as ce
+ import contextlib
+ import re
+ from functools import partial
+@@ -1628,6 +1629,7 @@
+     @utils.debug_log('inventory.buy_food')
+     @Strategy.wrap
+     def buy_food(self):
++        ce.hit("B.considered")
+         agent = self.agent
+         bl = agent.blstats
+         if not jf_config.BUY_FOOD or bl.gold < 20 or bl.hunger_state >= Hunger.FAINTING:
+--- a/campaign_events.py
++++ b/campaign_events.py
+@@ -0,0 +1,63 @@
++"""Optional action-neutral activation evidence; no-op outside campaign evals.
++
++Call hit('A.considered') at a gate and hit('A.applied') only when behavior
++changes. Counts are checkpointed at powers of two to bound diagnostic I/O.
++Without an explicit flush() at normal shutdown they are LOWER BOUNDS, not exact
++totals. Never use these counts or the environment setting to choose actions.
++"""
++import json
++import os
++from pathlib import Path
++
++_directory = os.environ.get("NETHACKERS_CAMPAIGN_EVENTS_DIR")
++_counts = {}
++_writes = 0
++_MAX_NAMES = 64
++_MAX_WRITES = 512
++
++
++def flush(*, exact=False):
++    global _writes
++    if not _directory or _writes >= _MAX_WRITES:
++        return
++    try:
++        directory = Path(_directory)
++        directory.mkdir(parents=True, exist_ok=True)
++        destination = directory / f"events-{os.getpid()}.json"
++        temporary = destination.with_suffix(".tmp")
++        temporary.write_text(json.dumps({
++            "pid": os.getpid(), "counts": _counts,
++            "counts_are_lower_bounds": not exact, "writes": _writes + 1,
++        }, sort_keys=True))
++        os.replace(temporary, destination)
++        _writes += 1
++    except OSError:
++        pass  # Diagnostics must never alter action selection or crash the bot.
++
++
++def hit(name):
++    if not _directory or not isinstance(name, str) or len(name) > 80:
++        return
++    if name not in _counts and len(_counts) >= _MAX_NAMES:
++        return
++    count = _counts[name] = _counts.get(name, 0) + 1
++    if count & (count - 1) == 0:
++        flush()
++
++
++def enabled():
++    return bool(_directory)
++
++_samples = 0
++def sample(kind, **values):
++    global _samples
++    if not _directory or _samples >= 64:
++        return
++    try:
++        directory = Path(_directory)
++        directory.mkdir(parents=True, exist_ok=True)
++        with (directory / f"samples-{os.getpid()}.jsonl").open("a") as stream:
++            stream.write(json.dumps(dict(kind=kind, **values), default=str) + "\n")
++        _samples += 1
++    except (OSError, TypeError, ValueError):
++        pass

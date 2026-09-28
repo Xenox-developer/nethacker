@@ -1,0 +1,11 @@
+--- a/autoascend/jf_config.py
++++ b/autoascend/jf_config.py
+@@ -286,7 +286,7 @@
+ 
+ # hypothesis: independent fixed-baseline tests of ray bookkeeping, local food reserve,
+ # and a brief emergency exception after observed intact-Elbereth damage.
+-WAND_BRANCH_PROBABILITY = False
++WAND_BRANCH_PROBABILITY = True
+ TOOL_SHOP_RESERVE = False
+ ELBERETH_FAILURE_OVERRIDE = False
+ 

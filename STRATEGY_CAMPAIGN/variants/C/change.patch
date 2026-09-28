@@ -1,0 +1,11 @@
+--- a/autoascend/jf_config.py
++++ b/autoascend/jf_config.py
+@@ -288,7 +288,7 @@
+ # and a brief emergency exception after observed intact-Elbereth damage.
+ WAND_BRANCH_PROBABILITY = False
+ TOOL_SHOP_RESERVE = False
+-ELBERETH_FAILURE_OVERRIDE = False
++ELBERETH_FAILURE_OVERRIDE = True
+ 
+ _raw = os.environ.get('JF_CFG')
+ if _raw:

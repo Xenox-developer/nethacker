@@ -1,0 +1,32 @@
+{
+  "confidence": "low",
+  "control_games_by_variant": {
+    "A": 3,
+    "baseline": 3
+  },
+  "control_score_ties": 3,
+  "eligible_singles": [
+    "A"
+  ],
+  "entrypoint_contract_checked": true,
+  "final_publication_candidate": "A",
+  "final_wand_fixtures_passed": 6,
+  "installed_sanitized_digest": "sha256:d2e0a9f983c0b912322b9725832840f3808ceae596d3012834725c82be59e3a8",
+  "native_publication_performed": false,
+  "nested_bot_copies": 0,
+  "passed": true,
+  "primary_gains_not_reproduced": 2,
+  "primary_games_by_variant": {
+    "A": 20,
+    "B": 20,
+    "C": 20,
+    "baseline": 20
+  },
+  "recommended": "A",
+  "required_combinations": [],
+  "result_errors": 0,
+  "sign_reversals": 0,
+  "technical_retries": 0,
+  "total_games": 86,
+  "workspace_caches_removed": true
+}

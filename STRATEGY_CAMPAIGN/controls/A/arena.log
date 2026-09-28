@@ -1,0 +1,21 @@
+arena · running 3 episode(s)…
+/tmp/campaign-A/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/tmp/campaign-A/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/tmp/campaign-A/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/tmp/campaign-A/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/tmp/campaign-A/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/tmp/campaign-A/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 3/3 (val-dwa-law-fem): progress=0.602 completed turns=15443 depth=28
+/tmp/campaign-A/autoascend/agent.py:902: RuntimeWarning: overflow encountered in scalar subtract
+  if to_y == from_y - 1: ret += 'n'
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 2/3 (val-dwa-law-fem): progress=0.507 completed turns=18909 depth=26
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 1/3 (val-dwa-law-fem): progress=0.507 completed turns=27675 depth=26

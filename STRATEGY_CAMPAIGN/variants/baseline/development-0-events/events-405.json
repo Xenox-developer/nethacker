@@ -1,0 +1,1 @@
+{"counts": {"A.branch_nodes": 1839, "A.branching_evaluations": 804, "A.evaluations": 4864, "A.score_changed": 30, "B.bail.location": 8, "B.considered": 4407, "C.observations": 17103, "C.qualified_loss": 4}, "counts_are_lower_bounds": true, "pid": 405, "writes": 74}

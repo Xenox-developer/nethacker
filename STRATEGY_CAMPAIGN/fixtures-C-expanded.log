@@ -1,0 +1,24 @@
+test_bad_stock_price_path_and_curse (__main__.FoodTests.test_bad_stock_price_path_and_curse) ... ok
+test_exact_eight_boundary (__main__.FoodTests.test_exact_eight_boundary) ... ok
+test_failed_target_cooldown (__main__.FoodTests.test_failed_target_cooldown) ... ok
+test_real_pickup_refreshes_stack_before_dropping_excess (__main__.FoodTests.test_real_pickup_refreshes_stack_before_dropping_excess) ... skipped 'Refresh option belongs only to B and combinations containing B'
+test_recheck_after_travel (__main__.FoodTests.test_recheck_after_travel) ... ok
+test_settlement_even_after_threat_timeout (__main__.FoodTests.test_settlement_even_after_threat_timeout) ... ok
+test_tool_flag_and_no_tool_original_branch (__main__.FoodTests.test_tool_flag_and_no_tool_original_branch) ... ok
+test_two_steps_unknown_buc_one_unit (__main__.FoodTests.test_two_steps_unknown_buc_one_unit) ... ok
+test_underfoot (__main__.FoodTests.test_underfoot) ... ok
+test_actual_last_resort_branch_and_gates (__main__.ProtectionTests.test_actual_last_resort_branch_and_gates) ... ok
+test_clear_evidence_on_leaving_or_erasure (__main__.ProtectionTests.test_clear_evidence_on_leaving_or_erasure) ... ok
+test_invalid_pairs (__main__.ProtectionTests.test_invalid_pairs) ... ok
+test_loss_boundary_and_same_turn (__main__.ProtectionTests.test_loss_boundary_and_same_turn) ... ok
+test_diagnostic_choice_distinguishes_scores_from_actions (__main__.WandTests.test_diagnostic_choice_distinguishes_scores_from_actions) ... ok
+test_existing_score_penalties_and_action_ranking (__main__.WandTests.test_existing_score_penalties_and_action_ranking) ... ok
+test_later_bounce_weight_and_sibling_permutation (__main__.WandTests.test_later_bounce_weight_and_sibling_permutation) ... ok
+test_mirrored_branches (__main__.WandTests.test_mirrored_branches) ... ok
+test_self_pet_peaceful_labels (__main__.WandTests.test_self_pet_peaceful_labels) ... ok
+test_straight_unchanged (__main__.WandTests.test_straight_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.033s
+
+OK (skipped=1)

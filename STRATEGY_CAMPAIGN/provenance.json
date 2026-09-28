@@ -1,0 +1,22 @@
+{
+  "request_assets": {
+    "README.md": "10094001e5fd41f071ee837cf5f927312d785bde193d6e82975bc25165278722",
+    "RESEARCH.md": "7ec352c5088aa96121d2ff58432a851430699d94b43d532022151bd5879a4261",
+    "campaign.py": "95688c60b223dd7c489186c36b3104bf9056263db8796dcc18f81c070088cdd3",
+    "campaign_events.py": "03ba1c746c70f13ed2e2258927fa28531f6a54fc0e4efd75e771aa5fcc0a46c7",
+    "research-resources.md": "1cd9f937a8e821c7c63759d6883c8b498926b893214ce1710764b15c2fbb0589",
+    "research-tactics.md": "c3583487930e72e937acda65a53d0262d386fa880b62fe60dd63c0522f5cbc2c",
+    "test_campaign.py": "539ee687ef08ccc4e6504006e559b7a65b655497c93cf96e99e603f301db590d"
+  },
+  "python": "3.11.16 (main, Sep 19 2026, 01:04:43) [GCC 14.2.0]",
+  "packages": {
+    "nle": "1.3.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "nethackers": "not installed as named distribution"
+  },
+  "reused_code": [
+    "Supplied campaign_events.py, with bounded sample extension"
+  ],
+  "peer_source_reused": false
+}

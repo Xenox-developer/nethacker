@@ -1,0 +1,14 @@
+{
+  "candidate": "A",
+  "criteria": {
+    "largest_development_absolute_difference": 2001,
+    "largest_public_gain": 1,
+    "largest_public_loss": 9
+  },
+  "seeds": [
+    1,
+    9,
+    2001
+  ],
+  "warning": "Diagnostic repeats only; never substituted into primary means."
+}

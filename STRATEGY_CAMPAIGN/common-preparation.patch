@@ -1,0 +1,569 @@
+--- a/autoascend/agent.py
++++ b/autoascend/agent.py
+@@ -1,3 +1,4 @@
++import campaign_events as ce
+ import contextlib
+ import re
+ import sys
+@@ -1903,6 +1904,13 @@
+                 continue
+ 
+             priority, best_action = max(actions, key=lambda x: x[0]) if actions else None
++            if ce.enabled():
++                alternate_action = combat.fight_heur.campaign_alternate_choice(self, actions)
++                if (combat.fight_heur.campaign_action_key(alternate_action) if alternate_action else None) != \
++                        combat.fight_heur.campaign_action_key(best_action):
++                    ce.hit('A.chosen_action_changed')
++                    ce.sample('wand_action', turn=int(self.blstats.time),
++                              actual=str(best_action), alternate=str(alternate_action))
+ 
+             with self.env.debug_tiles(move_priority_heatmap, color='turbo', is_heatmap=True):
+                 actions_str = '|'.join([combat.utils.action_str(self, a) for a in sorted(actions, key=lambda x: x[0])])
+@@ -2287,6 +2295,7 @@
+     @utils.debug_log('emergency_strategy')
+     @Strategy.wrap
+     def emergency_strategy(self):
++        protection_override = False
+ 
+         # if self.should_cast_extra_heal():
+         #     yield True
+@@ -2390,7 +2399,13 @@
+                 engraving = (self.inventory.engraving_below_me or '').lower()
+                 if not any(dive._ignores_elbereth(m[3]) for m in close) and not self.character.prop.blind and \
+                         (engraving == 'elbereth' or self.can_engrave()):
+-                    adjacent = []
++                    ce.hit('C.suppression_considered')
++                    protection_override = (jf_config.ELBERETH_FAILURE_OVERRIDE and
++                                           dive.protection_failed_recently())
++                    if protection_override:
++                        ce.hit('C.exception_activated')
++                    else:
++                        adjacent = []
+             if adjacent:
+                 level = self.current_level()
+                 here = level.objects[y, x]
+@@ -2409,11 +2424,15 @@
+                     if wand is not None and self._last_resort_dig_turn != self.blstats.time:
+                         yield True
+                         self._last_resort_dig_turn = self.blstats.time
++                        if protection_override:
++                            ce.hit('C.action.dig')
+                         self.log(f'LAST RESORT: zapping {wand.text!r} down')
+                         self.zap(wand, '>')
+                         return
+                 if stairs_ok and here in G.STAIR_DOWN and level.dungeon_number != Level.SOKOBAN:
+                     yield True
++                    if protection_override:
++                        ce.hit('C.action.stairs_down')
+                     self.log('LAST RESORT: down the stairs')
+                     self._last_resort_stairs_turn = self.blstats.time
+                     dive._retreat_blocked_until = self.blstats.time + 20
+@@ -2423,6 +2442,8 @@
+                 if stairs_ok and here in G.STAIR_UP and self.blstats.depth > 1 and \
+                         level.dungeon_number != Level.SOKOBAN and not dive.in_valley():
+                     yield True
++                    if protection_override:
++                        ce.hit('C.action.stairs_up')
+                     self.log('LAST RESORT: up the stairs')
+                     self._last_resort_stairs_turn = self.blstats.time
+                     self.move('<')
+@@ -2445,6 +2466,8 @@
+                         self.is_safe_to_pray(jf_config.DESPERATE_PRAYER_GAP):
+                     yield True
+                     gap = None if self.last_prayer_turn is None else self.blstats.time - self.last_prayer_turn
++                    if protection_override:
++                        ce.hit('C.action.prayer')
+                     self.log(f'LAST RESORT: desperate prayer (gap {gap})')
+                     self.pray()
+                     return
+@@ -2465,18 +2488,24 @@
+                             continue
+                         yield True
+                         self._last_resort_zapped.add(item.glyphs[0])
++                        if protection_override:
++                            ce.hit('C.action.wand')
+                         self.log(f'LAST RESORT: zapping unknown {item.text!r}')
+                         self.zap(item, self.calc_direction(y, x, my, mx))
+                         return
+                 for item in items:
+                     if item.category == nh.POTION_CLASS and not item.is_unambiguous():
+                         yield True
++                        if protection_override:
++                            ce.hit('C.action.potion')
+                         self.log(f'LAST RESORT: quaffing unknown {item.text!r}')
+                         self.inventory.quaff(item)
+                         return
+                 for item in items:
+                     if item.category == nh.SCROLL_CLASS and not item.is_unambiguous() and not watch:
+                         yield True
++                        if protection_override:
++                            ce.hit('C.action.scroll')
+                         self.log(f'LAST RESORT: reading unknown {item.text!r}')
+                         with self.atom_operation():
+                             self.step(A.Command.READ)
+--- a/autoascend/combat/fight_heur.py
++++ b/autoascend/combat/fight_heur.py
+@@ -1,3 +1,4 @@
++import campaign_events as ce
+ from collections import defaultdict
+ from itertools import product
+ 
+@@ -174,51 +175,65 @@
+     return [(y + dy, x + dx, dy, dx, 1.0, 0)]
+ 
+ 
+-def _simulate_wand_path(agent, wand, monsters, y, x, dy, dx, range_left, hit_targets, probability):
++def _simulate_wand_path(agent, wand, monsters, y, x, dy, dx, range_left, hit_targets, probability, corrected=None, trace=None):
++    if corrected is None:
++        corrected = jf_config.WAND_BRANCH_PROBABILITY
+     if range_left < 0:
+         return
+ 
+-    for y, x, dy, dx, next_prob, range_penalty in get_next_states(agent, wand, y, x, dy, dx):
+-        range_left -= range_penalty
++    states = get_next_states(agent, wand, y, x, dy, dx)
++    if len(states) > 1:
++        ce.hit("A.branch_nodes")
++        if trace is not None:
++            trace[0] = True
++    for y, x, dy, dx, next_prob, range_penalty in states:
++        remaining = range_left - range_penalty
+         monster = [m for m in monsters if m[1] == y and m[2] == x]
+         if monster:
+             assert len(monster) == 1
+             monster = monster[0]
+             # For each monster hit, range decreases by 2.
+-            range_left -= 2
++            remaining -= 2
+         elif inside(agent, y, x) and agent.glyphs[y, x] in G.PETS:
+             monster = 'pet'
+             # For each monster hit, range decreases by 2.
+-            range_left -= 2
++            remaining -= 2
+         elif inside(agent, y, x) and agent.glyphs[y, x] in G.MONS and (y, x) != (agent.blstats.y, agent.blstats.x):
+             # a monster that isn't a known hostile: a peaceful (a lightning bolt at a wraith hit a watch
+             # captain and the Watch killed the XL10)
+             monster = 'peaceful'
+-            range_left -= 2
++            remaining -= 2
+         elif agent.blstats.y == y and agent.blstats.x == x:
+             monster = 'self'
+-            range_left -= 2
++            remaining -= 2
+         else:
+             monster = None
+ 
+         hit_targets[(y, x, monster)] += probability * next_prob
+ 
+-        _simulate_wand_path(agent, wand, monsters, y, x, dy, dx, range_left - 1, hit_targets, 1.0)
+-
+-
+-def simulate_wand_path(agent, wand, monsters, dy, dx):
++        if not corrected:
++            range_left = remaining
++        _simulate_wand_path(agent, wand, monsters, y, x, dy, dx, remaining - 1,
++                            hit_targets, probability * next_prob if corrected else 1.0, corrected, trace)
++
++
++def simulate_wand_path(agent, wand, monsters, dy, dx, corrected=None):
+     """ Returns list of tuples (y, x, hit_object, expected_hit_count).
+     """
++    ce.hit("A.evaluations")
+     y, x = agent.blstats.y, agent.blstats.x
+ 
+     # TODO: random range left from 6 or 7 to 13
+     hit_targets = defaultdict(int)
+-    _simulate_wand_path(agent, wand, monsters, y, x, dy, dx, 13, hit_targets, 1.0)
++    trace = [False] if ce.enabled() else None
++    _simulate_wand_path(agent, wand, monsters, y, x, dy, dx, 13, hit_targets, 1.0, corrected, trace)
++    if trace is not None and trace[0]:
++        ce.hit('A.branching_evaluations')
+     for (y, x, hit_object), expected_hit_count in hit_targets.items():
+         yield y, x, hit_object, expected_hit_count
+ 
+ 
+-def get_potential_wand_usages(agent, monsters, dy, dx):
++def get_potential_wand_usages(agent, monsters, dy, dx, corrected=None):
+     ret = []
+     if missiles_risk_the_watch(agent):
+         return ret
+@@ -230,7 +245,7 @@
+             continue
+         priority = 0
+         # print('--------------', dy, dx)
+-        for y, x, monster, p in simulate_wand_path(agent, item, monsters, dy, dx):
++        for y, x, monster, p in simulate_wand_path(agent, item, monsters, dy, dx, corrected):
+             # print(y, x, monster, p)
+             if monster == 'pet':
+                 priority -= p * 20
+@@ -302,6 +317,7 @@
+ 
+ def get_available_actions(agent, monsters):
+     actions = []
++    shadow = []
+ 
+     # melee attack actions
+     for monster in monsters:
+@@ -324,6 +340,7 @@
+             else:
+                 actions.append((priority, ('melee', dy, dx)))
+ 
++    shadow.extend(actions)
+     # ranged attack actions
+     for dy, dx in product([-1, 0, 1], [-1, 0, 1]):
+         if dy != 0 or dx != 0:
+@@ -335,8 +352,22 @@
+                 if all(monster[3].mname in ONLY_RANGED_SLOW_MONSTERS for monster in monsters):
+                     pri += 10
+                 actions.append((pri, ('ranged', dy, dx)))
+-
+-            actions.extend(get_potential_wand_usages(agent, monsters, dy, dx))
++                shadow.append(actions[-1])
++
++            usages = get_potential_wand_usages(agent, monsters, dy, dx)
++            actions.extend(usages)
++            if ce.enabled():
++                alternate = get_potential_wand_usages(agent, monsters, dy, dx,
++                                                     not jf_config.WAND_BRANCH_PROBABILITY)
++                shadow.extend(alternate)
++                actual_by_item = {id(action[3]): score for score, action in usages}
++                other_by_item = {id(action[3]): score for score, action in alternate}
++                if actual_by_item != other_by_item:
++                    ce.hit('A.score_changed')
++                    ce.sample('wand_scores', turn=int(agent.blstats.time), direction=(dy, dx),
++                              actual=[(score, str(action)) for score, action in usages],
++                              alternate=[(score, str(action)) for score, action in alternate])
++    trailing_start = len(actions)
+ 
+     to_pickup = decide_what_to_pickup(agent)
+     if to_pickup:
+@@ -344,7 +375,10 @@
+ 
+     actions.extend(elbereth_action(agent, monsters))
+     actions.extend(wait_action(agent, monsters))
+-
++    if ce.enabled():
++        shadow.extend(actions[trailing_start:])
++        agent._campaign_alternate_actions = shadow
++        agent._campaign_original_actions = actions.copy()
+     return actions
+ 
+ 
+@@ -437,3 +471,20 @@
+         if not np.isnan(move_priority_heatmap[y, x]):
+             ret.append((move_priority_heatmap[y, x], ('move', dy, dx)))
+     return ret
++
++
++def campaign_action_key(action):
++    if action[0] == 'zap':
++        return ('zap', action[1], action[2], id(action[3]))
++    return id(action)
++
++
++def campaign_alternate_choice(agent, actions):
++    # All downstream filters either retain zaps or filter only non-zap classes.
++    # Preserve original candidate order for max() ties, then append goto/moves.
++    original_ids = {id(a) for _, a in agent._campaign_original_actions}
++    retained_ids = {id(a) for _, a in actions}
++    shadow = [(s, a) for s, a in agent._campaign_alternate_actions
++              if a[0] == 'zap' or id(a) in retained_ids]
++    shadow.extend((s, a) for s, a in actions if id(a) not in original_ids)
++    return max(shadow, key=lambda pair: pair[0])[1] if shadow else None
+--- a/autoascend/dive_logic.py
++++ b/autoascend/dive_logic.py
+@@ -1,3 +1,4 @@
++import campaign_events as ce
+ """Depth-first plan for the BALROG progression score.
+ 
+ The episode score is the best milestone ever reached (death costs nothing):
+@@ -552,7 +553,43 @@
+ 
+     # ------------------------------------------------------------------ state
+ 
++    def _observe_protection(self):
++        a = self.agent
++        b = a.blstats
++        here = (a.current_level().key(), b.y, b.x)
++        intact = (a.inventory.engraving_below_me or '').lower() == 'elbereth'
++        current = (b.time, here, b.hitpoints, b.max_hitpoints, bool(a.character.prop.polymorph), intact)
++        previous = getattr(self, '_protection_observation', None)
++        evidence = getattr(self, '_protection_failure', None)
++        if evidence is not None and (here != evidence[0] or not intact or b.time - evidence[1] > 3
++                                     or current[4] or b.max_hitpoints != evidence[2]):
++            self._protection_failure = None
++        if previous is not None and previous[0] == b.time:
++            # Same-turn repeats cannot create/extend evidence; invalidate changed context.
++            if previous[1:] != current[1:]:
++                self._protection_observation = None
++            return
++        if previous is not None and b.time == previous[0] + 1 and here == previous[1] and \
++                intact and previous[5] and not current[4] and not previous[4] and \
++                b.max_hitpoints == previous[3] and b.hitpoints < previous[2]:
++            self._protection_failure = (here, b.time, b.max_hitpoints)
++            ce.hit('C.qualified_loss')
++            ce.sample('protection_loss', turn=int(b.time), tile=str(here), hp=int(b.hitpoints),
++                      previous_hp=int(previous[2]))
++        self._protection_observation = current
++
++    def protection_failed_recently(self):
++        a = self.agent
++        b = a.blstats
++        evidence = getattr(self, '_protection_failure', None)
++        return bool(evidence is not None and evidence[0] == (a.current_level().key(), b.y, b.x)
++                    and 0 <= b.time - evidence[1] <= 3 and b.max_hitpoints == evidence[2]
++                    and not a.character.prop.polymorph
++                    and (a.inventory.engraving_below_me or '').lower() == 'elbereth')
++
+     def update(self):
++        ce.hit("C.observations")
++        self._observe_protection()
+         agent = self.agent
+         level = agent.current_level()
+         key = level.key()
+--- a/autoascend/item/inventory.py
++++ b/autoascend/item/inventory.py
+@@ -1,3 +1,4 @@
++import campaign_events as ce
+ import contextlib
+ import re
+ from functools import partial
+@@ -1625,9 +1626,139 @@
+             self.pickup(mine)
+         self.items.update(force=True)
+ 
++    def _reserve_gate(self, key=None, start=None):
++        a = self.agent
++        b = a.blstats
++        if start is not None and b.time - start >= 8:
++            return 'timeout'
++        if key is not None and a.current_level().key() != key:
++            return 'location'
++        if not a.current_level().shop_interior[b.y, b.x]:
++            return 'location'
++        if a.get_visible_monsters():
++            return 'threat'
++        if b.hunger_state not in (Hunger.HUNGRY, Hunger.WEAK) or a.carried_food_nutrition() >= 400:
++            return 'stock_hunger'
++        if a.character.prop.blind or a.character.prop.hallu or a.character.prop.polymorph or \
++                b.carrying_capacity >= 4:
++            return 'status'
++        return None
++
++    def _reserve_item(self, item):
++        return (item.shop_status == Item.FOR_SALE and item.is_unambiguous()
++                and item.object.name == 'food ration' and item.status != Item.CURSED
++                and item.price is not None and 0 < item.price <= self.agent.blstats.gold)
++
++    def _reserve_paths(self, limit=2):
++        # A bounded BFS restricted to known interior tiles. Each edge also passes
++        # native BFS legality (doors, squeezing, creatures and current hazards).
++        a = self.agent
++        level = a.current_level()
++        origin = (a.blstats.y, a.blstats.x)
++        safe = (level.shop_interior & level.walkable & (level.objects != -1)
++                & ~utils.isin(level.objects, G.TRAPS, G.DOORS)
++                & ~a.monster_tracker.monster_mask)
++        paths = {origin: []}
++        queue = [origin]
++        for pos in queue:
++            path = paths[pos]
++            if len(path) >= limit:
++                continue
++            dis = a.bfs(*pos)
++            for nxt in a.neighbors(*pos, shuffle=False):
++                if nxt not in paths and safe[nxt] and dis[nxt] == 1:
++                    paths[nxt] = path + [nxt]
++                    queue.append(nxt)
++        return paths
++
++    def _reserve_target(self):
++        reason = self._reserve_gate()
++        if reason:
++            ce.hit('B.bail.' + reason)
++            return None
++        ce.hit('B.eligible')
++        a = self.agent
++        level = a.current_level()
++        failed = getattr(self, '_reserve_failed', {})
++        # Bound retained cooldown memory by expiry, using game time only.
++        self._reserve_failed = {k: t for k, t in failed.items() if a.blstats.time - t < 100}
++        candidates = []
++        for pos, path in self._reserve_paths().items():
++            if (level.key(), pos) in self._reserve_failed:
++                ce.hit('B.bail.cooldown')
++                continue
++            for item in level.items[pos]:
++                if self._reserve_item(item):
++                    candidates.append((item.price, len(path), pos, path))
++        if not candidates:
++            ce.hit('B.bail.no_local_affordable_ration')
++            return None
++        return min(candidates, key=lambda v: (v[0], v[1], v[2]))
++
++    def _buy_tool_reserve(self, target):
++        a = self.agent
++        start = a.blstats.time
++        key = a.current_level().key()
++        price, distance, pos, path = target
++        before = a.carried_food_nutrition()
++        purchased = False
++        ce.hit('B.started')
++        try:
++            moves = 0
++            while (a.blstats.y, a.blstats.x) != pos:
++                reason = self._reserve_gate(key, start)
++                if reason:
++                    ce.hit('B.bail.' + reason)
++                    return
++                path = self._reserve_paths(2 - moves).get(pos)
++                stock = a.current_level().items[pos]
++                if not path or not any(self._reserve_item(i) for i in stock):
++                    ce.hit('B.bail.path_or_price_changed')
++                    return
++                nxt = path[0]
++                a.move(a.calc_direction(a.blstats.y, a.blstats.x, *nxt))
++                moves += 1
++                if moves >= 2 and (a.blstats.y, a.blstats.x) != pos:
++                    ce.hit('B.bail.path_or_price_changed')
++                    return
++            reason = self._reserve_gate(key, start)
++            if reason:
++                ce.hit('B.bail.' + reason)
++                return
++            items = [i for i in self.items_below_me if self._reserve_item(i)]
++            if not items:
++                ce.hit('B.bail.path_or_price_changed')
++                return
++            item = items[0]
++            if item.status == Item.UNKNOWN:
++                ce.hit('B.unknown_buc')
++            # Deferring preemption ensures debt settlement survives changed gates.
++            with a.atom_operation():
++                try:
++                    self.pickup(item, 1)
++                finally:
++                    if any(i.shop_status == Item.UNPAID for i in flatten_items(self.items)):
++                        ce.hit('B.settlement')
++                    self.pay_or_drop_unpaid()
++                    if a.blstats.time - start > 8:
++                        ce.hit('B.settlement_overrun')
++            purchased = (a.carried_food_nutrition() > before and
++                         not any(i.shop_status == Item.UNPAID for i in flatten_items(self.items)))
++            if purchased:
++                ce.hit('B.purchased')
++        finally:
++            if not purchased:
++                self._reserve_failed = getattr(self, '_reserve_failed', {})
++                self._reserve_failed[(key, pos)] = a.blstats.time
++            ce.sample('food_transaction', turn=int(start), tile=str((key, pos)), distance=distance,
++                      price=price, before=before, after=a.carried_food_nutrition(),
++                      turns=int(a.blstats.time - start), purchased=purchased,
++                      unpaid=any(i.shop_status == Item.UNPAID for i in flatten_items(self.items)))
++
+     @utils.debug_log('inventory.buy_food')
+     @Strategy.wrap
+     def buy_food(self):
++        ce.hit("B.considered")
+         agent = self.agent
+         bl = agent.blstats
+         if not jf_config.BUY_FOOD or bl.gold < 20 or bl.hunger_state >= Hunger.FAINTING:
+@@ -1639,8 +1770,15 @@
+             yield True
+             self.pay_or_drop_unpaid()
+             return
+-        if self.carried_nutrition() >= jf_config.BUY_FOOD_UNTIL or agent._carries_digging_tool() or \
+-                agent.get_visible_monsters():
++        if agent._carries_digging_tool():
++            target = self._reserve_target() if jf_config.TOOL_SHOP_RESERVE or ce.enabled() else None
++            if not jf_config.TOOL_SHOP_RESERVE or target is None:
++                yield False
++                return
++            yield True
++            self._buy_tool_reserve(target)
++            return
++        if self.carried_nutrition() >= jf_config.BUY_FOOD_UNTIL or agent.get_visible_monsters():
+             yield False
+         dis = agent.bfs()
+         target = self._food_for_sale(dis)
+--- a/autoascend/jf_config.py
++++ b/autoascend/jf_config.py
+@@ -284,6 +284,12 @@
+ # (6 of 90 baseline games, up to 5 charges = 5 levels each; jf16/5, jf27/1).
+ WAND_STAIRS_FIX = True
+ 
++# hypothesis: independent fixed-baseline tests of ray bookkeeping, local food reserve,
++# and a brief emergency exception after observed intact-Elbereth damage.
++WAND_BRANCH_PROBABILITY = False
++TOOL_SHOP_RESERVE = False
++ELBERETH_FAILURE_OVERRIDE = False
++
+ _raw = os.environ.get('JF_CFG')
+ if _raw:
+     for _name, _value in json.loads(_raw).items():
+--- a/campaign_events.py
++++ b/campaign_events.py
+@@ -0,0 +1,63 @@
++"""Optional action-neutral activation evidence; no-op outside campaign evals.
++
++Call hit('A.considered') at a gate and hit('A.applied') only when behavior
++changes. Counts are checkpointed at powers of two to bound diagnostic I/O.
++Without an explicit flush() at normal shutdown they are LOWER BOUNDS, not exact
++totals. Never use these counts or the environment setting to choose actions.
++"""
++import json
++import os
++from pathlib import Path
++
++_directory = os.environ.get("NETHACKERS_CAMPAIGN_EVENTS_DIR")
++_counts = {}
++_writes = 0
++_MAX_NAMES = 64
++_MAX_WRITES = 512
++
++
++def flush(*, exact=False):
++    global _writes
++    if not _directory or _writes >= _MAX_WRITES:
++        return
++    try:
++        directory = Path(_directory)
++        directory.mkdir(parents=True, exist_ok=True)
++        destination = directory / f"events-{os.getpid()}.json"
++        temporary = destination.with_suffix(".tmp")
++        temporary.write_text(json.dumps({
++            "pid": os.getpid(), "counts": _counts,
++            "counts_are_lower_bounds": not exact, "writes": _writes + 1,
++        }, sort_keys=True))
++        os.replace(temporary, destination)
++        _writes += 1
++    except OSError:
++        pass  # Diagnostics must never alter action selection or crash the bot.
++
++
++def hit(name):
++    if not _directory or not isinstance(name, str) or len(name) > 80:
++        return
++    if name not in _counts and len(_counts) >= _MAX_NAMES:
++        return
++    count = _counts[name] = _counts.get(name, 0) + 1
++    if count & (count - 1) == 0:
++        flush()
++
++
++def enabled():
++    return bool(_directory)
++
++_samples = 0
++def sample(kind, **values):
++    global _samples
++    if not _directory or _samples >= 64:
++        return
++    try:
++        directory = Path(_directory)
++        directory.mkdir(parents=True, exist_ok=True)
++        with (directory / f"samples-{os.getpid()}.jsonl").open("a") as stream:
++            stream.write(json.dumps(dict(kind=kind, **values), default=str) + "\n")
++        _samples += 1
++    except (OSError, TypeError, ValueError):
++        pass

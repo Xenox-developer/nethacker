@@ -1,0 +1,50 @@
+--- a/autoascend/item/inventory.py
++++ b/autoascend/item/inventory.py
+@@ -609,7 +609,7 @@
+                 self.letters_below_me = letters
+                 return items
+ 
+-    def pickup(self, items, counts=None):
++    def pickup(self, items, counts=None, refresh_inventory=False):
+         # TODO: if polyphormed, sometimes 'You are physically incapable of picking anything up.'
+         if isinstance(items, Item):
+             items = [items]
+@@ -655,6 +655,9 @@
+                 assert letter is not None, self.agent.message
+                 letter = letter[1]
+ 
++        if refresh_inventory:
++            # Tool-reserve transaction defers callbacks across pickup and settlement.
++            self.items.update(force=True)
+         if one_item and drop_count:
+             self.drop(self.items.all_items[self.items.all_letters.index(letter)], drop_count, smart=False)
+ 
+@@ -1733,13 +1736,15 @@
+             if item.status == Item.UNKNOWN:
+                 ce.hit('B.unknown_buc')
+             # Deferring preemption ensures debt settlement survives changed gates.
+-            with a.atom_operation():
++            with a.atom_operation(allow_update=True):
+                 try:
+-                    self.pickup(item, 1)
++                    self.pickup(item, 1, refresh_inventory=True)
+                 finally:
++                    self.items.update(force=True)
+                     if any(i.shop_status == Item.UNPAID for i in flatten_items(self.items)):
+                         ce.hit('B.settlement')
+                     self.pay_or_drop_unpaid()
++                    self.items.update(force=True)
+                     if a.blstats.time - start > 8:
+                         ce.hit('B.settlement_overrun')
+             purchased = (a.carried_food_nutrition() > before and
+--- a/autoascend/jf_config.py
++++ b/autoascend/jf_config.py
+@@ -287,7 +287,7 @@
+ # hypothesis: independent fixed-baseline tests of ray bookkeeping, local food reserve,
+ # and a brief emergency exception after observed intact-Elbereth damage.
+ WAND_BRANCH_PROBABILITY = False
+-TOOL_SHOP_RESERVE = False
++TOOL_SHOP_RESERVE = True
+ ELBERETH_FAILURE_OVERRIDE = False
+ 
+ _raw = os.environ.get('JF_CFG')

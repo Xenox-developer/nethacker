@@ -1,0 +1,2 @@
+{"kind": "protection_loss", "turn": 15361, "tile": "((np.int64(0), np.int64(28)), np.int64(9), np.int64(4))", "hp": 18, "previous_hp": 30}
+{"kind": "protection_loss", "turn": 15363, "tile": "((np.int64(0), np.int64(28)), np.int64(9), np.int64(4))", "hp": 3, "previous_hp": 11}

@@ -1,0 +1,6 @@
+{"kind": "protection_loss", "turn": 15300, "tile": "((np.int64(0), np.int64(2)), np.int64(2), np.int64(34))", "hp": 70, "previous_hp": 76}
+{"kind": "protection_loss", "turn": 15301, "tile": "((np.int64(0), np.int64(2)), np.int64(2), np.int64(34))", "hp": 62, "previous_hp": 70}
+{"kind": "protection_loss", "turn": 15481, "tile": "((np.int64(0), np.int64(2)), np.int64(11), np.int64(51))", "hp": 69, "previous_hp": 76}
+{"kind": "protection_loss", "turn": 15482, "tile": "((np.int64(0), np.int64(2)), np.int64(11), np.int64(51))", "hp": 67, "previous_hp": 69}
+{"kind": "protection_loss", "turn": 15523, "tile": "((np.int64(0), np.int64(2)), np.int64(15), np.int64(48))", "hp": 70, "previous_hp": 74}
+{"kind": "protection_loss", "turn": 15528, "tile": "((np.int64(0), np.int64(2)), np.int64(15), np.int64(48))", "hp": 67, "previous_hp": 71}
