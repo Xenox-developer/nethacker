@@ -1,0 +1,71 @@
+arena · running 15 episode(s)…
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+arena · episode 3/15 (val-dwa-law-fem): progress=0.051 completed turns=12491 depth=7
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:904: RuntimeWarning: overflow encountered in scalar subtract
+  if to_x == from_x - 1: ret += 'w'
+Warning: NetHack asked for env variable ROGUEOPTS
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:902: RuntimeWarning: overflow encountered in scalar subtract
+  if to_y == from_y - 1: ret += 'n'
+arena · episode 4/15 (val-dwa-law-fem): progress=0.507 completed turns=19294 depth=26
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 1/15 (val-dwa-law-fem): progress=0.426 completed turns=22718 depth=23
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 2/15 (val-dwa-law-fem): progress=0.647 completed turns=27854 depth=29
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 5/15 (val-dwa-law-fem): progress=0.426 completed turns=24057 depth=23
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+arena · episode 6/15 (val-dwa-law-fem): progress=0.647 completed turns=24039 depth=29
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 8/15 (val-dwa-law-fem): progress=0.647 completed turns=42222 depth=29
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 10/15 (val-dwa-law-fem): progress=0.507 completed turns=18909 depth=26
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 7/15 (val-dwa-law-fem): progress=0.554 completed turns=27684 depth=27
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 11/15 (val-dwa-law-fem): progress=0.602 completed turns=23314 depth=28
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 13/15 (val-dwa-law-fem): progress=0.426 completed turns=18565 depth=23
+/tmp/strategy-campaign-my1fh5rp/solution/autoascend/agent.py:414: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+arena · episode 9/15 (val-dwa-law-fem): progress=0.602 completed turns=60145 depth=28
+arena · episode 12/15 (val-dwa-law-fem): progress=0.466 completed turns=21375 depth=25
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 14/15 (val-dwa-law-fem): progress=0.206 completed turns=19766 depth=12
+arena · episode 15/15 (val-dwa-law-fem): progress=0.554 completed turns=23173 depth=27

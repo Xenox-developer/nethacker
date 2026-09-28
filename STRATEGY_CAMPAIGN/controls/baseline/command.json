@@ -1,0 +1,23 @@
+[
+  "/opt/nethackers/.venv/bin/python",
+  "-m",
+  "nethackers.arena.run",
+  "--solution",
+  "/tmp/strategy-control-yxcowdoe/solution",
+  "--batch",
+  "[[1, \"val-dwa-law-fem\"], [0, \"val-dwa-law-fem\"], [2000, \"val-dwa-law-fem\"]]",
+  "--secret",
+  "public",
+  "--evaluation-id",
+  "local",
+  "--max-steps",
+  "1000000",
+  "--no-progress-timeout",
+  "10000",
+  "--action-timeout",
+  "120",
+  "--max-parallel-evals",
+  "4",
+  "--out",
+  "/workspace/STRATEGY_CAMPAIGN/controls/baseline/results.json"
+]

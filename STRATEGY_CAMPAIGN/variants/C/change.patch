@@ -1,0 +1,8 @@
+--- a/autoascend/jf_config.py
++++ b/autoascend/jf_config.py
+@@ -302,4 +302,4 @@
+ # and a short observed-protection-failure emergency exception independently.
+ CAMPAIGN_A = False
+ CAMPAIGN_B = False
+-CAMPAIGN_C = False
++CAMPAIGN_C = True

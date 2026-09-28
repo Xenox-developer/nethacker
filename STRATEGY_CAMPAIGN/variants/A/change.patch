@@ -1,0 +1,10 @@
+--- a/autoascend/jf_config.py
++++ b/autoascend/jf_config.py
+@@ -300,6 +300,6 @@
+ 
+ # hypothesis: fixed campaign singles test ray bookkeeping, local food reserve,
+ # and a short observed-protection-failure emergency exception independently.
+-CAMPAIGN_A = False
++CAMPAIGN_A = True
+ CAMPAIGN_B = False
+ CAMPAIGN_C = False

@@ -1,0 +1,2348 @@
+{
+  "activation": {
+    "A": {
+      "all_attempts": {
+        "development-0": {
+          "A.branch_nodes": 1189,
+          "A.branching_projections": 483,
+          "A.evaluations": 327,
+          "A.score_changed": 28,
+          "A.zap_chosen": 3,
+          "B.bail_location": 8,
+          "C.emergency_action": 3,
+          "C.observations": 48938,
+          "C.qualified_loss": 4
+        },
+        "public-0": {
+          "A.branch_nodes": 1682,
+          "A.branching_projections": 633,
+          "A.evaluations": 427,
+          "A.score_changed": 96,
+          "A.zap_chosen": 8,
+          "B.bail_location": 26,
+          "B.bail_stock_or_hunger": 55,
+          "B.bail_threat": 38,
+          "C.emergency_action": 4,
+          "C.observations": 185523,
+          "C.qualified_loss": 7,
+          "C.suppression_considered": 31
+        }
+      },
+      "counts_are_lower_bounds": true,
+      "per_game_attribution": false,
+      "selected_attempt_counts": {
+        "A.branch_nodes": 2871,
+        "A.branching_projections": 1116,
+        "A.evaluations": 754,
+        "A.score_changed": 124,
+        "A.zap_chosen": 11,
+        "B.bail_location": 34,
+        "B.bail_stock_or_hunger": 55,
+        "B.bail_threat": 38,
+        "C.emergency_action": 7,
+        "C.observations": 234461,
+        "C.qualified_loss": 11,
+        "C.suppression_considered": 31
+      }
+    },
+    "B": {
+      "all_attempts": {
+        "development-0": {
+          "A.branch_nodes": 1027,
+          "A.branching_projections": 476,
+          "A.evaluations": 292,
+          "A.score_changed": 28,
+          "A.zap_chosen": 3,
+          "B.bail_location": 8,
+          "C.emergency_action": 2,
+          "C.observations": 48848,
+          "C.qualified_loss": 4
+        },
+        "public-0": {
+          "A.branch_nodes": 1474,
+          "A.branching_projections": 607,
+          "A.evaluations": 401,
+          "A.score_changed": 96,
+          "A.zap_chosen": 8,
+          "B.bail_location": 14,
+          "B.bail_stock_or_hunger": 30,
+          "C.emergency_action": 5,
+          "C.observations": 192768,
+          "C.qualified_loss": 8,
+          "C.suppression_considered": 35
+        }
+      },
+      "counts_are_lower_bounds": true,
+      "per_game_attribution": false,
+      "selected_attempt_counts": {
+        "A.branch_nodes": 2501,
+        "A.branching_projections": 1083,
+        "A.evaluations": 693,
+        "A.score_changed": 124,
+        "A.zap_chosen": 11,
+        "B.bail_location": 22,
+        "B.bail_stock_or_hunger": 30,
+        "C.emergency_action": 7,
+        "C.observations": 241616,
+        "C.qualified_loss": 12,
+        "C.suppression_considered": 35
+      }
+    },
+    "C": {
+      "all_attempts": {
+        "development-0": {
+          "A.branch_nodes": 1033,
+          "A.branching_projections": 479,
+          "A.evaluations": 323,
+          "A.score_changed": 28,
+          "A.zap_chosen": 3,
+          "B.bail_location": 8,
+          "C.emergency_action": 3,
+          "C.observations": 48938,
+          "C.qualified_loss": 4
+        },
+        "public-0": {
+          "A.branch_nodes": 1474,
+          "A.branching_projections": 607,
+          "A.evaluations": 401,
+          "A.score_changed": 96,
+          "A.zap_chosen": 8,
+          "B.bail_location": 14,
+          "B.bail_stock_or_hunger": 30,
+          "C.emergency_action": 5,
+          "C.observations": 192768,
+          "C.qualified_loss": 8,
+          "C.suppression_considered": 35
+        }
+      },
+      "counts_are_lower_bounds": true,
+      "per_game_attribution": false,
+      "selected_attempt_counts": {
+        "A.branch_nodes": 2507,
+        "A.branching_projections": 1086,
+        "A.evaluations": 724,
+        "A.score_changed": 124,
+        "A.zap_chosen": 11,
+        "B.bail_location": 22,
+        "B.bail_stock_or_hunger": 30,
+        "C.emergency_action": 8,
+        "C.observations": 241706,
+        "C.qualified_loss": 12,
+        "C.suppression_considered": 35
+      }
+    },
+    "baseline": {
+      "all_attempts": {
+        "development-0": {
+          "A.branch_nodes": 1033,
+          "A.branching_projections": 479,
+          "A.evaluations": 323,
+          "A.score_changed": 28,
+          "A.zap_chosen": 3,
+          "B.bail_location": 8,
+          "C.emergency_action": 3,
+          "C.observations": 48938,
+          "C.qualified_loss": 4
+        },
+        "public-0": {
+          "A.branch_nodes": 1474,
+          "A.branching_projections": 607,
+          "A.evaluations": 401,
+          "A.score_changed": 96,
+          "A.zap_chosen": 8,
+          "B.bail_location": 26,
+          "B.bail_stock_or_hunger": 55,
+          "B.bail_threat": 38,
+          "C.emergency_action": 4,
+          "C.observations": 185523,
+          "C.qualified_loss": 7,
+          "C.suppression_considered": 31
+        }
+      },
+      "counts_are_lower_bounds": true,
+      "per_game_attribution": false,
+      "selected_attempt_counts": {
+        "A.branch_nodes": 2507,
+        "A.branching_projections": 1086,
+        "A.evaluations": 724,
+        "A.score_changed": 124,
+        "A.zap_chosen": 11,
+        "B.bail_location": 34,
+        "B.bail_stock_or_hunger": 55,
+        "B.bail_threat": 38,
+        "C.emergency_action": 7,
+        "C.observations": 234461,
+        "C.qualified_loss": 11,
+        "C.suppression_considered": 31
+      }
+    }
+  },
+  "baseline_digest": "sha256:0bd921b672c1e02a1eb33a8c9f49cb19b42f921571230b3c1fe33baf5e89e4af",
+  "best_single": "A",
+  "best_tested_single": "A",
+  "campaign_complete": true,
+  "comparisons": {
+    "A": {
+      "clean": true,
+      "development_delta": 0.0,
+      "errors": [],
+      "game_count": 20,
+      "means": {
+        "development": 0.2803439441175858,
+        "public": 0.48754987757483376
+      },
+      "outcomes": {
+        "development": {
+          "gains": 0,
+          "losses": 0,
+          "ties": 5
+        },
+        "public": {
+          "gains": 1,
+          "losses": 0,
+          "ties": 14
+        }
+      },
+      "paired": {
+        "development": [
+          {
+            "delta": 0.0,
+            "new": 0.11704996473565571,
+            "new_status": "completed",
+            "old": 0.11704996473565571,
+            "old_status": "completed",
+            "seed": 2000
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6015648510382184,
+            "new_status": "completed",
+            "old": 0.6015648510382184,
+            "old_status": "completed",
+            "seed": 2001
+          },
+          {
+            "delta": 0.0,
+            "new": 0.0507583712345433,
+            "new_status": "completed",
+            "old": 0.0507583712345433,
+            "old_status": "completed",
+            "seed": 2002
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5067605633802816,
+            "new_status": "completed",
+            "old": 0.5067605633802816,
+            "old_status": "completed",
+            "seed": 2003
+          },
+          {
+            "delta": 0.0,
+            "new": 0.12558597019922987,
+            "new_status": "completed",
+            "old": 0.12558597019922987,
+            "old_status": "completed",
+            "seed": 2004
+          }
+        ],
+        "public": [
+          {
+            "delta": 0.0,
+            "new": 0.4258360748858015,
+            "new_status": "completed",
+            "old": 0.4258360748858015,
+            "old_status": "completed",
+            "seed": 0
+          },
+          {
+            "delta": 0.13974437821899954,
+            "new": 0.6465049415992812,
+            "new_status": "completed",
+            "old": 0.5067605633802816,
+            "old_status": "completed",
+            "seed": 1
+          },
+          {
+            "delta": 0.0,
+            "new": 0.0507583712345433,
+            "new_status": "completed",
+            "old": 0.0507583712345433,
+            "old_status": "completed",
+            "seed": 2
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5067605633802816,
+            "new_status": "completed",
+            "old": 0.5067605633802816,
+            "old_status": "completed",
+            "seed": 3
+          },
+          {
+            "delta": 0.0,
+            "new": 0.4258360748858015,
+            "new_status": "completed",
+            "old": 0.4258360748858015,
+            "old_status": "completed",
+            "seed": 4
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6465049415992812,
+            "new_status": "completed",
+            "old": 0.6465049415992812,
+            "old_status": "completed",
+            "seed": 5
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5543572044866264,
+            "new_status": "completed",
+            "old": 0.5543572044866264,
+            "old_status": "completed",
+            "seed": 6
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6465049415992812,
+            "new_status": "completed",
+            "old": 0.6465049415992812,
+            "old_status": "completed",
+            "seed": 7
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6015648510382184,
+            "new_status": "completed",
+            "old": 0.6015648510382184,
+            "old_status": "completed",
+            "seed": 8
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5543572044866264,
+            "new_status": "completed",
+            "old": 0.5543572044866264,
+            "old_status": "completed",
+            "seed": 9
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6015648510382184,
+            "new_status": "completed",
+            "old": 0.6015648510382184,
+            "old_status": "completed",
+            "seed": 10
+          },
+          {
+            "delta": 0.0,
+            "new": 0.46637631565303056,
+            "new_status": "completed",
+            "old": 0.46637631565303056,
+            "old_status": "completed",
+            "seed": 11
+          },
+          {
+            "delta": 0.0,
+            "new": 0.4258360748858015,
+            "new_status": "completed",
+            "old": 0.4258360748858015,
+            "old_status": "completed",
+            "seed": 12
+          },
+          {
+            "delta": 0.0,
+            "new": 0.20612854836308672,
+            "new_status": "completed",
+            "old": 0.20612854836308672,
+            "old_status": "completed",
+            "seed": 13
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5543572044866264,
+            "new_status": "completed",
+            "old": 0.5543572044866264,
+            "old_status": "completed",
+            "seed": 14
+          }
+        ]
+      },
+      "pooled_mean": 0.4357483942105218,
+      "public_delta": 0.009316291881266637,
+      "rows": {
+        "development": [
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 8,
+            "milestone": "Xp:9",
+            "progress": 0.11704996473565571,
+            "status": "completed",
+            "steps": 34698,
+            "trajectory_id": 2000,
+            "turns": 22317,
+            "wall_seconds": 72.975844
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an elf-lord",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 28,
+            "milestone": "Dlvl:28",
+            "progress": 0.6015648510382184,
+            "status": "completed",
+            "steps": 22179,
+            "trajectory_id": 2001,
+            "turns": 15443,
+            "wall_seconds": 51.187509
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a manes",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 5,
+            "milestone": "Xp:7",
+            "progress": 0.0507583712345433,
+            "status": "completed",
+            "steps": 23265,
+            "trajectory_id": 2002,
+            "turns": 19769,
+            "wall_seconds": 57.134385
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 26,
+            "milestone": "Dlvl:26",
+            "progress": 0.5067605633802816,
+            "status": "completed",
+            "steps": 35182,
+            "trajectory_id": 2003,
+            "turns": 27382,
+            "wall_seconds": 78.678735
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a snake",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 10,
+            "milestone": "Dlvl:10",
+            "progress": 0.12558597019922987,
+            "status": "completed",
+            "steps": 11023,
+            "trajectory_id": 2004,
+            "turns": 9692,
+            "wall_seconds": 26.055201
+          }
+        ],
+        "public": [
+          {
+            "ascended": false,
+            "cause_of_death": "drowned in deep water",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 23,
+            "milestone": "Dlvl:23",
+            "progress": 0.4258360748858015,
+            "status": "completed",
+            "steps": 30437,
+            "trajectory_id": 0,
+            "turns": 22718,
+            "wall_seconds": 77.382367
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 29,
+            "milestone": "Dlvl:29",
+            "progress": 0.6465049415992812,
+            "status": "completed",
+            "steps": 46033,
+            "trajectory_id": 1,
+            "turns": 27854,
+            "wall_seconds": 102.237012
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an owlbear",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 7,
+            "milestone": "Xp:7",
+            "progress": 0.0507583712345433,
+            "status": "completed",
+            "steps": 18120,
+            "trajectory_id": 2,
+            "turns": 12491,
+            "wall_seconds": 46.627257
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a giant eel",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 26,
+            "milestone": "Dlvl:26",
+            "progress": 0.5067605633802816,
+            "status": "completed",
+            "steps": 30598,
+            "trajectory_id": 3,
+            "turns": 19294,
+            "wall_seconds": 74.837584
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a raven",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 23,
+            "milestone": "Dlvl:23",
+            "progress": 0.4258360748858015,
+            "status": "completed",
+            "steps": 40034,
+            "trajectory_id": 4,
+            "turns": 24057,
+            "wall_seconds": 83.170617
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "died of starvation",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 29,
+            "milestone": "Dlvl:29",
+            "progress": 0.6465049415992812,
+            "status": "completed",
+            "steps": 30862,
+            "trajectory_id": 5,
+            "turns": 25955,
+            "wall_seconds": 74.583713
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an invisible arch-lich",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 27,
+            "milestone": "Dlvl:27",
+            "progress": 0.5543572044866264,
+            "status": "completed",
+            "steps": 80322,
+            "trajectory_id": 6,
+            "turns": 27684,
+            "wall_seconds": 147.054833
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 29,
+            "milestone": "Dlvl:29",
+            "progress": 0.6465049415992812,
+            "status": "completed",
+            "steps": 25158,
+            "trajectory_id": 7,
+            "turns": 20145,
+            "wall_seconds": 61.030358
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a captain",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 28,
+            "milestone": "Dlvl:28",
+            "progress": 0.6015648510382184,
+            "status": "completed",
+            "steps": 80918,
+            "trajectory_id": 8,
+            "turns": 60145,
+            "wall_seconds": 169.984254
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "died of starvation",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 27,
+            "milestone": "Dlvl:27",
+            "progress": 0.5543572044866264,
+            "status": "completed",
+            "steps": 42464,
+            "trajectory_id": 9,
+            "turns": 31015,
+            "wall_seconds": 89.547926
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 28,
+            "milestone": "Dlvl:28",
+            "progress": 0.6015648510382184,
+            "status": "completed",
+            "steps": 35117,
+            "trajectory_id": 10,
+            "turns": 23314,
+            "wall_seconds": 71.222894
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an invisible stalker",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 25,
+            "milestone": "Dlvl:25",
+            "progress": 0.46637631565303056,
+            "status": "completed",
+            "steps": 36626,
+            "trajectory_id": 11,
+            "turns": 21375,
+            "wall_seconds": 83.951631
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a raven",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 23,
+            "milestone": "Dlvl:23",
+            "progress": 0.4258360748858015,
+            "status": "completed",
+            "steps": 27583,
+            "trajectory_id": 12,
+            "turns": 18565,
+            "wall_seconds": 60.788128
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a warhorse",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 12,
+            "milestone": "Dlvl:12",
+            "progress": 0.20612854836308672,
+            "status": "completed",
+            "steps": 31688,
+            "trajectory_id": 13,
+            "turns": 19766,
+            "wall_seconds": 72.924213
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a shark",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 27,
+            "milestone": "Dlvl:27",
+            "progress": 0.5543572044866264,
+            "status": "completed",
+            "steps": 31125,
+            "trajectory_id": 14,
+            "turns": 23173,
+            "wall_seconds": 55.599208
+          }
+        ]
+      }
+    },
+    "B": {
+      "clean": true,
+      "development_delta": -0.03127668846730809,
+      "errors": [],
+      "game_count": 20,
+      "means": {
+        "development": 0.2490672556502777,
+        "public": 0.4843767681677441
+      },
+      "outcomes": {
+        "development": {
+          "gains": 0,
+          "losses": 1,
+          "ties": 4
+        },
+        "public": {
+          "gains": 1,
+          "losses": 1,
+          "ties": 13
+        }
+      },
+      "paired": {
+        "development": [
+          {
+            "delta": 0.0,
+            "new": 0.11704996473565571,
+            "new_status": "completed",
+            "old": 0.11704996473565571,
+            "old_status": "completed",
+            "seed": 2000
+          },
+          {
+            "delta": -0.15638344233654045,
+            "new": 0.445181408701678,
+            "new_status": "completed",
+            "old": 0.6015648510382184,
+            "old_status": "completed",
+            "seed": 2001
+          },
+          {
+            "delta": 0.0,
+            "new": 0.0507583712345433,
+            "new_status": "completed",
+            "old": 0.0507583712345433,
+            "old_status": "completed",
+            "seed": 2002
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5067605633802816,
+            "new_status": "completed",
+            "old": 0.5067605633802816,
+            "old_status": "completed",
+            "seed": 2003
+          },
+          {
+            "delta": 0.0,
+            "new": 0.12558597019922987,
+            "new_status": "completed",
+            "old": 0.12558597019922987,
+            "old_status": "completed",
+            "seed": 2004
+          }
+        ],
+        "public": [
+          {
+            "delta": 0.0,
+            "new": 0.4258360748858015,
+            "new_status": "completed",
+            "old": 0.4258360748858015,
+            "old_status": "completed",
+            "seed": 0
+          },
+          {
+            "delta": 0.13974437821899954,
+            "new": 0.6465049415992812,
+            "new_status": "completed",
+            "old": 0.5067605633802816,
+            "old_status": "completed",
+            "seed": 1
+          },
+          {
+            "delta": 0.0,
+            "new": 0.0507583712345433,
+            "new_status": "completed",
+            "old": 0.0507583712345433,
+            "old_status": "completed",
+            "seed": 2
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5067605633802816,
+            "new_status": "completed",
+            "old": 0.5067605633802816,
+            "old_status": "completed",
+            "seed": 3
+          },
+          {
+            "delta": 0.0,
+            "new": 0.4258360748858015,
+            "new_status": "completed",
+            "old": 0.4258360748858015,
+            "old_status": "completed",
+            "seed": 4
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6465049415992812,
+            "new_status": "completed",
+            "old": 0.6465049415992812,
+            "old_status": "completed",
+            "seed": 5
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5543572044866264,
+            "new_status": "completed",
+            "old": 0.5543572044866264,
+            "old_status": "completed",
+            "seed": 6
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6465049415992812,
+            "new_status": "completed",
+            "old": 0.6465049415992812,
+            "old_status": "completed",
+            "seed": 7
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6015648510382184,
+            "new_status": "completed",
+            "old": 0.6015648510382184,
+            "old_status": "completed",
+            "seed": 8
+          },
+          {
+            "delta": -0.04759664110634476,
+            "new": 0.5067605633802816,
+            "new_status": "completed",
+            "old": 0.5543572044866264,
+            "old_status": "completed",
+            "seed": 9
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6015648510382184,
+            "new_status": "completed",
+            "old": 0.6015648510382184,
+            "old_status": "completed",
+            "seed": 10
+          },
+          {
+            "delta": 0.0,
+            "new": 0.46637631565303056,
+            "new_status": "completed",
+            "old": 0.46637631565303056,
+            "old_status": "completed",
+            "seed": 11
+          },
+          {
+            "delta": 0.0,
+            "new": 0.4258360748858015,
+            "new_status": "completed",
+            "old": 0.4258360748858015,
+            "old_status": "completed",
+            "seed": 12
+          },
+          {
+            "delta": 0.0,
+            "new": 0.20612854836308672,
+            "new_status": "completed",
+            "old": 0.20612854836308672,
+            "old_status": "completed",
+            "seed": 13
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5543572044866264,
+            "new_status": "completed",
+            "old": 0.5543572044866264,
+            "old_status": "completed",
+            "seed": 14
+          }
+        ]
+      },
+      "pooled_mean": 0.4255493900383775,
+      "public_delta": 0.0061431824741769855,
+      "rows": {
+        "development": [
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 8,
+            "milestone": "Xp:9",
+            "progress": 0.11704996473565571,
+            "status": "completed",
+            "steps": 34698,
+            "trajectory_id": 2000,
+            "turns": 22317,
+            "wall_seconds": 83.969113
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a raven",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 24,
+            "milestone": "Dlvl:24",
+            "progress": 0.445181408701678,
+            "status": "completed",
+            "steps": 21955,
+            "trajectory_id": 2001,
+            "turns": 15341,
+            "wall_seconds": 59.64315
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a manes",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 5,
+            "milestone": "Xp:7",
+            "progress": 0.0507583712345433,
+            "status": "completed",
+            "steps": 23265,
+            "trajectory_id": 2002,
+            "turns": 19769,
+            "wall_seconds": 65.934858
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 26,
+            "milestone": "Dlvl:26",
+            "progress": 0.5067605633802816,
+            "status": "completed",
+            "steps": 35182,
+            "trajectory_id": 2003,
+            "turns": 27382,
+            "wall_seconds": 90.693323
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a snake",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 10,
+            "milestone": "Dlvl:10",
+            "progress": 0.12558597019922987,
+            "status": "completed",
+            "steps": 11023,
+            "trajectory_id": 2004,
+            "turns": 9692,
+            "wall_seconds": 28.81176
+          }
+        ],
+        "public": [
+          {
+            "ascended": false,
+            "cause_of_death": "drowned in deep water",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 23,
+            "milestone": "Dlvl:23",
+            "progress": 0.4258360748858015,
+            "status": "completed",
+            "steps": 30437,
+            "trajectory_id": 0,
+            "turns": 22718,
+            "wall_seconds": 75.481627
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 29,
+            "milestone": "Dlvl:29",
+            "progress": 0.6465049415992812,
+            "status": "completed",
+            "steps": 46033,
+            "trajectory_id": 1,
+            "turns": 27854,
+            "wall_seconds": 99.393053
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an owlbear",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 7,
+            "milestone": "Xp:7",
+            "progress": 0.0507583712345433,
+            "status": "completed",
+            "steps": 18120,
+            "trajectory_id": 2,
+            "turns": 12491,
+            "wall_seconds": 46.980414
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a giant eel",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 26,
+            "milestone": "Dlvl:26",
+            "progress": 0.5067605633802816,
+            "status": "completed",
+            "steps": 30598,
+            "trajectory_id": 3,
+            "turns": 19294,
+            "wall_seconds": 72.23063
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a raven",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 23,
+            "milestone": "Dlvl:23",
+            "progress": 0.4258360748858015,
+            "status": "completed",
+            "steps": 40034,
+            "trajectory_id": 4,
+            "turns": 24057,
+            "wall_seconds": 80.445186
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a shark",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 29,
+            "milestone": "Dlvl:29",
+            "progress": 0.6465049415992812,
+            "status": "completed",
+            "steps": 32214,
+            "trajectory_id": 5,
+            "turns": 24039,
+            "wall_seconds": 72.275622
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an invisible arch-lich",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 27,
+            "milestone": "Dlvl:27",
+            "progress": 0.5543572044866264,
+            "status": "completed",
+            "steps": 80322,
+            "trajectory_id": 6,
+            "turns": 27684,
+            "wall_seconds": 146.412564
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a troll",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 29,
+            "milestone": "Dlvl:29",
+            "progress": 0.6465049415992812,
+            "status": "completed",
+            "steps": 44150,
+            "trajectory_id": 7,
+            "turns": 42222,
+            "wall_seconds": 103.109844
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a captain",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 28,
+            "milestone": "Dlvl:28",
+            "progress": 0.6015648510382184,
+            "status": "completed",
+            "steps": 80918,
+            "trajectory_id": 8,
+            "turns": 60145,
+            "wall_seconds": 179.348505
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a raven",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 26,
+            "milestone": "Dlvl:26",
+            "progress": 0.5067605633802816,
+            "status": "completed",
+            "steps": 35220,
+            "trajectory_id": 9,
+            "turns": 18909,
+            "wall_seconds": 72.472177
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 28,
+            "milestone": "Dlvl:28",
+            "progress": 0.6015648510382184,
+            "status": "completed",
+            "steps": 35117,
+            "trajectory_id": 10,
+            "turns": 23314,
+            "wall_seconds": 77.101212
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an invisible stalker",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 25,
+            "milestone": "Dlvl:25",
+            "progress": 0.46637631565303056,
+            "status": "completed",
+            "steps": 36626,
+            "trajectory_id": 11,
+            "turns": 21375,
+            "wall_seconds": 95.48183
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a raven",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 23,
+            "milestone": "Dlvl:23",
+            "progress": 0.4258360748858015,
+            "status": "completed",
+            "steps": 27583,
+            "trajectory_id": 12,
+            "turns": 18565,
+            "wall_seconds": 68.067006
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a warhorse",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 12,
+            "milestone": "Dlvl:12",
+            "progress": 0.20612854836308672,
+            "status": "completed",
+            "steps": 31688,
+            "trajectory_id": 13,
+            "turns": 19766,
+            "wall_seconds": 79.739437
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a shark",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 27,
+            "milestone": "Dlvl:27",
+            "progress": 0.5543572044866264,
+            "status": "completed",
+            "steps": 31125,
+            "trajectory_id": 14,
+            "turns": 23173,
+            "wall_seconds": 70.576386
+          }
+        ]
+      }
+    },
+    "C": {
+      "clean": true,
+      "development_delta": 0.0,
+      "errors": [],
+      "game_count": 20,
+      "means": {
+        "development": 0.2803439441175858,
+        "public": 0.4750604762864775
+      },
+      "outcomes": {
+        "development": {
+          "gains": 0,
+          "losses": 0,
+          "ties": 5
+        },
+        "public": {
+          "gains": 0,
+          "losses": 1,
+          "ties": 14
+        }
+      },
+      "paired": {
+        "development": [
+          {
+            "delta": 0.0,
+            "new": 0.11704996473565571,
+            "new_status": "completed",
+            "old": 0.11704996473565571,
+            "old_status": "completed",
+            "seed": 2000
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6015648510382184,
+            "new_status": "completed",
+            "old": 0.6015648510382184,
+            "old_status": "completed",
+            "seed": 2001
+          },
+          {
+            "delta": 0.0,
+            "new": 0.0507583712345433,
+            "new_status": "completed",
+            "old": 0.0507583712345433,
+            "old_status": "completed",
+            "seed": 2002
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5067605633802816,
+            "new_status": "completed",
+            "old": 0.5067605633802816,
+            "old_status": "completed",
+            "seed": 2003
+          },
+          {
+            "delta": 0.0,
+            "new": 0.12558597019922987,
+            "new_status": "completed",
+            "old": 0.12558597019922987,
+            "old_status": "completed",
+            "seed": 2004
+          }
+        ],
+        "public": [
+          {
+            "delta": 0.0,
+            "new": 0.4258360748858015,
+            "new_status": "completed",
+            "old": 0.4258360748858015,
+            "old_status": "completed",
+            "seed": 0
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5067605633802816,
+            "new_status": "completed",
+            "old": 0.5067605633802816,
+            "old_status": "completed",
+            "seed": 1
+          },
+          {
+            "delta": 0.0,
+            "new": 0.0507583712345433,
+            "new_status": "completed",
+            "old": 0.0507583712345433,
+            "old_status": "completed",
+            "seed": 2
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5067605633802816,
+            "new_status": "completed",
+            "old": 0.5067605633802816,
+            "old_status": "completed",
+            "seed": 3
+          },
+          {
+            "delta": 0.0,
+            "new": 0.4258360748858015,
+            "new_status": "completed",
+            "old": 0.4258360748858015,
+            "old_status": "completed",
+            "seed": 4
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6465049415992812,
+            "new_status": "completed",
+            "old": 0.6465049415992812,
+            "old_status": "completed",
+            "seed": 5
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5543572044866264,
+            "new_status": "completed",
+            "old": 0.5543572044866264,
+            "old_status": "completed",
+            "seed": 6
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6465049415992812,
+            "new_status": "completed",
+            "old": 0.6465049415992812,
+            "old_status": "completed",
+            "seed": 7
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6015648510382184,
+            "new_status": "completed",
+            "old": 0.6015648510382184,
+            "old_status": "completed",
+            "seed": 8
+          },
+          {
+            "delta": -0.04759664110634476,
+            "new": 0.5067605633802816,
+            "new_status": "completed",
+            "old": 0.5543572044866264,
+            "old_status": "completed",
+            "seed": 9
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6015648510382184,
+            "new_status": "completed",
+            "old": 0.6015648510382184,
+            "old_status": "completed",
+            "seed": 10
+          },
+          {
+            "delta": 0.0,
+            "new": 0.46637631565303056,
+            "new_status": "completed",
+            "old": 0.46637631565303056,
+            "old_status": "completed",
+            "seed": 11
+          },
+          {
+            "delta": 0.0,
+            "new": 0.4258360748858015,
+            "new_status": "completed",
+            "old": 0.4258360748858015,
+            "old_status": "completed",
+            "seed": 12
+          },
+          {
+            "delta": 0.0,
+            "new": 0.20612854836308672,
+            "new_status": "completed",
+            "old": 0.20612854836308672,
+            "old_status": "completed",
+            "seed": 13
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5543572044866264,
+            "new_status": "completed",
+            "old": 0.5543572044866264,
+            "old_status": "completed",
+            "seed": 14
+          }
+        ]
+      },
+      "pooled_mean": 0.4263813432442546,
+      "public_delta": -0.003173109407089651,
+      "rows": {
+        "development": [
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 8,
+            "milestone": "Xp:9",
+            "progress": 0.11704996473565571,
+            "status": "completed",
+            "steps": 34698,
+            "trajectory_id": 2000,
+            "turns": 22317,
+            "wall_seconds": 81.989467
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an elf-lord",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 28,
+            "milestone": "Dlvl:28",
+            "progress": 0.6015648510382184,
+            "status": "completed",
+            "steps": 22179,
+            "trajectory_id": 2001,
+            "turns": 15443,
+            "wall_seconds": 58.560252
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a manes",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 5,
+            "milestone": "Xp:7",
+            "progress": 0.0507583712345433,
+            "status": "completed",
+            "steps": 23265,
+            "trajectory_id": 2002,
+            "turns": 19769,
+            "wall_seconds": 64.346641
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 26,
+            "milestone": "Dlvl:26",
+            "progress": 0.5067605633802816,
+            "status": "completed",
+            "steps": 35182,
+            "trajectory_id": 2003,
+            "turns": 27382,
+            "wall_seconds": 89.440452
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a snake",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 10,
+            "milestone": "Dlvl:10",
+            "progress": 0.12558597019922987,
+            "status": "completed",
+            "steps": 11023,
+            "trajectory_id": 2004,
+            "turns": 9692,
+            "wall_seconds": 28.864135
+          }
+        ],
+        "public": [
+          {
+            "ascended": false,
+            "cause_of_death": "drowned in deep water",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 23,
+            "milestone": "Dlvl:23",
+            "progress": 0.4258360748858015,
+            "status": "completed",
+            "steps": 30437,
+            "trajectory_id": 0,
+            "turns": 22718,
+            "wall_seconds": 87.115364
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a soldier ant",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 26,
+            "milestone": "Dlvl:26",
+            "progress": 0.5067605633802816,
+            "status": "completed",
+            "steps": 45716,
+            "trajectory_id": 1,
+            "turns": 27675,
+            "wall_seconds": 114.885443
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an owlbear",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 7,
+            "milestone": "Xp:7",
+            "progress": 0.0507583712345433,
+            "status": "completed",
+            "steps": 18120,
+            "trajectory_id": 2,
+            "turns": 12491,
+            "wall_seconds": 54.670092
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a giant eel",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 26,
+            "milestone": "Dlvl:26",
+            "progress": 0.5067605633802816,
+            "status": "completed",
+            "steps": 30598,
+            "trajectory_id": 3,
+            "turns": 19294,
+            "wall_seconds": 84.660132
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a raven",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 23,
+            "milestone": "Dlvl:23",
+            "progress": 0.4258360748858015,
+            "status": "completed",
+            "steps": 40034,
+            "trajectory_id": 4,
+            "turns": 24057,
+            "wall_seconds": 92.108598
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a shark",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 29,
+            "milestone": "Dlvl:29",
+            "progress": 0.6465049415992812,
+            "status": "completed",
+            "steps": 32214,
+            "trajectory_id": 5,
+            "turns": 24039,
+            "wall_seconds": 80.707322
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an invisible arch-lich",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 27,
+            "milestone": "Dlvl:27",
+            "progress": 0.5543572044866264,
+            "status": "completed",
+            "steps": 80322,
+            "trajectory_id": 6,
+            "turns": 27684,
+            "wall_seconds": 164.135785
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a troll",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 29,
+            "milestone": "Dlvl:29",
+            "progress": 0.6465049415992812,
+            "status": "completed",
+            "steps": 44150,
+            "trajectory_id": 7,
+            "turns": 42222,
+            "wall_seconds": 115.861303
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a captain",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 28,
+            "milestone": "Dlvl:28",
+            "progress": 0.6015648510382184,
+            "status": "completed",
+            "steps": 80918,
+            "trajectory_id": 8,
+            "turns": 60145,
+            "wall_seconds": 195.498098
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a raven",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 26,
+            "milestone": "Dlvl:26",
+            "progress": 0.5067605633802816,
+            "status": "completed",
+            "steps": 35220,
+            "trajectory_id": 9,
+            "turns": 18909,
+            "wall_seconds": 81.228664
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 28,
+            "milestone": "Dlvl:28",
+            "progress": 0.6015648510382184,
+            "status": "completed",
+            "steps": 35117,
+            "trajectory_id": 10,
+            "turns": 23314,
+            "wall_seconds": 84.168755
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an invisible stalker",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 25,
+            "milestone": "Dlvl:25",
+            "progress": 0.46637631565303056,
+            "status": "completed",
+            "steps": 36626,
+            "trajectory_id": 11,
+            "turns": 21375,
+            "wall_seconds": 98.848295
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a raven",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 23,
+            "milestone": "Dlvl:23",
+            "progress": 0.4258360748858015,
+            "status": "completed",
+            "steps": 27583,
+            "trajectory_id": 12,
+            "turns": 18565,
+            "wall_seconds": 71.092081
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a warhorse",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 12,
+            "milestone": "Dlvl:12",
+            "progress": 0.20612854836308672,
+            "status": "completed",
+            "steps": 31688,
+            "trajectory_id": 13,
+            "turns": 19766,
+            "wall_seconds": 76.452866
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a shark",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 27,
+            "milestone": "Dlvl:27",
+            "progress": 0.5543572044866264,
+            "status": "completed",
+            "steps": 31125,
+            "trajectory_id": 14,
+            "turns": 23173,
+            "wall_seconds": 68.290945
+          }
+        ]
+      }
+    },
+    "baseline": {
+      "clean": true,
+      "development_delta": 0.0,
+      "errors": [],
+      "game_count": 20,
+      "means": {
+        "development": 0.2803439441175858,
+        "public": 0.4782335856935671
+      },
+      "outcomes": {
+        "development": {
+          "gains": 0,
+          "losses": 0,
+          "ties": 5
+        },
+        "public": {
+          "gains": 0,
+          "losses": 0,
+          "ties": 15
+        }
+      },
+      "paired": {
+        "development": [
+          {
+            "delta": 0.0,
+            "new": 0.11704996473565571,
+            "new_status": "completed",
+            "old": 0.11704996473565571,
+            "old_status": "completed",
+            "seed": 2000
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6015648510382184,
+            "new_status": "completed",
+            "old": 0.6015648510382184,
+            "old_status": "completed",
+            "seed": 2001
+          },
+          {
+            "delta": 0.0,
+            "new": 0.0507583712345433,
+            "new_status": "completed",
+            "old": 0.0507583712345433,
+            "old_status": "completed",
+            "seed": 2002
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5067605633802816,
+            "new_status": "completed",
+            "old": 0.5067605633802816,
+            "old_status": "completed",
+            "seed": 2003
+          },
+          {
+            "delta": 0.0,
+            "new": 0.12558597019922987,
+            "new_status": "completed",
+            "old": 0.12558597019922987,
+            "old_status": "completed",
+            "seed": 2004
+          }
+        ],
+        "public": [
+          {
+            "delta": 0.0,
+            "new": 0.4258360748858015,
+            "new_status": "completed",
+            "old": 0.4258360748858015,
+            "old_status": "completed",
+            "seed": 0
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5067605633802816,
+            "new_status": "completed",
+            "old": 0.5067605633802816,
+            "old_status": "completed",
+            "seed": 1
+          },
+          {
+            "delta": 0.0,
+            "new": 0.0507583712345433,
+            "new_status": "completed",
+            "old": 0.0507583712345433,
+            "old_status": "completed",
+            "seed": 2
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5067605633802816,
+            "new_status": "completed",
+            "old": 0.5067605633802816,
+            "old_status": "completed",
+            "seed": 3
+          },
+          {
+            "delta": 0.0,
+            "new": 0.4258360748858015,
+            "new_status": "completed",
+            "old": 0.4258360748858015,
+            "old_status": "completed",
+            "seed": 4
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6465049415992812,
+            "new_status": "completed",
+            "old": 0.6465049415992812,
+            "old_status": "completed",
+            "seed": 5
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5543572044866264,
+            "new_status": "completed",
+            "old": 0.5543572044866264,
+            "old_status": "completed",
+            "seed": 6
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6465049415992812,
+            "new_status": "completed",
+            "old": 0.6465049415992812,
+            "old_status": "completed",
+            "seed": 7
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6015648510382184,
+            "new_status": "completed",
+            "old": 0.6015648510382184,
+            "old_status": "completed",
+            "seed": 8
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5543572044866264,
+            "new_status": "completed",
+            "old": 0.5543572044866264,
+            "old_status": "completed",
+            "seed": 9
+          },
+          {
+            "delta": 0.0,
+            "new": 0.6015648510382184,
+            "new_status": "completed",
+            "old": 0.6015648510382184,
+            "old_status": "completed",
+            "seed": 10
+          },
+          {
+            "delta": 0.0,
+            "new": 0.46637631565303056,
+            "new_status": "completed",
+            "old": 0.46637631565303056,
+            "old_status": "completed",
+            "seed": 11
+          },
+          {
+            "delta": 0.0,
+            "new": 0.4258360748858015,
+            "new_status": "completed",
+            "old": 0.4258360748858015,
+            "old_status": "completed",
+            "seed": 12
+          },
+          {
+            "delta": 0.0,
+            "new": 0.20612854836308672,
+            "new_status": "completed",
+            "old": 0.20612854836308672,
+            "old_status": "completed",
+            "seed": 13
+          },
+          {
+            "delta": 0.0,
+            "new": 0.5543572044866264,
+            "new_status": "completed",
+            "old": 0.5543572044866264,
+            "old_status": "completed",
+            "seed": 14
+          }
+        ]
+      },
+      "pooled_mean": 0.4287611752995718,
+      "public_delta": 0.0,
+      "rows": {
+        "development": [
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 8,
+            "milestone": "Xp:9",
+            "progress": 0.11704996473565571,
+            "status": "completed",
+            "steps": 34698,
+            "trajectory_id": 2000,
+            "turns": 22317,
+            "wall_seconds": 72.927585
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an elf-lord",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 28,
+            "milestone": "Dlvl:28",
+            "progress": 0.6015648510382184,
+            "status": "completed",
+            "steps": 22179,
+            "trajectory_id": 2001,
+            "turns": 15443,
+            "wall_seconds": 51.796587
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a manes",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 5,
+            "milestone": "Xp:7",
+            "progress": 0.0507583712345433,
+            "status": "completed",
+            "steps": 23265,
+            "trajectory_id": 2002,
+            "turns": 19769,
+            "wall_seconds": 57.288122
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 26,
+            "milestone": "Dlvl:26",
+            "progress": 0.5067605633802816,
+            "status": "completed",
+            "steps": 35182,
+            "trajectory_id": 2003,
+            "turns": 27382,
+            "wall_seconds": 79.318681
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a snake",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 10,
+            "milestone": "Dlvl:10",
+            "progress": 0.12558597019922987,
+            "status": "completed",
+            "steps": 11023,
+            "trajectory_id": 2004,
+            "turns": 9692,
+            "wall_seconds": 25.916951
+          }
+        ],
+        "public": [
+          {
+            "ascended": false,
+            "cause_of_death": "drowned in deep water",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 23,
+            "milestone": "Dlvl:23",
+            "progress": 0.4258360748858015,
+            "status": "completed",
+            "steps": 30437,
+            "trajectory_id": 0,
+            "turns": 22718,
+            "wall_seconds": 78.332036
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a soldier ant",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 26,
+            "milestone": "Dlvl:26",
+            "progress": 0.5067605633802816,
+            "status": "completed",
+            "steps": 45716,
+            "trajectory_id": 1,
+            "turns": 27675,
+            "wall_seconds": 102.671211
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an owlbear",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 7,
+            "milestone": "Xp:7",
+            "progress": 0.0507583712345433,
+            "status": "completed",
+            "steps": 18120,
+            "trajectory_id": 2,
+            "turns": 12491,
+            "wall_seconds": 47.634504
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a pit viper",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 26,
+            "milestone": "Dlvl:26",
+            "progress": 0.5067605633802816,
+            "status": "completed",
+            "steps": 30465,
+            "trajectory_id": 3,
+            "turns": 19274,
+            "wall_seconds": 75.676503
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a raven",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 23,
+            "milestone": "Dlvl:23",
+            "progress": 0.4258360748858015,
+            "status": "completed",
+            "steps": 40034,
+            "trajectory_id": 4,
+            "turns": 24057,
+            "wall_seconds": 81.681972
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "died of starvation",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 29,
+            "milestone": "Dlvl:29",
+            "progress": 0.6465049415992812,
+            "status": "completed",
+            "steps": 30862,
+            "trajectory_id": 5,
+            "turns": 25955,
+            "wall_seconds": 73.104106
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an invisible arch-lich",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 27,
+            "milestone": "Dlvl:27",
+            "progress": 0.5543572044866264,
+            "status": "completed",
+            "steps": 80322,
+            "trajectory_id": 6,
+            "turns": 27684,
+            "wall_seconds": 149.217858
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 29,
+            "milestone": "Dlvl:29",
+            "progress": 0.6465049415992812,
+            "status": "completed",
+            "steps": 25158,
+            "trajectory_id": 7,
+            "turns": 20145,
+            "wall_seconds": 62.481625
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a captain",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 28,
+            "milestone": "Dlvl:28",
+            "progress": 0.6015648510382184,
+            "status": "completed",
+            "steps": 80918,
+            "trajectory_id": 8,
+            "turns": 60145,
+            "wall_seconds": 171.73314
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "died of starvation",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 27,
+            "milestone": "Dlvl:27",
+            "progress": 0.5543572044866264,
+            "status": "completed",
+            "steps": 42464,
+            "trajectory_id": 9,
+            "turns": 31015,
+            "wall_seconds": 91.517397
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a minotaur",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 28,
+            "milestone": "Dlvl:28",
+            "progress": 0.6015648510382184,
+            "status": "completed",
+            "steps": 35117,
+            "trajectory_id": 10,
+            "turns": 23314,
+            "wall_seconds": 72.402809
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by an invisible stalker",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 25,
+            "milestone": "Dlvl:25",
+            "progress": 0.46637631565303056,
+            "status": "completed",
+            "steps": 36626,
+            "trajectory_id": 11,
+            "turns": 21375,
+            "wall_seconds": 83.618998
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a raven",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 23,
+            "milestone": "Dlvl:23",
+            "progress": 0.4258360748858015,
+            "status": "completed",
+            "steps": 27583,
+            "trajectory_id": 12,
+            "turns": 18565,
+            "wall_seconds": 60.310664
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a warhorse",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 12,
+            "milestone": "Dlvl:12",
+            "progress": 0.20612854836308672,
+            "status": "completed",
+            "steps": 31688,
+            "trajectory_id": 13,
+            "turns": 19766,
+            "wall_seconds": 72.790469
+          },
+          {
+            "ascended": false,
+            "cause_of_death": "killed by a shark",
+            "character": "val-dwa-law-fem",
+            "end_status": "1",
+            "error": null,
+            "max_depth": 27,
+            "milestone": "Dlvl:27",
+            "progress": 0.5543572044866264,
+            "status": "completed",
+            "steps": 31125,
+            "trajectory_id": 14,
+            "turns": 23173,
+            "wall_seconds": 53.927284
+          }
+        ]
+      }
+    }
+  },
+  "complete": true,
+  "confidence": "low",
+  "confidence_reason": "The sole primary Public gain reversed sign in the paired diagnostic repeat; no chosen-action-change diagnostic was recorded.",
+  "config": {
+    "action_timeout": 120.0,
+    "batches": {
+      "development": [
+        2000,
+        2001,
+        2002,
+        2003,
+        2004
+      ],
+      "public": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "development_is_holdout": false,
+    "evaluation_id": "local",
+    "identity": "val-dwa-law-fem",
+    "max_parallel_evals": 4,
+    "max_steps": 1000000,
+    "no_progress_timeout": 10000,
+    "secret": "public"
+  },
+  "controls": {
+    "changed_deltas": true,
+    "game_count": 6,
+    "rows": [
+      {
+        "changed": true,
+        "control_baseline": {
+          "ascended": false,
+          "cause_of_death": "killed by a minotaur",
+          "character": "val-dwa-law-fem",
+          "end_status": "1",
+          "error": null,
+          "max_depth": 29,
+          "milestone": "Dlvl:29",
+          "progress": 0.6465049415992812,
+          "status": "completed",
+          "steps": 46033,
+          "trajectory_id": 1,
+          "turns": 27854,
+          "wall_seconds": 97.741684
+        },
+        "control_candidate": {
+          "ascended": false,
+          "cause_of_death": "killed by a soldier ant",
+          "character": "val-dwa-law-fem",
+          "end_status": "1",
+          "error": null,
+          "max_depth": 26,
+          "milestone": "Dlvl:26",
+          "progress": 0.5067605633802816,
+          "status": "completed",
+          "steps": 45716,
+          "trajectory_id": 1,
+          "turns": 27675,
+          "wall_seconds": 88.706308
+        },
+        "control_delta": -0.13974437821899954,
+        "primary_delta": 0.13974437821899954,
+        "reversal": true,
+        "seed": 1
+      },
+      {
+        "changed": false,
+        "control_baseline": {
+          "ascended": false,
+          "cause_of_death": "drowned in deep water",
+          "character": "val-dwa-law-fem",
+          "end_status": "1",
+          "error": null,
+          "max_depth": 23,
+          "milestone": "Dlvl:23",
+          "progress": 0.4258360748858015,
+          "status": "completed",
+          "steps": 30437,
+          "trajectory_id": 0,
+          "turns": 22718,
+          "wall_seconds": 78.760684
+        },
+        "control_candidate": {
+          "ascended": false,
+          "cause_of_death": "drowned in deep water",
+          "character": "val-dwa-law-fem",
+          "end_status": "1",
+          "error": null,
+          "max_depth": 23,
+          "milestone": "Dlvl:23",
+          "progress": 0.4258360748858015,
+          "status": "completed",
+          "steps": 30437,
+          "trajectory_id": 0,
+          "turns": 22718,
+          "wall_seconds": 70.379341
+        },
+        "control_delta": 0.0,
+        "primary_delta": 0.0,
+        "reversal": false,
+        "seed": 0
+      },
+      {
+        "changed": false,
+        "control_baseline": {
+          "ascended": false,
+          "cause_of_death": "killed by a minotaur",
+          "character": "val-dwa-law-fem",
+          "end_status": "1",
+          "error": null,
+          "max_depth": 8,
+          "milestone": "Xp:9",
+          "progress": 0.11704996473565571,
+          "status": "completed",
+          "steps": 34698,
+          "trajectory_id": 2000,
+          "turns": 22317,
+          "wall_seconds": 83.131138
+        },
+        "control_candidate": {
+          "ascended": false,
+          "cause_of_death": "killed by a minotaur",
+          "character": "val-dwa-law-fem",
+          "end_status": "1",
+          "error": null,
+          "max_depth": 8,
+          "milestone": "Xp:9",
+          "progress": 0.11704996473565571,
+          "status": "completed",
+          "steps": 34698,
+          "trajectory_id": 2000,
+          "turns": 22317,
+          "wall_seconds": 74.139529
+        },
+        "control_delta": 0.0,
+        "primary_delta": 0.0,
+        "reversal": false,
+        "seed": 2000
+      }
+    ],
+    "unexpected_reversal": true
+  },
+  "eligible_singles": [
+    "A"
+  ],
+  "final_publication_candidate": "A",
+  "instrumentation_limitations": [
+    "Aggregate process counters are lower bounds, without seed attribution.",
+    "B0/A/C dormant B opportunity counters use the ordinary-food estimate; B uses total edible carried nutrition.",
+    "Emergency action samples include all last-resort actions, not only exceptions.",
+    "A branch counters include active and shadow projections. Score changes and retained-candidate shadow reranking are distinct counters; this is not a full counterfactual trajectory replay.",
+    "Three-turn exception means trigger turn and the next two turns.",
+    "Source manifests exclude assets, evidence and caches as documented by campaign.py."
+  ],
+  "missing_combinations": [],
+  "primary_game_count": 80,
+  "recommendation_status": "development recommendation only",
+  "recommended": "A",
+  "required_combinations": [],
+  "selected": "A",
+  "technical_retry_count": 0,
+  "total_game_count": 86,
+  "warning": "Development selection only; native Public/gate/publication still required."
+}

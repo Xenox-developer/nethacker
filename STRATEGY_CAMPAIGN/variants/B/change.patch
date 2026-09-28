@@ -1,0 +1,55 @@
+--- a/autoascend/item/inventory.py
++++ b/autoascend/item/inventory.py
+@@ -1636,7 +1636,7 @@
+             return 'location'
+         if a.get_visible_monsters():
+             return 'threat'
+-        if b.hunger_state not in (Hunger.HUNGRY, Hunger.WEAK) or self.carried_nutrition() >= 400:
++        if b.hunger_state not in (Hunger.HUNGRY, Hunger.WEAK) or a.carried_food_nutrition() >= 400:
+             return 'stock_or_hunger'
+         return None
+ 
+@@ -1702,8 +1702,9 @@
+         yield True
+         ce.hit('B.started')
+         _, _, y, x = target
+-        before = self.carried_nutrition()
++        before = a.carried_food_nutrition()
+         purchased = False
++        settled = False
+         try:
+             for _ in range(2):
+                 reason = self._reserve_gate(key, started)
+@@ -1737,19 +1738,20 @@
+                 # Settlement is mandatory after pickup, even when time or threats changed.
+                 if any(i.shop_status == Item.UNPAID for i in flatten_items(self.items)):
+                     ce.hit('B.settlement')
++                    settled = True
+                     self.pay_or_drop_unpaid()
+-            purchased = self.carried_nutrition() > before and not any(
++            purchased = a.carried_food_nutrition() > before and not any(
+                 i.shop_status == Item.UNPAID for i in flatten_items(self.items))
+             if purchased:
+                 ce.hit('B.purchased')
+         finally:
+             elapsed = a.blstats.time - started
+             if elapsed > 8:
+-                ce.hit('B.settlement_overrun')
++                ce.hit('B.settlement_overrun' if settled else 'B.invocation_overrun')
+             if not purchased:
+                 self._reserve_failed[(key, y, x)] = a.blstats.time
+             ce.sample('food_end', turn=a.blstats.time, elapsed=elapsed, stock_before=before,
+-                      stock_after=self.carried_nutrition(), purchased=purchased)
++                      stock_after=a.carried_food_nutrition(), purchased=purchased)
+ 
+     @utils.debug_log('inventory.buy_food')
+     @Strategy.wrap
+--- a/autoascend/jf_config.py
++++ b/autoascend/jf_config.py
+@@ -301,5 +301,5 @@
+ # hypothesis: fixed campaign singles test ray bookkeeping, local food reserve,
+ # and a short observed-protection-failure emergency exception independently.
+ CAMPAIGN_A = False
+-CAMPAIGN_B = False
++CAMPAIGN_B = True
+ CAMPAIGN_C = False

@@ -1,0 +1,74 @@
+{
+  "candidate": "A",
+  "config": {
+    "action_timeout": 120.0,
+    "batches": {
+      "development": [
+        2000,
+        2001,
+        2002,
+        2003,
+        2004
+      ],
+      "public": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "development_is_holdout": false,
+    "evaluation_id": "local",
+    "identity": "val-dwa-law-fem",
+    "max_parallel_evals": 4,
+    "max_steps": 1000000,
+    "no_progress_timeout": 10000,
+    "secret": "public"
+  },
+  "not_primary_data": true,
+  "rules": [
+    {
+      "delta": 0.13974437821899954,
+      "new": 0.6465049415992812,
+      "new_status": "completed",
+      "old": 0.5067605633802816,
+      "old_status": "completed",
+      "rule": "largest Public gain",
+      "seed": 1
+    },
+    {
+      "delta": 0.0,
+      "new": 0.4258360748858015,
+      "new_status": "completed",
+      "old": 0.4258360748858015,
+      "old_status": "completed",
+      "rule": "largest Public loss",
+      "seed": 0
+    },
+    {
+      "delta": 0.0,
+      "new": 0.11704996473565571,
+      "new_status": "completed",
+      "old": 0.11704996473565571,
+      "old_status": "completed",
+      "rule": "largest development absolute difference",
+      "seed": 2000
+    }
+  ],
+  "seeds": [
+    1,
+    0,
+    2000
+  ]
+}

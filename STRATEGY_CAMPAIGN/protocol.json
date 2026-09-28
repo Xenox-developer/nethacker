@@ -1,0 +1,49 @@
+{
+  "request_id": "20260927T215044431526Z-eab26a5f56264b9391f20dd5ac976a24",
+  "incoming": "/tmp/campaign-incoming",
+  "baseline": "/tmp/campaign-baseline",
+  "flags_off_baseline": true,
+  "config": {
+    "identity": "val-dwa-law-fem",
+    "secret": "public",
+    "evaluation_id": "local",
+    "max_steps": 1000000,
+    "no_progress_timeout": 10000,
+    "action_timeout": 120.0,
+    "max_parallel_evals": 4,
+    "batches": {
+      "public": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "development": [
+        2000,
+        2001,
+        2002,
+        2003,
+        2004
+      ]
+    },
+    "development_is_holdout": false
+  },
+  "control_rule": [
+    "largest Public gain",
+    "largest Public loss",
+    "largest development absolute delta"
+  ],
+  "controls_ties": "lower trajectory id; deduplicate",
+  "thresholds_fixed_before_games": true
+}
