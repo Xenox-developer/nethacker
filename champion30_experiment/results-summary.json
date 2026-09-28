@@ -1,0 +1,79 @@
+{
+  "groups": {
+    "Public": {
+      "baseline_mean": 0.5127182081639106,
+      "hybrid_mean": 0.4888017445533289,
+      "delta": -0.02391646361058164,
+      "gains": [],
+      "ties": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        13
+      ],
+      "losses": [
+        6,
+        11,
+        12,
+        14
+      ]
+    },
+    "Development": {
+      "baseline_mean": 0.3864832339294242,
+      "hybrid_mean": 0.3803633306914008,
+      "delta": -0.006119903238023361,
+      "gains": [],
+      "ties": [
+        3100,
+        3101,
+        3102,
+        3103,
+        3104,
+        3105,
+        3107,
+        3108,
+        3109,
+        3110,
+        3111
+      ],
+      "losses": [
+        3106
+      ]
+    }
+  },
+  "diagnostics": {
+    "baseline": {
+      "enabled": 27,
+      "visit": 1605,
+      "eligibility": 1212,
+      "eligibility_reject": 747,
+      "engraving_call": 456,
+      "intact_reject": 336,
+      "eligibility_depth_alone": 212,
+      "eligibility_reject_depth_alone": 212,
+      "blind_guard_reject": 9,
+      "safety_reject": 57
+    },
+    "hybrid": {
+      "enabled": 27,
+      "visit": 1869,
+      "eligibility": 1281,
+      "eligibility_reject": 533,
+      "engraving_call": 735,
+      "intact_reject": 531,
+      "eligibility_depth_alone": 129,
+      "engraving_call_depth_alone": 129,
+      "blind_guard_reject": 8,
+      "sighted_cap_reject": 5,
+      "new_engraving_visible_immune": 3,
+      "safety_reject": 57
+    }
+  }
+}
