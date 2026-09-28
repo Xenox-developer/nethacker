@@ -1,0 +1,8 @@
+{
+  "baseline_reference": "github.com/Xenox-developer/nethacker@b01a1eef34751eb044a6971f1a2735e6007a7d3f",
+  "champion_digest": "sha256:c41a0a007ae3ee074a82632cee8c508e2384cb08db01e98946cb0ba73e9370a9",
+  "upstream_package": "github.com/vkurenkov/nethacker@f15bb8c8e01d905d1946e32bfd2558e17394eab6",
+  "added_guard_reference": "github.com/Xenox-developer/nethacker@7d546b6ab2b972c793489801f609aa691fc82b44",
+  "runtime_files": 47,
+  "note": "Historical reports, evaluation assets and generated caches excluded from frozen runtime assets."
+}
