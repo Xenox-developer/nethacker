@@ -1,0 +1,119 @@
+{"limit": 20000, "stage": "enabled"}
+{"depth": 2, "stage": "visit", "turn": 10002}
+{"depth": 2, "depth_alone": false, "stage": "eligibility", "turn": 10002}
+{"depth": 2, "depth_alone": false, "stage": "eligibility_reject", "turn": 10002}
+{"depth": 2, "stage": "visit", "turn": 10003}
+{"depth": 2, "depth_alone": false, "stage": "eligibility", "turn": 10003}
+{"depth": 2, "depth_alone": false, "stage": "eligibility_reject", "turn": 10003}
+{"depth": 2, "stage": "visit", "turn": 10005}
+{"depth": 2, "stage": "safety_reject", "turn": 10005}
+{"depth": 3, "stage": "visit", "turn": 10017}
+{"depth": 3, "stage": "safety_reject", "turn": 10017}
+{"depth": 3, "stage": "visit", "turn": 10021}
+{"depth": 3, "stage": "safety_reject", "turn": 10021}
+{"depth": 5, "stage": "visit", "turn": 10027}
+{"depth": 5, "stage": "safety_reject", "turn": 10027}
+{"depth": 5, "stage": "visit", "turn": 10029}
+{"depth": 5, "stage": "safety_reject", "turn": 10029}
+{"depth": 6, "stage": "visit", "turn": 10032}
+{"depth": 6, "stage": "safety_reject", "turn": 10032}
+{"depth": 6, "stage": "visit", "turn": 10034}
+{"depth": 6, "stage": "safety_reject", "turn": 10034}
+{"depth": 7, "stage": "visit", "turn": 10037}
+{"depth": 7, "stage": "safety_reject", "turn": 10037}
+{"depth": 7, "stage": "visit", "turn": 10040}
+{"depth": 7, "stage": "safety_reject", "turn": 10040}
+{"depth": 8, "stage": "visit", "turn": 10044}
+{"depth": 8, "stage": "safety_reject", "turn": 10044}
+{"depth": 8, "stage": "visit", "turn": 10046}
+{"depth": 8, "stage": "safety_reject", "turn": 10046}
+{"depth": 10, "stage": "visit", "turn": 10053}
+{"depth": 10, "stage": "safety_reject", "turn": 10053}
+{"depth": 10, "stage": "visit", "turn": 10055}
+{"depth": 10, "stage": "safety_reject", "turn": 10055}
+{"depth": 11, "stage": "visit", "turn": 10060}
+{"depth": 11, "stage": "safety_reject", "turn": 10060}
+{"depth": 11, "stage": "visit", "turn": 10062}
+{"depth": 11, "stage": "safety_reject", "turn": 10062}
+{"depth": 11, "stage": "visit", "turn": 10067}
+{"depth": 11, "stage": "safety_reject", "turn": 10067}
+{"depth": 11, "stage": "visit", "turn": 10068}
+{"depth": 11, "stage": "safety_reject", "turn": 10068}
+{"depth": 11, "stage": "visit", "turn": 10077}
+{"depth": 11, "depth_alone": false, "stage": "eligibility", "turn": 10077}
+{"depth": 11, "depth_alone": false, "immune_names": [], "stage": "engraving_call", "turn": 10077, "visible_immune": false}
+{"depth": 11, "stage": "visit", "turn": 10078}
+{"depth": 11, "stage": "intact_reject", "turn": 10078}
+{"depth": 12, "stage": "visit", "turn": 10082}
+{"depth": 12, "depth_alone": false, "stage": "eligibility", "turn": 10082}
+{"depth": 12, "depth_alone": false, "stage": "eligibility_reject", "turn": 10082}
+{"depth": 12, "stage": "visit", "turn": 10084}
+{"depth": 12, "depth_alone": false, "stage": "eligibility", "turn": 10084}
+{"depth": 12, "depth_alone": false, "stage": "eligibility_reject", "turn": 10084}
+{"depth": 13, "stage": "visit", "turn": 10088}
+{"depth": 13, "depth_alone": false, "stage": "eligibility", "turn": 10088}
+{"depth": 13, "depth_alone": false, "stage": "eligibility_reject", "turn": 10088}
+{"depth": 13, "stage": "visit", "turn": 10091}
+{"depth": 13, "depth_alone": false, "stage": "eligibility", "turn": 10091}
+{"depth": 13, "depth_alone": false, "stage": "eligibility_reject", "turn": 10091}
+{"depth": 14, "stage": "visit", "turn": 10188}
+{"depth": 14, "depth_alone": false, "stage": "eligibility", "turn": 10188}
+{"depth": 14, "depth_alone": false, "immune_names": [], "stage": "engraving_call", "turn": 10188, "visible_immune": false}
+{"depth": 14, "stage": "visit", "turn": 10188}
+{"depth": 14, "stage": "intact_reject", "turn": 10188}
+{"depth": 14, "stage": "visit", "turn": 10190}
+{"depth": 14, "depth_alone": false, "stage": "eligibility", "turn": 10190}
+{"depth": 14, "depth_alone": false, "immune_names": [], "stage": "engraving_call", "turn": 10190, "visible_immune": false}
+{"depth": 14, "stage": "visit", "turn": 10191}
+{"depth": 14, "stage": "intact_reject", "turn": 10191}
+{"depth": 15, "stage": "visit", "turn": 10195}
+{"depth": 15, "depth_alone": false, "stage": "eligibility", "turn": 10195}
+{"depth": 15, "depth_alone": false, "immune_names": [], "stage": "engraving_call", "turn": 10195, "visible_immune": false}
+{"depth": 15, "stage": "visit", "turn": 10196}
+{"depth": 15, "stage": "intact_reject", "turn": 10196}
+{"depth": 15, "stage": "visit", "turn": 10198}
+{"depth": 15, "depth_alone": false, "stage": "eligibility", "turn": 10198}
+{"depth": 15, "depth_alone": false, "immune_names": [], "stage": "engraving_call", "turn": 10198, "visible_immune": false}
+{"depth": 15, "stage": "visit", "turn": 10199}
+{"depth": 15, "stage": "intact_reject", "turn": 10199}
+{"depth": 16, "stage": "visit", "turn": 10202}
+{"depth": 16, "depth_alone": false, "stage": "eligibility", "turn": 10202}
+{"depth": 16, "depth_alone": false, "stage": "eligibility_reject", "turn": 10202}
+{"depth": 16, "stage": "visit", "turn": 10204}
+{"depth": 16, "depth_alone": false, "stage": "eligibility", "turn": 10204}
+{"depth": 16, "depth_alone": false, "stage": "eligibility_reject", "turn": 10204}
+{"depth": 17, "stage": "visit", "turn": 10472}
+{"depth": 17, "depth_alone": false, "stage": "eligibility", "turn": 10472}
+{"depth": 17, "depth_alone": false, "stage": "eligibility_reject", "turn": 10472}
+{"depth": 17, "stage": "visit", "turn": 10474}
+{"depth": 17, "depth_alone": false, "stage": "eligibility", "turn": 10474}
+{"depth": 17, "depth_alone": false, "stage": "eligibility_reject", "turn": 10474}
+{"depth": 17, "stage": "visit", "turn": 10477}
+{"depth": 17, "depth_alone": false, "stage": "eligibility", "turn": 10477}
+{"depth": 17, "depth_alone": false, "immune_names": [], "stage": "engraving_call", "turn": 10477, "visible_immune": false}
+{"depth": 17, "stage": "visit", "turn": 10479}
+{"depth": 17, "depth_alone": false, "stage": "eligibility", "turn": 10479}
+{"depth": 17, "depth_alone": false, "immune_names": [], "stage": "engraving_call", "turn": 10479, "visible_immune": false}
+{"depth": 17, "stage": "visit", "turn": 10480}
+{"depth": 17, "depth_alone": false, "stage": "eligibility", "turn": 10480}
+{"depth": 17, "depth_alone": false, "immune_names": [], "stage": "engraving_call", "turn": 10480, "visible_immune": false}
+{"depth": 17, "stage": "visit", "turn": 10482}
+{"depth": 17, "stage": "intact_reject", "turn": 10482}
+{"depth": 18, "stage": "visit", "turn": 10523}
+{"depth": 18, "depth_alone": false, "stage": "eligibility", "turn": 10523}
+{"depth": 18, "depth_alone": false, "immune_names": [], "stage": "engraving_call", "turn": 10523, "visible_immune": false}
+{"depth": 18, "stage": "visit", "turn": 10524}
+{"depth": 18, "stage": "intact_reject", "turn": 10524}
+{"depth": 18, "stage": "visit", "turn": 10527}
+{"depth": 18, "depth_alone": false, "stage": "eligibility", "turn": 10527}
+{"depth": 18, "depth_alone": false, "immune_names": [], "stage": "engraving_call", "turn": 10527, "visible_immune": false}
+{"depth": 18, "stage": "visit", "turn": 10527}
+{"depth": 18, "stage": "intact_reject", "turn": 10527}
+{"depth": 19, "stage": "visit", "turn": 10548}
+{"depth": 19, "stage": "intact_reject", "turn": 10548}
+{"depth": 19, "stage": "visit", "turn": 10552}
+{"depth": 19, "depth_alone": false, "stage": "eligibility", "turn": 10552}
+{"depth": 19, "depth_alone": false, "stage": "eligibility_reject", "turn": 10552}
+{"depth": 20, "stage": "visit", "turn": 10556}
+{"depth": 20, "depth_alone": false, "stage": "eligibility", "turn": 10556}
+{"depth": 20, "depth_alone": false, "immune_names": [], "stage": "engraving_call", "turn": 10556, "visible_immune": false}

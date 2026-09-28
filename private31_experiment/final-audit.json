@@ -1,0 +1,36 @@
+{
+  "utc": "2026-09-28T06:49:35.622484+00:00",
+  "arms_unchanged": true,
+  "installed_candidate_matches_freeze": true,
+  "games": 84,
+  "native_champion_replaced": false,
+  "outer_scoring_publication": "pending enclosing native workflow",
+  "incoming_preserved_sha256": "e4e43ed9ba84e04a469fbceb44558d5e1c92016a317bd6cd425c59a74276e9c0",
+  "frozen_map_sha256": {
+    "baseline": "65df12e920a42bbd2d301ce35e7cb305bed952c9731a87e7d168fd60f0a5a182",
+    "candidate": "1c6e18e57a5caf4ee7f81cf5c45d54e29320318a5c1caa80e86c3bf79ba7faa3"
+  },
+  "batch_validation": {
+    "baseline-primary": {
+      "rows": 27,
+      "completed": 27,
+      "errors": 0
+    },
+    "candidate-primary": {
+      "rows": 27,
+      "completed": 27,
+      "errors": 0
+    },
+    "baseline-repeat": {
+      "rows": 15,
+      "completed": 15,
+      "errors": 0
+    },
+    "candidate-repeat": {
+      "rows": 15,
+      "completed": 15,
+      "errors": 0
+    }
+  },
+  "diagnostics_byte_identical": true
+}

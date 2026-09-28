@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "/opt/nethackers/.venv/bin/python",
+    "-m",
+    "nethackers.arena.run",
+    "--solution",
+    "/workspace/private31_experiment/candidate",
+    "--batch",
+    "[[0, \"val-dwa-law-fem\"], [1, \"val-dwa-law-fem\"], [2, \"val-dwa-law-fem\"], [3, \"val-dwa-law-fem\"], [4, \"val-dwa-law-fem\"], [5, \"val-dwa-law-fem\"], [6, \"val-dwa-law-fem\"], [7, \"val-dwa-law-fem\"], [8, \"val-dwa-law-fem\"], [9, \"val-dwa-law-fem\"], [10, \"val-dwa-law-fem\"], [11, \"val-dwa-law-fem\"], [12, \"val-dwa-law-fem\"], [13, \"val-dwa-law-fem\"], [14, \"val-dwa-law-fem\"]]",
+    "--evaluation-id",
+    "local",
+    "--secret",
+    "public",
+    "--max-steps",
+    "1000000",
+    "--no-progress-timeout",
+    "10000",
+    "--action-timeout",
+    "120",
+    "--max-parallel-evals",
+    "4",
+    "--out",
+    "/workspace/private31_experiment/candidate-repeat-raw.json"
+  ],
+  "started": "2026-09-28T06:46:03.855636+00:00",
+  "diagnostics_env": {
+    "PRIVATE31_DIAGNOSTICS": "1",
+    "PRIVATE31_DIAGNOSTICS_DIR": "/workspace/private31_experiment/diagnostics/candidate-repeat"
+  }
+}

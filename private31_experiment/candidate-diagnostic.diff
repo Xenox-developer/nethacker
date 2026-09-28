@@ -1,0 +1,31 @@
+--- candidate/policy
++++ candidate/instrumented
+@@ -1,3 +1,4 @@
++from ..trap_diagnostics import operation, slot_check
+ import contextlib
+ import re
+ from functools import partial
+@@ -200,6 +201,7 @@
+ 
+         return True
+ 
++    @slot_check
+     def _trap_slot_blocked(self, slot):
+         return self.agent.blstats.time < getattr(self, '_trap_armor_until', {}).get(slot, 0)
+ 
+@@ -215,6 +217,7 @@
+             return True
+         return False
+ 
++    @operation
+     def wear(self, item, smart=True):
+         assert item is not None
+ 
+@@ -245,6 +248,7 @@
+ 
+         return True
+ 
++    @operation
+     def takeoff(self, item):
+         # TODO: smart
+ 

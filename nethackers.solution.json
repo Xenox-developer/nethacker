@@ -1,0 +1,36 @@
+{
+  "schema": "nethackers.solution/v1",
+  "name": "private31-trap-armor-cooldown",
+  "root": "autoascend",
+  "parents": [
+    "github.com/DT6A/nethacker@59ce30c509ef568366fe846afeba03dede939339",
+    "github.com/vkurenkov/nethacker@ef6acf87e265f74600b914060f620d06117070a3",
+    "github.com/vkurenkov/nethacker@f15bb8c8e01d905d1946e32bfd2558e17394eab6",
+    "github.com/Xenox-developer/nethacker@b01a1eef34751eb044a6971f1a2735e6007a7d3f"
+  ],
+  "influences": [
+    "github.com/DT6A/nethacker@59ce30c509ef568366fe846afeba03dede939339",
+    "github.com/daglar-dragomirov/nethacker@cb527267cc6e3562ea8e02ccc09c90ff17fe8ccf",
+    "github.com/kenforthewin/nethack_astra@38b1a38b340d4cb154fe5e4411b2819dc407d5e3",
+    "github.com/vkurenkov/nethacker@ef6acf87e265f74600b914060f620d06117070a3",
+    "github.com/kefirski/nethacker@995d8f40b2d24ee09487b0e87e014ca2fcc10928",
+    "github.com/daglar-dragomirov/nethacker@c4308340c16ceb94e2e7896dd5897676b1fc3512",
+    "github.com/vkurenkov/nethacker@f15bb8c8e01d905d1946e32bfd2558e17394eab6",
+    "github.com/Xenox-developer/nethacker@7d546b6ab2b972c793489801f609aa691fc82b44",
+    "github.com/daglar-dragomirov/nethacker@14626734f3d8a0702b52e67996ba86b57ef0b852",
+    "github.com/daglar-dragomirov/nethacker@c131c7c377fc36b84b2c969aee4b40ff9ec6e653",
+    "github.com/kefirski/nethacker@314507ee72fcedf3749b6e2b4d60330bc159e88f",
+    "github.com/kefirski/nethacker@5b7f1ebb452945da5d76862ce21d8b1a0053c0f5",
+    "github.com/kefirski/nethacker@91cc604d54aec632e67f8f21680319ac7e77a2fd",
+    "github.com/daglar-dragomirov/nethacker@5d0d455a1585271143aa47fbd5b44c2f6dae7d4b",
+    "github.com/Xenox-developer/nethacker@56cd7f631d7a2400ec3366aa2d7f539524829572",
+    "github.com/eL1fe/nethacker@a9e63ae735fba55510cbdd83b1545d4ad9f04f94"
+  ],
+  "entrypoint": "bot.py",
+  "runtime_authorship": {
+    "baseline": "github.com/Xenox-developer/nethacker@56cd7f631d7a2400ec3366aa2d7f539524829572",
+    "mechanism": "github.com/eL1fe/nethacker@a9e63ae735fba55510cbdd83b1545d4ad9f04f94/engines/dag/autoascend/item/inventory.py",
+    "license": "MIT",
+    "note": "Native parents retained separately from runtime authorship; attempt31 daglar5d0d455 plus attempt28 depth>=20 guard, exact adapter and blind cap6."
+  }
+}

@@ -1,0 +1,14 @@
+{"fixture": "wear: Your foot is trapped!", "passed": true}
+{"fixture": "takeoff: Your foot is trapped!", "passed": true}
+{"fixture": "wear: Your feet are stuck in the floor!", "passed": true}
+{"fixture": "takeoff: Your feet are stuck in the floor!", "passed": true}
+{"fixture": "wear: Your foot is attached to the buried ball!", "passed": true}
+{"fixture": "takeoff: Your foot is attached to the buried ball!", "passed": true}
+{"fixture": "wear: The bear trap prevents you from pulling your foot out.", "passed": true}
+{"fixture": "takeoff: The bear trap prevents you from pulling your foot out.", "passed": true}
+{"fixture": "wear: You are stuck and cannot pull your feet free.", "passed": true}
+{"fixture": "takeoff: You are stuck and cannot pull your feet free.", "passed": true}
+{"fixture": "ordinary success and unrelated assertions", "passed": true}
+{"fixture": "cursed guards", "passed": true}
+{"fixture": "welded guard and original refusal behavior", "passed": true}
+{"arm": "baseline", "passed": 13}

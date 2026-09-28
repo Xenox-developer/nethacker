@@ -1,0 +1,30 @@
+{
+  "baseline-primary": {
+    "streams": 27,
+    "events": {
+      "enabled": 27
+    },
+    "expected_episodes": 27
+  },
+  "candidate-primary": {
+    "streams": 27,
+    "events": {
+      "enabled": 27
+    },
+    "expected_episodes": 27
+  },
+  "baseline-repeat": {
+    "streams": 15,
+    "events": {
+      "enabled": 15
+    },
+    "expected_episodes": 15
+  },
+  "candidate-repeat": {
+    "streams": 15,
+    "events": {
+      "enabled": 15
+    },
+    "expected_episodes": 15
+  }
+}

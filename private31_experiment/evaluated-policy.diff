@@ -1,0 +1,89 @@
+--- baseline/inventory.py
++++ candidate/inventory.py
+@@ -79,6 +79,8 @@
+     def _droppable(self, item):
+         """arrange_items may drop it. With SCARE_KEEP a carried scroll that may be scare monster stays: a heavy
+         armour swap dropped all light loot and picked it up again (base-jf26 s14: 'The scroll turns to dust')."""
++        if item.equipped and item.is_armor() and self._trap_slot_blocked(item.object.sub):
++            return False
+         if not item.can_be_dropped_from_inventory():
+             return False
+         return not (power.keep_scroll(item) and item in self.items.all_items)
+@@ -199,6 +201,22 @@
+ 
+         return True
+ 
++    @slot_check
++    def _trap_slot_blocked(self, slot):
++        return self.agent.blstats.time < getattr(self, '_trap_armor_until', {}).get(slot, 0)
++
++    def _blocked_by_trap(self, item):
++        # hypothesis: a 20-game-turn slot cooldown lets normal play proceed after
++        # explicit trap refusals, without renewing the deadline on skipped retries.
++        # Adapted from eL1fe/nethacker a9e63ae engines/dag (MIT).
++        if re.search(r'Your foot is trapped!|Your feet are stuck in the |is attached to the buried ball!|'
++                     r'bear trap prevents you from pulling your |and cannot pull your ', self.agent.message):
++            if not hasattr(self, '_trap_armor_until'):
++                self._trap_armor_until = {}
++            self._trap_armor_until[item.object.sub] = self.agent.blstats.time + 20
++            return True
++        return False
++
+     @operation
+     def wear(self, item, smart=True):
+         assert item is not None
+@@ -210,6 +228,9 @@
+ 
+         if item.equipped:
+             return True
++
++        if self._trap_slot_blocked(item.object.sub):
++            return False
+ 
+         for i in self.items:
+             assert not isinstance(i, O.Armor) or i.sub != item.sub or not i.equipped, (i, item)
+@@ -220,9 +241,10 @@
+                 return False
+             assert 'What do you want to wear?' in self.agent.message, self.agent.message
+             self.agent.type_text(letter)
++            if self._blocked_by_trap(item):
++                return False
+             assert 'You finish your dressing maneuver.' in self.agent.message or \
+-                   'You are now wearing ' in self.agent.message or \
+-                   'Your foot is trapped!' in self.agent.message, self.agent.message
++                   'You are now wearing ' in self.agent.message, self.agent.message
+ 
+         return True
+ 
+@@ -236,6 +258,8 @@
+ 
+         equipped_armors = [i for i in self.items if i.is_armor() and i.equipped]
+         assert item in equipped_armors
++        if self._trap_slot_blocked(item.object.sub):
++            return False
+ 
+         with self.agent.atom_operation():
+             self.agent.step(A.Command.TAKEOFF)
+@@ -251,6 +275,8 @@
+                 assert 'What do you want to take off?' in self.agent.message, self.agent.message
+                 self.agent.type_text(letter)
+             if 'It is cursed.' in self.agent.message or 'They are cursed.' in self.agent.message:
++                return False
++            if self._blocked_by_trap(item):
+                 return False
+             assert is_take_off_message(), self.agent.message
+ 
+@@ -1346,6 +1372,13 @@
+                 if best_armorset[slot] == getattr(self.items, name) or \
+                         (getattr(self.items, name) is not None and getattr(self.items, name).status == Item.CURSED):
+                     continue
++                if self._trap_slot_blocked(slot):
++                    continue
++                # A blocked outer layer also prevents changing the armor beneath it.
++                if slot in (O.ARM_SHIRT, O.ARM_SUIT) and self.items.cloak is not None and self._trap_slot_blocked(O.ARM_CLOAK):
++                    continue
++                if slot == O.ARM_SHIRT and self.items.suit is not None and self._trap_slot_blocked(O.ARM_SUIT):
++                    continue
+                 additional_cond = True
+                 if slot == O.ARM_SHIELD:
+                     additional_cond &= self.items.main_hand is None or not self.items.main_hand.objs[0].bi

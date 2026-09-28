@@ -1,0 +1,23 @@
+--- baseline/policy
++++ baseline/instrumented
+@@ -1,3 +1,4 @@
++from ..trap_diagnostics import operation, slot_check
+ import contextlib
+ import re
+ from functools import partial
+@@ -198,6 +199,7 @@
+ 
+         return True
+ 
++    @operation
+     def wear(self, item, smart=True):
+         assert item is not None
+ 
+@@ -224,6 +226,7 @@
+ 
+         return True
+ 
++    @operation
+     def takeoff(self, item):
+         # TODO: smart
+ 

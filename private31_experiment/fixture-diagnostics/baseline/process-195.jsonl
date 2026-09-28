@@ -1,0 +1,11 @@
+{"limit": 2000, "stage": "enabled"}
+{"expiry": 120, "message": "Your foot is trapped!", "operation": "wear", "slot": 4, "stage": "refusal", "turn": 100}
+{"expiry": 120, "message": "Your foot is trapped!", "operation": "takeoff", "slot": 4, "stage": "refusal", "turn": 100}
+{"expiry": 120, "message": "Your feet are stuck in the floor!", "operation": "wear", "slot": 4, "stage": "refusal", "turn": 100}
+{"expiry": 120, "message": "Your feet are stuck in the floor!", "operation": "takeoff", "slot": 4, "stage": "refusal", "turn": 100}
+{"expiry": 120, "message": "Your foot is attached to the buried ball!", "operation": "wear", "slot": 4, "stage": "refusal", "turn": 100}
+{"expiry": 120, "message": "Your foot is attached to the buried ball!", "operation": "takeoff", "slot": 4, "stage": "refusal", "turn": 100}
+{"expiry": 120, "message": "The bear trap prevents you from pulling your foot out.", "operation": "wear", "slot": 4, "stage": "refusal", "turn": 100}
+{"expiry": 120, "message": "The bear trap prevents you from pulling your foot out.", "operation": "takeoff", "slot": 4, "stage": "refusal", "turn": 100}
+{"expiry": 120, "message": "You are stuck and cannot pull your feet free.", "operation": "wear", "slot": 4, "stage": "refusal", "turn": 100}
+{"expiry": 120, "message": "You are stuck and cannot pull your feet free.", "operation": "takeoff", "slot": 4, "stage": "refusal", "turn": 100}

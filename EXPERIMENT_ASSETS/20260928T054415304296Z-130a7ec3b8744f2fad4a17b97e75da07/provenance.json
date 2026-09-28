@@ -1,0 +1,12 @@
+{
+  "baseline_reference": "github.com/Xenox-developer/nethacker@56cd7f631d7a2400ec3366aa2d7f539524829572",
+  "full_historical_digest": "sha256:1e2f694943be0b87314c48f014bb290a26f836957193130ca90e319899552230",
+  "baseline_runtime_files": 51,
+  "reference": "github.com/eL1fe/nethacker@a9e63ae735fba55510cbdd83b1545d4ad9f04f94",
+  "reference_source_path": "engines/dag/autoascend/item/inventory.py",
+  "reference_files_sha256": {
+    "LICENSE": "8c6bb7b6b705d8808fccf4ab244582217b88dd9fa3e02daa34d130be74ce76a6",
+    "inventory.py": "6488e11cd15f5f2bb40caaf02f58076cb8c28f5fb9170e2b1b5265dea1af3e95"
+  },
+  "scope": "Only trap-refusal20-turn armor cooldown mechanism; no root router or1000-turn welded extension."
+}
