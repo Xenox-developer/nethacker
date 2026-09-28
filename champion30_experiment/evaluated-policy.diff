@@ -1,0 +1,17 @@
+--- baseline/autoascend/dive_logic.py
++++ hybrid/autoascend/dive_logic.py
+@@ -3871,9 +3871,12 @@
+         # even if out of sight now (base-public s14: an invisible ogre king hit us in the fresh pit; s1: a
+         # chameleon)
+         rewrite = spot[3] and tries.get(spot[:3] + (False,), 0) > 0
++        # hypothesis: depth >= 20 pre-dig protection covers unseen arrivals.
++        # Adapted from Xenox-developer/nethacker@7d546b6ab2b972c793489801f609aa691fc82b44.
++        deep_dig = bl.depth >= 20
+         _deep_observe("eligibility", locals())
+-        if not near and not (ELBERETH_ALWAYS or self.on_medusa_level() or bl.hunger_state >= Hunger.WEAK or
+-                             rewrite):
++        if not near and not (ELBERETH_ALWAYS or deep_dig or self.on_medusa_level() or
++                             bl.hunger_state >= Hunger.WEAK or rewrite):
+             _deep_observe("eligibility_reject", locals())
+             return False
+         if blind:
