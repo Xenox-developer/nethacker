@@ -1,0 +1,32 @@
+[
+  {
+    "trajectory_id": 6,
+    "status": "completed",
+    "progress": 0.46637631565303056,
+    "ascended": false,
+    "steps": 22079,
+    "turns": 11124,
+    "max_depth": 25,
+    "end_status": "1",
+    "error": null,
+    "wall_seconds": 61.299959,
+    "character": "val-dwa-law-fem",
+    "milestone": "Dlvl:25",
+    "cause_of_death": "killed by a pit viper"
+  },
+  {
+    "trajectory_id": 11,
+    "status": "completed",
+    "progress": 0.6015648510382184,
+    "ascended": false,
+    "steps": 18124,
+    "turns": 13537,
+    "max_depth": 28,
+    "end_status": "1",
+    "error": null,
+    "wall_seconds": 56.707473,
+    "character": "val-dwa-law-fem",
+    "milestone": "Dlvl:28",
+    "cause_of_death": "killed by a minotaur"
+  }
+]
