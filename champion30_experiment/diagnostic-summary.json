@@ -1,0 +1,706 @@
+{
+  "counts": {
+    "baseline": {
+      "enabled": 27,
+      "visit": 1605,
+      "eligibility": 1212,
+      "eligibility_reject": 747,
+      "engraving_call": 456,
+      "intact_reject": 336,
+      "eligibility_depth_alone": 212,
+      "eligibility_reject_depth_alone": 212,
+      "blind_guard_reject": 9,
+      "safety_reject": 57
+    },
+    "hybrid": {
+      "enabled": 27,
+      "visit": 1869,
+      "eligibility": 1281,
+      "eligibility_reject": 533,
+      "engraving_call": 735,
+      "intact_reject": 531,
+      "eligibility_depth_alone": 129,
+      "engraving_call_depth_alone": 129,
+      "blind_guard_reject": 8,
+      "sighted_cap_reject": 5,
+      "new_engraving_visible_immune": 3,
+      "safety_reject": 57
+    }
+  },
+  "streams": {
+    "baseline": [
+      {
+        "file": "diagnostics/baseline/process-209.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 31,
+          "eligibility": 22,
+          "eligibility_reject": 8,
+          "engraving_call": 14,
+          "intact_reject": 9
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-210.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 70,
+          "eligibility": 54,
+          "eligibility_reject": 40,
+          "engraving_call": 14,
+          "intact_reject": 16,
+          "eligibility_depth_alone": 11,
+          "eligibility_reject_depth_alone": 11
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-211.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 68,
+          "eligibility": 47,
+          "eligibility_reject": 24,
+          "engraving_call": 23,
+          "intact_reject": 21,
+          "eligibility_depth_alone": 6,
+          "eligibility_reject_depth_alone": 6
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-212.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 70,
+          "eligibility": 51,
+          "eligibility_reject": 30,
+          "engraving_call": 21,
+          "intact_reject": 19,
+          "eligibility_depth_alone": 5,
+          "eligibility_reject_depth_alone": 5
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-228.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 65,
+          "eligibility": 56,
+          "eligibility_reject": 46,
+          "engraving_call": 10,
+          "intact_reject": 9,
+          "eligibility_depth_alone": 18,
+          "eligibility_reject_depth_alone": 18
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-230.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 68,
+          "eligibility": 58,
+          "eligibility_reject": 39,
+          "engraving_call": 19,
+          "intact_reject": 10,
+          "eligibility_depth_alone": 12,
+          "eligibility_reject_depth_alone": 12
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-232.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 74,
+          "eligibility": 56,
+          "engraving_call": 24,
+          "intact_reject": 18,
+          "eligibility_reject": 32,
+          "eligibility_depth_alone": 10,
+          "eligibility_reject_depth_alone": 10
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-234.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 45,
+          "eligibility": 43,
+          "eligibility_reject": 37,
+          "engraving_call": 5,
+          "intact_reject": 2,
+          "eligibility_depth_alone": 8,
+          "eligibility_reject_depth_alone": 8,
+          "blind_guard_reject": 1
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-236.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 65,
+          "eligibility": 55,
+          "eligibility_reject": 40,
+          "engraving_call": 15,
+          "intact_reject": 10,
+          "eligibility_depth_alone": 12,
+          "eligibility_reject_depth_alone": 12
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-238.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 73,
+          "eligibility": 55,
+          "eligibility_reject": 31,
+          "engraving_call": 24,
+          "intact_reject": 18,
+          "eligibility_depth_alone": 7,
+          "eligibility_reject_depth_alone": 7
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-240.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 70,
+          "eligibility": 58,
+          "eligibility_reject": 39,
+          "engraving_call": 19,
+          "intact_reject": 12,
+          "eligibility_depth_alone": 16,
+          "eligibility_reject_depth_alone": 16
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-242.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 80,
+          "eligibility": 63,
+          "engraving_call": 28,
+          "intact_reject": 17,
+          "eligibility_reject": 35,
+          "eligibility_depth_alone": 11,
+          "eligibility_reject_depth_alone": 11
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-249.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 76,
+          "eligibility": 61,
+          "eligibility_reject": 39,
+          "engraving_call": 22,
+          "intact_reject": 15,
+          "eligibility_depth_alone": 12,
+          "eligibility_reject_depth_alone": 12
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-256.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 59,
+          "eligibility": 47,
+          "eligibility_reject": 30,
+          "engraving_call": 17,
+          "intact_reject": 12,
+          "eligibility_depth_alone": 6,
+          "eligibility_reject_depth_alone": 6
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-259.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 78,
+          "eligibility": 60,
+          "eligibility_reject": 39,
+          "engraving_call": 21,
+          "intact_reject": 18,
+          "eligibility_depth_alone": 13,
+          "eligibility_reject_depth_alone": 13
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-273.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 89,
+          "eligibility": 60,
+          "eligibility_reject": 23,
+          "engraving_call": 37,
+          "intact_reject": 29,
+          "eligibility_depth_alone": 4,
+          "eligibility_reject_depth_alone": 4
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-274.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 78,
+          "eligibility": 57,
+          "eligibility_reject": 30,
+          "engraving_call": 27,
+          "intact_reject": 21,
+          "eligibility_depth_alone": 9,
+          "eligibility_reject_depth_alone": 9
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-276.jsonl",
+        "counts": {
+          "enabled": 1
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-291.jsonl",
+        "counts": {
+          "enabled": 1
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-301.jsonl",
+        "counts": {
+          "enabled": 1
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-303.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 48,
+          "eligibility": 22,
+          "eligibility_reject": 11,
+          "safety_reject": 17,
+          "engraving_call": 11,
+          "intact_reject": 9
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-307.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 90,
+          "eligibility": 69,
+          "eligibility_reject": 31,
+          "engraving_call": 33,
+          "intact_reject": 21,
+          "eligibility_depth_alone": 9,
+          "eligibility_reject_depth_alone": 9,
+          "blind_guard_reject": 5
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-309.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 38,
+          "eligibility": 36,
+          "eligibility_reject": 26,
+          "eligibility_depth_alone": 2,
+          "eligibility_reject_depth_alone": 2,
+          "engraving_call": 8,
+          "blind_guard_reject": 2,
+          "intact_reject": 2
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-310.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 63,
+          "eligibility": 22,
+          "engraving_call": 11,
+          "intact_reject": 9,
+          "safety_reject": 32,
+          "eligibility_reject": 11,
+          "eligibility_depth_alone": 9,
+          "eligibility_reject_depth_alone": 9
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-315.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 73,
+          "eligibility": 58,
+          "eligibility_reject": 36,
+          "engraving_call": 21,
+          "intact_reject": 15,
+          "blind_guard_reject": 1,
+          "eligibility_depth_alone": 9,
+          "eligibility_reject_depth_alone": 9
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-317.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 69,
+          "eligibility": 56,
+          "eligibility_reject": 37,
+          "engraving_call": 19,
+          "intact_reject": 13,
+          "eligibility_depth_alone": 12,
+          "eligibility_reject_depth_alone": 12
+        }
+      },
+      {
+        "file": "diagnostics/baseline/process-327.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 65,
+          "eligibility": 46,
+          "eligibility_reject": 33,
+          "safety_reject": 8,
+          "engraving_call": 13,
+          "intact_reject": 11,
+          "eligibility_depth_alone": 11,
+          "eligibility_reject_depth_alone": 11
+        }
+      }
+    ],
+    "hybrid": [
+      {
+        "file": "diagnostics/hybrid/process-342.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 31,
+          "eligibility": 22,
+          "eligibility_reject": 8,
+          "engraving_call": 14,
+          "intact_reject": 9
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-343.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 89,
+          "eligibility": 63,
+          "eligibility_reject": 25,
+          "engraving_call": 38,
+          "intact_reject": 26,
+          "eligibility_depth_alone": 13,
+          "engraving_call_depth_alone": 13
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-344.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 81,
+          "eligibility": 54,
+          "eligibility_reject": 29,
+          "engraving_call": 25,
+          "intact_reject": 27,
+          "eligibility_depth_alone": 8,
+          "engraving_call_depth_alone": 8
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-345.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 74,
+          "eligibility": 48,
+          "eligibility_reject": 18,
+          "engraving_call": 29,
+          "intact_reject": 26,
+          "eligibility_depth_alone": 3,
+          "engraving_call_depth_alone": 3,
+          "blind_guard_reject": 1
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-356.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 80,
+          "eligibility": 56,
+          "eligibility_reject": 28,
+          "engraving_call": 28,
+          "intact_reject": 24,
+          "eligibility_depth_alone": 7,
+          "engraving_call_depth_alone": 7
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-358.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 85,
+          "eligibility": 64,
+          "eligibility_reject": 27,
+          "engraving_call": 37,
+          "intact_reject": 21,
+          "eligibility_depth_alone": 6,
+          "engraving_call_depth_alone": 6
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-360.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 77,
+          "eligibility": 54,
+          "engraving_call": 32,
+          "intact_reject": 23,
+          "eligibility_reject": 22,
+          "eligibility_depth_alone": 6,
+          "engraving_call_depth_alone": 6
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-364.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 60,
+          "eligibility": 48,
+          "eligibility_reject": 29,
+          "engraving_call": 19,
+          "intact_reject": 12,
+          "eligibility_depth_alone": 3,
+          "engraving_call_depth_alone": 3
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-375.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 90,
+          "eligibility": 68,
+          "eligibility_reject": 28,
+          "engraving_call": 39,
+          "intact_reject": 22,
+          "eligibility_depth_alone": 8,
+          "engraving_call_depth_alone": 8,
+          "sighted_cap_reject": 1
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-376.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 86,
+          "eligibility": 58,
+          "eligibility_reject": 22,
+          "engraving_call": 36,
+          "intact_reject": 28,
+          "eligibility_depth_alone": 5,
+          "engraving_call_depth_alone": 5
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-377.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 90,
+          "eligibility": 62,
+          "eligibility_reject": 23,
+          "engraving_call": 39,
+          "intact_reject": 28,
+          "eligibility_depth_alone": 9,
+          "engraving_call_depth_alone": 9
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-385.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 85,
+          "eligibility": 61,
+          "engraving_call": 37,
+          "intact_reject": 24,
+          "eligibility_reject": 24,
+          "eligibility_depth_alone": 6,
+          "engraving_call_depth_alone": 6
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-386.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 77,
+          "eligibility": 56,
+          "eligibility_reject": 27,
+          "engraving_call": 29,
+          "intact_reject": 21,
+          "eligibility_depth_alone": 4,
+          "engraving_call_depth_alone": 4
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-391.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 67,
+          "eligibility": 48,
+          "eligibility_reject": 24,
+          "engraving_call": 24,
+          "intact_reject": 19,
+          "eligibility_depth_alone": 2,
+          "engraving_call_depth_alone": 2,
+          "new_engraving_visible_immune": 1
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-399.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 105,
+          "eligibility": 76,
+          "eligibility_reject": 26,
+          "engraving_call": 46,
+          "intact_reject": 29,
+          "eligibility_depth_alone": 6,
+          "engraving_call_depth_alone": 6,
+          "sighted_cap_reject": 4
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-401.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 93,
+          "eligibility": 61,
+          "eligibility_reject": 19,
+          "engraving_call": 42,
+          "intact_reject": 32,
+          "eligibility_depth_alone": 2,
+          "engraving_call_depth_alone": 2
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-403.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 88,
+          "eligibility": 60,
+          "eligibility_reject": 21,
+          "engraving_call": 39,
+          "intact_reject": 28,
+          "eligibility_depth_alone": 9,
+          "engraving_call_depth_alone": 9,
+          "new_engraving_visible_immune": 1
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-406.jsonl",
+        "counts": {
+          "enabled": 1
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-410.jsonl",
+        "counts": {
+          "enabled": 1
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-411.jsonl",
+        "counts": {
+          "enabled": 1
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-414.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 48,
+          "eligibility": 22,
+          "eligibility_reject": 11,
+          "safety_reject": 17,
+          "engraving_call": 11,
+          "intact_reject": 9
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-418.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 87,
+          "eligibility": 65,
+          "eligibility_reject": 22,
+          "engraving_call": 37,
+          "intact_reject": 22,
+          "eligibility_depth_alone": 1,
+          "engraving_call_depth_alone": 1,
+          "blind_guard_reject": 6
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-426.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 52,
+          "eligibility": 41,
+          "eligibility_reject": 24,
+          "eligibility_depth_alone": 6,
+          "engraving_call": 17,
+          "engraving_call_depth_alone": 6,
+          "intact_reject": 11
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-428.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 72,
+          "eligibility": 23,
+          "engraving_call": 21,
+          "intact_reject": 17,
+          "safety_reject": 32,
+          "eligibility_reject": 2,
+          "eligibility_depth_alone": 3,
+          "engraving_call_depth_alone": 3
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-429.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 85,
+          "eligibility": 63,
+          "eligibility_reject": 27,
+          "engraving_call": 35,
+          "intact_reject": 22,
+          "blind_guard_reject": 1,
+          "eligibility_depth_alone": 5,
+          "engraving_call_depth_alone": 5
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-432.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 88,
+          "eligibility": 60,
+          "eligibility_reject": 25,
+          "engraving_call": 35,
+          "intact_reject": 28,
+          "eligibility_depth_alone": 8,
+          "engraving_call_depth_alone": 8
+        }
+      },
+      {
+        "file": "diagnostics/hybrid/process-442.jsonl",
+        "counts": {
+          "enabled": 1,
+          "visit": 79,
+          "eligibility": 48,
+          "eligibility_reject": 22,
+          "safety_reject": 8,
+          "engraving_call": 26,
+          "intact_reject": 23,
+          "eligibility_depth_alone": 9,
+          "engraving_call_depth_alone": 9,
+          "new_engraving_visible_immune": 1
+        }
+      }
+    ]
+  }
+}

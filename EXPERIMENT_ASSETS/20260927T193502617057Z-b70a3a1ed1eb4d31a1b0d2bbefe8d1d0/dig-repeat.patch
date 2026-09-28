@@ -1,0 +1,13 @@
+--- a/autoascend/global_logic.py
++++ b/autoascend/global_logic.py
+@@ -925,7 +925,9 @@
+             ])
+             # a digger with room to dig finishes the hole instead of walking to a fight
+             .preempt(self.agent, [
+-                self.dive.dig_first(),
++                # hypothesis: complete an emergency dig while its safety checks hold,
++                # rather than letting combat erase Elbereth between digging steps.
++                self.dive.dig_first().repeat(),
+             ])
+             # astra's survival layer, only once diving (the tour keeps the elite's proven behaviour)
+             .preempt(self.agent, [
