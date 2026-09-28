@@ -1,0 +1,24 @@
+{
+  "schema": "nethackers.solution/v1",
+  "name": "jawfish",
+  "root": "autoascend",
+  "parents": [
+    "github.com/DT6A/nethacker@59ce30c509ef568366fe846afeba03dede939339",
+    "github.com/vkurenkov/nethacker@ef6acf87e265f74600b914060f620d06117070a3",
+    "github.com/vkurenkov/nethacker@f15bb8c8e01d905d1946e32bfd2558e17394eab6",
+    "github.com/Xenox-developer/nethacker@b01a1eef34751eb044a6971f1a2735e6007a7d3f"
+  ],
+  "influences": [
+    "github.com/DT6A/nethacker@59ce30c509ef568366fe846afeba03dede939339",
+    "github.com/daglar-dragomirov/nethacker@cb527267cc6e3562ea8e02ccc09c90ff17fe8ccf",
+    "github.com/kenforthewin/nethack_astra@38b1a38b340d4cb154fe5e4411b2819dc407d5e3",
+    "github.com/vkurenkov/nethacker@ef6acf87e265f74600b914060f620d06117070a3",
+    "github.com/kefirski/nethacker@995d8f40b2d24ee09487b0e87e014ca2fcc10928",
+    "github.com/daglar-dragomirov/nethacker@c4308340c16ceb94e2e7896dd5897676b1fc3512",
+    "github.com/vkurenkov/nethacker@f15bb8c8e01d905d1946e32bfd2558e17394eab6",
+    "github.com/Xenox-developer/nethacker@7d546b6ab2b972c793489801f609aa691fc82b44",
+    "github.com/daglar-dragomirov/nethacker@5d0d455a1585271143aa47fbd5b44c2f6dae7d4b",
+    "github.com/kefirski/nethacker@454ae8df96e7ec68f0df2488b2b8a90368407cf1"
+  ],
+  "entrypoint": "bot.py"
+}

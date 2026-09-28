@@ -1,0 +1,140 @@
+--- base30-runtime/autoascend/deep_protection_diagnostics.py
++++ hybrid/autoascend/deep_protection_diagnostics.py
+@@ -0,0 +1,57 @@
++"""Opt-in passive helper observations; no RNG, evaluator data or policy writes.
++
++One bounded JSONL stream per sandbox process. The filename is only a process
++identifier, not a game identifier. `engraving_call` records entry at the actual
++call site, not successful text completion or lasting protection.
++"""
++import json
++import os
++from pathlib import Path
++
++_ENABLED = os.environ.get('CHAMPION30_DIAGNOSTICS') == '1'
++_LIMIT = 20000
++_count = 0
++_path = None
++
++def _write(row):
++    global _count, _path
++    try:
++        if not _ENABLED or _count > _LIMIT:
++            return
++        if _path is None:
++            directory = Path(os.environ.get('CHAMPION30_DIAGNOSTICS_DIR', '/tmp/champion30-diagnostics'))
++            directory.mkdir(parents=True, exist_ok=True)
++            _path = directory / ('process-%s.jsonl' % os.getpid())
++        if _count == _LIMIT:
++            row = {'stage': 'truncated', 'limit': _LIMIT}
++        with _path.open('a') as f:
++            f.write(json.dumps(row, sort_keys=True) + '\n')
++        _count += 1
++    except Exception:
++        # Diagnostic failures cannot prevent or change the helper action.
++        pass
++
++def observe(stage, state):
++    if not _ENABLED:
++        return
++    try:
++        self = state['self']
++        agent = self.agent
++        bl = agent.blstats
++        row = dict(stage=stage, turn=int(bl.time), depth=int(bl.depth))
++        if 'near' in state and 'rewrite' in state:
++            from .glyph import Hunger
++            from . import dive_logic
++            original = bool(state['near'] or dive_logic.ELBERETH_ALWAYS or
++                            (self.medusa_level is not None and state['spot'][0] == self.medusa_level) or
++                            bl.hunger_state >= Hunger.WEAK or state['rewrite'])
++            row['depth_alone'] = bool(bl.depth >= 20 and not original)
++        if stage == 'engraving_call':
++            monsters = agent.get_visible_monsters()
++            row['visible_immune'] = any(self._melee_ignores_elbereth(m[3]) for m in monsters)
++            row['immune_names'] = sorted({m[3].mname for m in monsters if self._melee_ignores_elbereth(m[3])})
++        _write(row)
++    except Exception:
++        _write({'stage': 'observation_error', 'at': stage})
++
++_write({'stage': 'enabled', 'limit': _LIMIT})
+--- base30-runtime/autoascend/dive_logic.py
++++ hybrid/autoascend/dive_logic.py
+@@ -24,6 +24,7 @@
+ from scipy import ndimage
+ 
+ from . import objects as O
++from .deep_protection_diagnostics import observe as _deep_observe
+ 
+ from . import jf_config, jf_log, power, utils, valley
+ from .castle_logic import CastlePassage
+@@ -3848,11 +3849,14 @@
+         and casters included), always on Medusa's level, capped per square and dig phase (the pit erases it).
+         Blind (a raven's claw), the engraving can't be read back: engrave once per phase (a blind dust
+         Elbereth survives its letters only ~1 time in 3, engrave.c) and dig on."""
++        _deep_observe("visit", locals())
+         agent = self.agent
+         if agent.character.prop.polymorph or not agent.can_engrave() or utils.any_in(agent.glyphs, G.SWALLOW):
++            _deep_observe("safety_reject", locals())
+             return False
+         blind = agent.character.prop.blind
+         if not blind and (agent.inventory.engraving_below_me or '').lower() == 'elbereth':
++            _deep_observe("intact_reject", locals())
+             return False
+         bl = agent.blstats
+         near = [m for m in agent.get_visible_monsters()
+@@ -3867,8 +3871,13 @@
+         # even if out of sight now (base-public s14: an invisible ogre king hit us in the fresh pit; s1: a
+         # chameleon)
+         rewrite = spot[3] and tries.get(spot[:3] + (False,), 0) > 0
+-        if not near and not (ELBERETH_ALWAYS or self.on_medusa_level() or bl.hunger_state >= Hunger.WEAK or
+-                             rewrite):
++        # hypothesis: depth >= 20 pre-dig protection covers unseen arrivals.
++        # Adapted from Xenox-developer/nethacker@7d546b6ab2b972c793489801f609aa691fc82b44.
++        deep_dig = bl.depth >= 20
++        _deep_observe("eligibility", locals())
++        if not near and not (ELBERETH_ALWAYS or deep_dig or self.on_medusa_level() or
++                             bl.hunger_state >= Hunger.WEAK or rewrite):
++            _deep_observe("eligibility_reject", locals())
+             return False
+         if blind:
+             # can't read it back: the only sign it didn't take (a blind dust Elbereth keeps all 8 letters ~1 time
+@@ -3878,13 +3887,16 @@
+             # 'It bites!', 7 applies without a single dig turn)
+             last = self.__dict__.setdefault('_engrave_turn', {}).get(spot)
+             if tries.get(spot, 0) >= ELBERETH_TRIES_BLIND or (last is not None and not self._hurt_since(last)):
++                _deep_observe("blind_guard_reject", locals())
+                 return False
+         elif tries.get(spot, 0) >= ELBERETH_TRIES_ESCAPE:
++            _deep_observe("sighted_cap_reject", locals())
+             return False
+         tries[spot] = tries.get(spot, 0) + 1
+         self.__dict__.setdefault('_engrave_turn', {})[spot] = bl.time
+         agent.log(f'DIVE Elbereth before digging{" (blind)" if blind else ""}'
+                   f'{" in the pit" if spot[3] else ""}: {[m[3].mname for m in near]}')
++        _deep_observe("engraving_call", locals())
+         agent.engrave('Elbereth')
+         return True
+ 
+--- base30-runtime/nethackers.solution.json
++++ hybrid/nethackers.solution.json
+@@ -5,7 +5,8 @@
+   "parents": [
+     "github.com/DT6A/nethacker@59ce30c509ef568366fe846afeba03dede939339",
+     "github.com/vkurenkov/nethacker@ef6acf87e265f74600b914060f620d06117070a3",
+-    "github.com/vkurenkov/nethacker@f15bb8c8e01d905d1946e32bfd2558e17394eab6"
++    "github.com/vkurenkov/nethacker@f15bb8c8e01d905d1946e32bfd2558e17394eab6",
++    "github.com/Xenox-developer/nethacker@b01a1eef34751eb044a6971f1a2735e6007a7d3f"
+   ],
+   "influences": [
+     "github.com/DT6A/nethacker@59ce30c509ef568366fe846afeba03dede939339",
+@@ -14,7 +15,8 @@
+     "github.com/vkurenkov/nethacker@ef6acf87e265f74600b914060f620d06117070a3",
+     "github.com/kefirski/nethacker@995d8f40b2d24ee09487b0e87e014ca2fcc10928",
+     "github.com/daglar-dragomirov/nethacker@c4308340c16ceb94e2e7896dd5897676b1fc3512",
+-    "github.com/vkurenkov/nethacker@f15bb8c8e01d905d1946e32bfd2558e17394eab6"
++    "github.com/vkurenkov/nethacker@f15bb8c8e01d905d1946e32bfd2558e17394eab6",
++    "github.com/Xenox-developer/nethacker@7d546b6ab2b972c793489801f609aa691fc82b44"
+   ],
+   "entrypoint": "bot.py"
+ }
