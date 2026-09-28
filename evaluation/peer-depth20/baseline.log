@@ -1,0 +1,96 @@
+arena · running 23 episode(s)…
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+arena · episode 2/23 (val-dwa-law-fem): progress=0.161 completed turns=8907 depth=11
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 1/23 (val-dwa-law-fem): progress=0.466 completed turns=11410 depth=25
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 4/23 (val-dwa-law-fem): progress=0.507 completed turns=13816 depth=26
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 3/23 (val-dwa-law-fem): progress=0.445 completed turns=16444 depth=24
+arena · episode 5/23 (val-dwa-law-fem): progress=0.037 completed turns=6965 depth=3
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 7/23 (val-dwa-law-fem): progress=0.466 completed turns=11147 depth=25
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 6/23 (val-dwa-law-fem): progress=0.554 completed turns=15654 depth=27
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+arena · episode 9/23 (val-dwa-law-fem): progress=0.051 completed turns=13177 depth=3
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 8/23 (val-dwa-law-fem): progress=0.466 completed turns=15762 depth=25
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 10/23 (val-dwa-law-fem): progress=0.554 completed turns=15683 depth=27
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 12/23 (val-dwa-law-fem): progress=0.466 completed turns=13510 depth=25
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 13/23 (val-dwa-law-fem): progress=0.554 completed turns=12109 depth=27
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 11/23 (val-dwa-law-fem): progress=0.602 completed turns=21417 depth=28
+arena · episode 14/23 (val-dwa-law-fem): progress=0.445 completed turns=10243 depth=24
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 17/23 (val-dwa-law-fem): progress=0.554 completed turns=9280 depth=27
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 18/23 (val-dwa-law-fem): progress=0.554 completed turns=10730 depth=27
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+arena · episode 15/23 (val-dwa-law-fem): progress=0.554 completed turns=21412 depth=27
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 20/23 (val-dwa-law-fem): progress=0.554 completed turns=11671 depth=27
+Warning: NetHack asked for env variable ROGUEOPTS
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+arena · episode 19/23 (val-dwa-law-fem): progress=0.466 completed turns=10852 depth=25
+Warning: NetHack asked for env variable ROGUEOPTS
+/workspace/evaluation/peer-depth20/baseline/autoascend/agent.py:433: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+arena · episode 21/23 (val-dwa-law-fem): progress=0.445 completed turns=10934 depth=24
+arena · episode 16/23 (val-dwa-law-fem): progress=0.117 completed turns=23624 depth=3
+arena · episode 23/23 (val-dwa-law-fem): progress=0.024 completed turns=11345 depth=1
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 22/23 (val-dwa-law-fem): progress=0.393 completed turns=11751 depth=21

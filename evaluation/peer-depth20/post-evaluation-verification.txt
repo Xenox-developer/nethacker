@@ -1,0 +1,1 @@
+All baseline and candidate source hashes verified unchanged after both arms completed. Runtime delta versus pinned peer: only autoascend/dive_logic.py. Metadata is separately attributed. Both arena return codes 0; 46/46 completed, errors=[]; no rerolls.

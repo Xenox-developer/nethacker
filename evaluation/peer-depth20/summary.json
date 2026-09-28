@@ -1,0 +1,24 @@
+{
+  "Public": {
+    "n": 15,
+    "baseline": 0.4220357371026817,
+    "hybrid": 0.42075644771762183,
+    "delta": -0.0012792893850599007,
+    "gains": 2,
+    "ties": 12,
+    "losses": 1,
+    "baseline_turns_mean": 13843.733333333334,
+    "hybrid_turns_mean": 13172.866666666667
+  },
+  "development": {
+    "n": 8,
+    "baseline": 0.3885971144871926,
+    "hybrid": 0.41142394381734615,
+    "delta": 0.022826829330153564,
+    "gains": 2,
+    "ties": 6,
+    "losses": 0,
+    "baseline_turns_mean": 12523.375,
+    "hybrid_turns_mean": 13125.875
+  }
+}

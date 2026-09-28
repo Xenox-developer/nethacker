@@ -1,0 +1,1 @@
+Pre-evaluation fixture failed in both arms: dummy glyphs was a list; actual utils.any_in requires ndarray dtype int16. Replaced fixture glyphs with zeros ndarray. No policy or arena game ran before repair. Original fixture retained. Error: AttributeError: list object has no attribute dtype, utils.py:96.
