@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "/opt/nethackers/.venv/bin/python",
+    "-m",
+    "nethackers.arena.run",
+    "--solution",
+    "/workspace/champion30_experiment/hybrid",
+    "--batch",
+    "[[0, \"val-dwa-law-fem\"], [1, \"val-dwa-law-fem\"], [2, \"val-dwa-law-fem\"], [3, \"val-dwa-law-fem\"], [4, \"val-dwa-law-fem\"], [5, \"val-dwa-law-fem\"], [6, \"val-dwa-law-fem\"], [7, \"val-dwa-law-fem\"], [8, \"val-dwa-law-fem\"], [9, \"val-dwa-law-fem\"], [10, \"val-dwa-law-fem\"], [11, \"val-dwa-law-fem\"], [12, \"val-dwa-law-fem\"], [13, \"val-dwa-law-fem\"], [14, \"val-dwa-law-fem\"], [3100, \"val-dwa-law-fem\"], [3101, \"val-dwa-law-fem\"], [3102, \"val-dwa-law-fem\"], [3103, \"val-dwa-law-fem\"], [3104, \"val-dwa-law-fem\"], [3105, \"val-dwa-law-fem\"], [3106, \"val-dwa-law-fem\"], [3107, \"val-dwa-law-fem\"], [3108, \"val-dwa-law-fem\"], [3109, \"val-dwa-law-fem\"], [3110, \"val-dwa-law-fem\"], [3111, \"val-dwa-law-fem\"]]",
+    "--evaluation-id",
+    "local",
+    "--secret",
+    "public",
+    "--max-steps",
+    "1000000",
+    "--no-progress-timeout",
+    "10000",
+    "--action-timeout",
+    "120",
+    "--max-parallel-evals",
+    "4",
+    "--out",
+    "/workspace/champion30_experiment/hybrid-raw.json"
+  ],
+  "diagnostics_env": {
+    "CHAMPION30_DIAGNOSTICS": "1",
+    "CHAMPION30_DIAGNOSTICS_DIR": "/workspace/champion30_experiment/diagnostics/hybrid"
+  },
+  "started": "2026-09-28T05:08:16.256269+00:00"
+}
