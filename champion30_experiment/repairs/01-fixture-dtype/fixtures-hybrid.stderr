@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/workspace/champion30_experiment/fixtures.py", line 27, in <module>
+    check('depth19',False)
+  File "/workspace/champion30_experiment/fixtures.py", line 22, in check
+    result=obj._elbereth_before_digging_escape()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/champion30_experiment/hybrid/autoascend/dive_logic.py", line 3854, in _elbereth_before_digging_escape
+    if agent.character.prop.polymorph or not agent.can_engrave() or utils.any_in(agent.glyphs, G.SWALLOW):
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/champion30_experiment/hybrid/autoascend/utils.py", line 113, in any_in
+    return isin(array, *elems).any()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/champion30_experiment/hybrid/autoascend/utils.py", line 96, in isin
+    assert array.dtype == np.int16
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

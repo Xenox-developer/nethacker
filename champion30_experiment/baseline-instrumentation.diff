@@ -1,0 +1,53 @@
+--- before
++++ after
+@@ -24,6 +24,7 @@
+ from scipy import ndimage
+ 
+ from . import objects as O
++from .deep_protection_diagnostics import observe as _deep_observe
+ 
+ from . import jf_config, jf_log, power, utils, valley
+ from .castle_logic import CastlePassage
+@@ -3848,11 +3849,14 @@
+         and casters included), always on Medusa's level, capped per square and dig phase (the pit erases it).
+         Blind (a raven's claw), the engraving can't be read back: engrave once per phase (a blind dust
+         Elbereth survives its letters only ~1 time in 3, engrave.c) and dig on."""
++        _deep_observe("visit", locals())
+         agent = self.agent
+         if agent.character.prop.polymorph or not agent.can_engrave() or utils.any_in(agent.glyphs, G.SWALLOW):
++            _deep_observe("safety_reject", locals())
+             return False
+         blind = agent.character.prop.blind
+         if not blind and (agent.inventory.engraving_below_me or '').lower() == 'elbereth':
++            _deep_observe("intact_reject", locals())
+             return False
+         bl = agent.blstats
+         near = [m for m in agent.get_visible_monsters()
+@@ -3867,8 +3871,10 @@
+         # even if out of sight now (base-public s14: an invisible ogre king hit us in the fresh pit; s1: a
+         # chameleon)
+         rewrite = spot[3] and tries.get(spot[:3] + (False,), 0) > 0
++        _deep_observe("eligibility", locals())
+         if not near and not (ELBERETH_ALWAYS or self.on_medusa_level() or bl.hunger_state >= Hunger.WEAK or
+                              rewrite):
++            _deep_observe("eligibility_reject", locals())
+             return False
+         if blind:
+             # can't read it back: the only sign it didn't take (a blind dust Elbereth keeps all 8 letters ~1 time
+@@ -3878,13 +3884,16 @@
+             # 'It bites!', 7 applies without a single dig turn)
+             last = self.__dict__.setdefault('_engrave_turn', {}).get(spot)
+             if tries.get(spot, 0) >= ELBERETH_TRIES_BLIND or (last is not None and not self._hurt_since(last)):
++                _deep_observe("blind_guard_reject", locals())
+                 return False
+         elif tries.get(spot, 0) >= ELBERETH_TRIES_ESCAPE:
++            _deep_observe("sighted_cap_reject", locals())
+             return False
+         tries[spot] = tries.get(spot, 0) + 1
+         self.__dict__.setdefault('_engrave_turn', {})[spot] = bl.time
+         agent.log(f'DIVE Elbereth before digging{" (blind)" if blind else ""}'
+                   f'{" in the pit" if spot[3] else ""}: {[m[3].mname for m in near]}')
++        _deep_observe("engraving_call", locals())
+         agent.engrave('Elbereth')
+         return True
+ 
