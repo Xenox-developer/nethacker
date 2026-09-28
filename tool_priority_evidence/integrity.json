@@ -1,0 +1,11 @@
+{
+  "evaluated_sources_unchanged": true,
+  "changed_files": [
+    "autoascend/global_logic.py",
+    "autoascend/tool_priority_observation.py",
+    "nethackers.solution.json"
+  ],
+  "peer_mit_notice_preserved": true,
+  "fixture_cases": 9,
+  "numpy_writer_regression": "passed"
+}

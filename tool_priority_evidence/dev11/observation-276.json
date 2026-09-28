@@ -1,0 +1,105 @@
+{
+  "limit": 20000,
+  "counts": {
+    "policy_visits": 2228,
+    "compared": 2228,
+    "retention_gate": 1001,
+    "eligible_tool": 0,
+    "changed_allocations": 0,
+    "changed_tool": 0,
+    "changed_armor": 0,
+    "negative_examples": 10
+  },
+  "examples": [
+    {
+      "capacity": 950,
+      "forced_weight": 30,
+      "forced_slots": 1,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 30,
+      "forced_slots": 1,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 30,
+      "forced_slots": 1,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 30,
+      "forced_slots": 1,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 30,
+      "forced_slots": 1,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 30,
+      "forced_slots": 1,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 30,
+      "forced_slots": 1,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 30,
+      "forced_slots": 1,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 30,
+      "forced_slots": 1,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 30,
+      "forced_slots": 1,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "parent_mean": 0.48754987757483376,
+  "candidate_mean": 0.4782335856935671,
+  "gains": 0,
+  "ties": 14,
+  "losses": 1,
+  "fresh_validation": "not triggered: no Public improvement",
+  "rows": [
+    {
+      "seed": 0,
+      "parent": 0.4258360748858015,
+      "candidate": 0.4258360748858015,
+      "delta": 0.0,
+      "parent_depth": 23,
+      "candidate_depth": 23
+    },
+    {
+      "seed": 1,
+      "parent": 0.6465049415992812,
+      "candidate": 0.5067605633802816,
+      "delta": -0.13974437821899954,
+      "parent_depth": 29,
+      "candidate_depth": 26
+    },
+    {
+      "seed": 2,
+      "parent": 0.0507583712345433,
+      "candidate": 0.0507583712345433,
+      "delta": 0.0,
+      "parent_depth": 7,
+      "candidate_depth": 7
+    },
+    {
+      "seed": 3,
+      "parent": 0.5067605633802816,
+      "candidate": 0.5067605633802816,
+      "delta": 0.0,
+      "parent_depth": 26,
+      "candidate_depth": 26
+    },
+    {
+      "seed": 4,
+      "parent": 0.4258360748858015,
+      "candidate": 0.4258360748858015,
+      "delta": 0.0,
+      "parent_depth": 23,
+      "candidate_depth": 23
+    },
+    {
+      "seed": 5,
+      "parent": 0.6465049415992812,
+      "candidate": 0.6465049415992812,
+      "delta": 0.0,
+      "parent_depth": 29,
+      "candidate_depth": 29
+    },
+    {
+      "seed": 6,
+      "parent": 0.5543572044866264,
+      "candidate": 0.5543572044866264,
+      "delta": 0.0,
+      "parent_depth": 27,
+      "candidate_depth": 27
+    },
+    {
+      "seed": 7,
+      "parent": 0.6465049415992812,
+      "candidate": 0.6465049415992812,
+      "delta": 0.0,
+      "parent_depth": 29,
+      "candidate_depth": 29
+    },
+    {
+      "seed": 8,
+      "parent": 0.6015648510382184,
+      "candidate": 0.6015648510382184,
+      "delta": 0.0,
+      "parent_depth": 28,
+      "candidate_depth": 28
+    },
+    {
+      "seed": 9,
+      "parent": 0.5543572044866264,
+      "candidate": 0.5543572044866264,
+      "delta": 0.0,
+      "parent_depth": 27,
+      "candidate_depth": 27
+    },
+    {
+      "seed": 10,
+      "parent": 0.6015648510382184,
+      "candidate": 0.6015648510382184,
+      "delta": 0.0,
+      "parent_depth": 28,
+      "candidate_depth": 28
+    },
+    {
+      "seed": 11,
+      "parent": 0.46637631565303056,
+      "candidate": 0.46637631565303056,
+      "delta": 0.0,
+      "parent_depth": 25,
+      "candidate_depth": 25
+    },
+    {
+      "seed": 12,
+      "parent": 0.4258360748858015,
+      "candidate": 0.4258360748858015,
+      "delta": 0.0,
+      "parent_depth": 23,
+      "candidate_depth": 23
+    },
+    {
+      "seed": 13,
+      "parent": 0.20612854836308672,
+      "candidate": 0.20612854836308672,
+      "delta": 0.0,
+      "parent_depth": 12,
+      "candidate_depth": 12
+    },
+    {
+      "seed": 14,
+      "parent": 0.5543572044866264,
+      "candidate": 0.5543572044866264,
+      "delta": 0.0,
+      "parent_depth": 27,
+      "candidate_depth": 27
+    }
+  ],
+  "delta": -0.009316291881266647
+}

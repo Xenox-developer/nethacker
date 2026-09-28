@@ -1,0 +1,15 @@
+{
+  "limit": 20000,
+  "counts": {
+    "policy_visits": 1556,
+    "compared": 1556,
+    "retention_gate": 0,
+    "eligible_tool": 0,
+    "changed_allocations": 0,
+    "changed_tool": 0,
+    "changed_armor": 0,
+    "negative_examples": 10
+  },
+  "examples": [
+    {
+      "capacity": 

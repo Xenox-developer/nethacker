@@ -1,0 +1,189 @@
+[
+  {
+    "label": "integration-bug/dev8",
+    "solution": "/workspace",
+    "batch": [
+      [
+        8,
+        "val-dwa-law-fem"
+      ]
+    ],
+    "evaluation_id": "local",
+    "limits": "native defaults unchanged",
+    "diagnostic_output": "/tmp/tool-priority-dev8",
+    "mode": "one foreground arena command, awaited to completion",
+    "status": "terminated for diagnostic serialization integration bug; native infrastructure_error retained"
+  },
+  {
+    "label": "dev8-fixed",
+    "solution": "/workspace",
+    "batch": [
+      [
+        8,
+        "val-dwa-law-fem"
+      ]
+    ],
+    "evaluation_id": "local",
+    "limits": "native defaults unchanged",
+    "diagnostic_output": "/tmp/tool-priority-dev8-fixed",
+    "mode": "one foreground arena command, awaited to completion",
+    "status": "completed"
+  },
+  {
+    "label": "dev11",
+    "solution": "/workspace",
+    "batch": [
+      [
+        11,
+        "val-dwa-law-fem"
+      ]
+    ],
+    "evaluation_id": "local",
+    "limits": "native defaults unchanged",
+    "diagnostic_output": "/tmp/tool-priority-dev11",
+    "mode": "one foreground arena command, awaited to completion",
+    "status": "completed"
+  },
+  {
+    "label": "parent-public15",
+    "solution": "/refs/parent",
+    "batch": [
+      [
+        0,
+        "val-dwa-law-fem"
+      ],
+      [
+        1,
+        "val-dwa-law-fem"
+      ],
+      [
+        2,
+        "val-dwa-law-fem"
+      ],
+      [
+        3,
+        "val-dwa-law-fem"
+      ],
+      [
+        4,
+        "val-dwa-law-fem"
+      ],
+      [
+        5,
+        "val-dwa-law-fem"
+      ],
+      [
+        6,
+        "val-dwa-law-fem"
+      ],
+      [
+        7,
+        "val-dwa-law-fem"
+      ],
+      [
+        8,
+        "val-dwa-law-fem"
+      ],
+      [
+        9,
+        "val-dwa-law-fem"
+      ],
+      [
+        10,
+        "val-dwa-law-fem"
+      ],
+      [
+        11,
+        "val-dwa-law-fem"
+      ],
+      [
+        12,
+        "val-dwa-law-fem"
+      ],
+      [
+        13,
+        "val-dwa-law-fem"
+      ],
+      [
+        14,
+        "val-dwa-law-fem"
+      ]
+    ],
+    "evaluation_id": "local",
+    "limits": "native defaults unchanged",
+    "diagnostic_output": null,
+    "mode": "one foreground arena command, awaited to completion",
+    "status": "completed"
+  },
+  {
+    "label": "candidate-public15",
+    "solution": "/workspace",
+    "batch": [
+      [
+        0,
+        "val-dwa-law-fem"
+      ],
+      [
+        1,
+        "val-dwa-law-fem"
+      ],
+      [
+        2,
+        "val-dwa-law-fem"
+      ],
+      [
+        3,
+        "val-dwa-law-fem"
+      ],
+      [
+        4,
+        "val-dwa-law-fem"
+      ],
+      [
+        5,
+        "val-dwa-law-fem"
+      ],
+      [
+        6,
+        "val-dwa-law-fem"
+      ],
+      [
+        7,
+        "val-dwa-law-fem"
+      ],
+      [
+        8,
+        "val-dwa-law-fem"
+      ],
+      [
+        9,
+        "val-dwa-law-fem"
+      ],
+      [
+        10,
+        "val-dwa-law-fem"
+      ],
+      [
+        11,
+        "val-dwa-law-fem"
+      ],
+      [
+        12,
+        "val-dwa-law-fem"
+      ],
+      [
+        13,
+        "val-dwa-law-fem"
+      ],
+      [
+        14,
+        "val-dwa-law-fem"
+      ]
+    ],
+    "evaluation_id": "local",
+    "limits": "native defaults unchanged",
+    "diagnostic_output": null,
+    "mode": "one foreground arena command, awaited to completion",
+    "status": "completed"
+  }
+]

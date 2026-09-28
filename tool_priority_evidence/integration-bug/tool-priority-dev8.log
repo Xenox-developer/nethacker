@@ -1,0 +1,6 @@
+arena · running 1 episode(s)…
+/workspace/autoascend/agent.py:413: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+/workspace/autoascend/agent.py:413: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+arena · episode 1/1 (val-dwa-law-fem): progress=0.000 infrastructure_error turns=879 depth=1

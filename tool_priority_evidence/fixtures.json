@@ -1,0 +1,212 @@
+[
+  {
+    "name": "tight_weight",
+    "capacity": 500,
+    "items": [
+      "long sword",
+      "pick-axe",
+      "splint mail",
+      "small shield"
+    ],
+    "passed": true,
+    "gate": true,
+    "eligible": "pick-axe",
+    "old": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "new": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "name": "generous",
+    "capacity": 1000,
+    "items": [
+      "long sword",
+      "pick-axe",
+      "splint mail",
+      "small shield"
+    ],
+    "passed": true,
+    "gate": true,
+    "eligible": "pick-axe",
+    "old": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "new": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "name": "no_tool",
+    "capacity": 500,
+    "items": [
+      "long sword",
+      "splint mail",
+      "small shield"
+    ],
+    "passed": true,
+    "gate": true,
+    "eligible": null,
+    "old": [
+      1,
+      1,
+      1
+    ],
+    "new": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "name": "non_diving",
+    "capacity": 500,
+    "items": [
+      "long sword",
+      "pick-axe",
+      "splint mail",
+      "small shield"
+    ],
+    "passed": true,
+    "gate": false,
+    "eligible": null,
+    "old": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "new": [
+      1,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "name": "forced_cursed_armor",
+    "capacity": 500,
+    "items": [
+      "long sword",
+      "pick-axe",
+      "small shield"
+    ],
+    "passed": true,
+    "gate": true,
+    "eligible": "pick-axe",
+    "old": [
+      1,
+      0,
+      1
+    ],
+    "new": [
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "name": "forced_overweight",
+    "capacity": 300,
+    "items": [
+      "long sword",
+      "pick-axe",
+      "small shield"
+    ],
+    "passed": true,
+    "gate": true,
+    "eligible": "pick-axe",
+    "old": [
+      0,
+      0,
+      0
+    ],
+    "new": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "forced_tool_not_double_charged",
+    "capacity": 600,
+    "items": [
+      "long sword",
+      "pick-axe",
+      "splint mail",
+      "small shield"
+    ],
+    "passed": true,
+    "gate": true,
+    "eligible": "pick-axe",
+    "old": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "new": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "name": "tight_slots",
+    "capacity": 5000,
+    "items": [
+      "long sword",
+      "pick-axe",
+      "splint mail"
+    ],
+    "passed": true,
+    "gate": true,
+    "eligible": "pick-axe",
+    "old": [
+      1,
+      0,
+      1
+    ],
+    "new": [
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "name": "cursed_shield_mattock_ineligible",
+    "capacity": 500,
+    "items": [
+      "long sword",
+      "dwarvish mattock",
+      "splint mail"
+    ],
+    "passed": true,
+    "gate": true,
+    "eligible": null,
+    "old": [
+      1,
+      0,
+      1
+    ],
+    "new": [
+      1,
+      0,
+      1
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+--- parent/autoascend/global_logic.py
++++ candidate/autoascend/global_logic.py
+@@ -9,6 +9,7 @@
+ from . import utils
+ from . import jf_config
+ from . import power
++from . import tool_priority_observation
+ from .character import Character
+ from .dive_logic import DiveLogic
+ from .exceptions import AgentPanic
+@@ -27,6 +28,11 @@
+         self._drop_gold_till_turn = -float('inf')
+ 
+     def _split(self, items, forced_items, weight_capacity):
++        observation = tool_priority_observation.begin()
++        calls = [] if observation else None
++        reservation_index = None
++        eligible_tool = None
++        retention_gate = False
+         remaining_weight = weight_capacity
+         ret_inv = {}
+         for item in forced_items:
+@@ -39,6 +45,8 @@
+         def add_item(item, count=None, to_bag=False):
+             nonlocal ret_inv, ret_bag, remaining_weight
+             assert isinstance(item, Item)
++            if calls is not None:
++                calls.append((item, count, to_bag, bag))
+             if to_bag and bag is not None and item is not bag:
+                 ret = ret_bag
+             else:
+@@ -75,6 +83,16 @@
+                 add_item(item)
+ 
+             dive_ = getattr(self.agent.global_logic, 'dive', None)
++            # hypothesis: reserve the already-eligible dive tool before optional armor,
++            # after the known melee weapon. Inspired by daglar-dragomirov/nethacker
++            # 5d0d455a1585271143aa47fbd5b44c2f6dae7d4b TOOL_KEEP_FIRST (MIT; LICENSE).
++            if not allow_unknown_status and dive_ is not None:
++                retention_gate = dive_.keep_digging_tool()
++                if retention_gate:
++                    eligible_tool = dive_.best_digging_tool(forced_items + items)
++                    if eligible_tool is not None:
++                        reservation_index = len(calls) if calls is not None else None
++                        add_item(eligible_tool)
+             no_shield = dive_ is not None and dive_.mattock_digger()
+             for item in self.agent.inventory.get_best_armorset(items=forced_items + items,
+                                                                allow_unknown_status=allow_unknown_status):
+@@ -177,6 +195,11 @@
+         for item in items:
+             if item.is_container() and item is not bag and ret_inv.get(item, 0) != 0:
+                 r[item] = [0 for _ in items]
++        if observation:
++            tool_priority_observation.finish(
++                items, forced_items, weight_capacity, calls, reservation_index,
++                eligible_tool, retention_gate, ret_inv, ret_bag,
++                self.MAX_NUMBER_OF_ITEMS)
+         return r
+ 
+ 
+--- parent/autoascend/tool_priority_observation.py
++++ candidate/autoascend/tool_priority_observation.py
+@@ -0,0 +1,87 @@
++"""Opt-in, bounded allocation replay; never queries policy, RNG, or evaluator."""
++import atexit
++import json
++import os
++from collections import Counter
++
++_PATH = os.environ.get('TOOL_PRIORITY_OBSERVE')
++_LIMIT = 20000
++_counts = Counter()
++_examples = []
++
++
++def begin():
++    if not _PATH:
++        return False
++    _counts['policy_visits'] += 1
++    return _counts['policy_visits'] <= _LIMIT
++
++
++def replay(forced, capacity, calls, skip, slots):
++    inv = {i: i.count for i in forced}
++    bag_inv = {}
++    left = capacity - sum(i.weight() for i in forced)
++    for index, (item, count, to_bag, bag) in enumerate(calls):
++        if index == skip:
++            continue
++        target = bag_inv if to_bag and bag is not None and item is not bag else inv
++        if left < 0 or (target is inv and len(target) >= slots):
++            continue
++        total = inv.get(item, 0) + bag_inv.get(item, 0)
++        prior = target.get(item, 0)
++        weight = item.unit_weight(with_content=False)
++        extra = item.count if weight <= 0 else int(left // weight)
++        if count is not None:
++            extra = min(extra, count)
++        target[item] = min(item.count, total + extra) - (total - prior)
++        left -= weight * (target[item] - prior)
++    return inv, bag_inv
++
++
++def finish(items, forced, capacity, calls, reservation, tool, gate, inv, bag, slots):
++    _counts['compared'] += 1
++    current = replay(forced, capacity, calls, None, slots)
++    if current != (inv, bag):
++        _counts['replay_mismatch'] += 1
++        return
++    old_inv, old_bag = replay(forced, capacity, calls, reservation, slots)
++    _counts['retention_gate'] += int(gate)
++    _counts['eligible_tool'] += int(tool is not None)
++    changes = []
++    for item in dict.fromkeys(forced + items):
++        old = old_inv.get(item, 0) + old_bag.get(item, 0)
++        new = inv.get(item, 0) + bag.get(item, 0)
++        if old != new:
++            changes.append({'item': item.text or str(item.objs[0].name),
++                            'category': item.category, 'weight': item.unit_weight(False),
++                            'old': old, 'new': new, 'tool': item is tool})
++    changed = bool(changes)
++    _counts['changed_allocations'] += changed
++    _counts['changed_tool'] += any(c['tool'] for c in changes)
++    # Armor category is an item property, never an evaluator signal.
++    import nle.nethack as nh
++    _counts['changed_armor'] += any(c['category'] == nh.ARMOR_CLASS for c in changes)
++    key = 'changed_examples' if changed else 'negative_examples'
++    if _counts[key] < (30 if changed else 10):
++        _counts[key] += 1
++        _examples.append({'capacity': capacity, 'forced_weight': sum(i.weight() for i in forced),
++                          'forced_slots': len(forced), 'gate': gate,
++                          'eligible_tool': None if tool is None else tool.text or str(tool.objs[0].name),
++                          'changed': changed, 'allocations': changes})
++
++    # Persist within the episode too: process termination need not run atexit.
++    try:
++        flush()
++    except (OSError, TypeError, ValueError):
++        _counts['write_errors'] += 1
++
++
++def flush():
++    if _PATH:
++        os.makedirs(_PATH, exist_ok=True)
++        with open(os.path.join(_PATH, f'observation-{os.getpid()}.json'), 'w') as f:
++            json.dump({'limit': _LIMIT, 'counts': dict(_counts), 'examples': _examples},
++                      f, indent=2, default=lambda value: value.item())
++
++
++atexit.register(flush)
+--- parent/nethackers.solution.json
++++ candidate/nethackers.solution.json
+@@ -12,7 +12,8 @@
+     "github.com/kenforthewin/nethack_astra@38b1a38b340d4cb154fe5e4411b2819dc407d5e3",
+     "github.com/vkurenkov/nethacker@ef6acf87e265f74600b914060f620d06117070a3",
+     "github.com/kefirski/nethacker@995d8f40b2d24ee09487b0e87e014ca2fcc10928",
+-    "github.com/daglar-dragomirov/nethacker@c4308340c16ceb94e2e7896dd5897676b1fc3512"
++    "github.com/daglar-dragomirov/nethacker@c4308340c16ceb94e2e7896dd5897676b1fc3512",
++    "github.com/daglar-dragomirov/nethacker@5d0d455a1585271143aa47fbd5b44c2f6dae7d4b"
+   ],
+   "entrypoint": "bot.py"
+ }

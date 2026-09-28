@@ -1,0 +1,5 @@
+arena · running 1 episode(s)…
+/workspace/autoascend/agent.py:413: RuntimeWarning: overflow encountered in scalar subtract
+  self.cursor_pos = (observation['tty_cursor'][0] - 1, observation['tty_cursor'][1])
+Warning: NetHack asked for env variable ROGUEOPTS
+arena · episode 1/1 (val-dwa-law-fem): progress=0.602 completed turns=44888 depth=28

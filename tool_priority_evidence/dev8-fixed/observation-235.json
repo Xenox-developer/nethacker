@@ -1,0 +1,6014 @@
+{
+  "limit": 20000,
+  "counts": {
+    "policy_visits": 9761,
+    "compared": 9761,
+    "retention_gate": 7137,
+    "eligible_tool": 7020,
+    "changed_allocations": 450,
+    "changed_tool": 450,
+    "changed_armor": 450,
+    "negative_examples": 10,
+    "changed_examples": 30
+  },
+  "examples": [
+    {
+      "capacity": 925,
+      "forced_weight": 30,
+      "forced_slots": 1,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 925,
+      "forced_weight": 30,
+      "forced_slots": 1,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 925,
+      "forced_weight": 280,
+      "forced_slots": 2,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 925,
+      "forced_weight": 280,
+      "forced_slots": 2,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 925,
+      "forced_weight": 280,
+      "forced_slots": 2,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 925,
+      "forced_weight": 280,
+      "forced_slots": 2,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 925,
+      "forced_weight": 280,
+      "forced_slots": 2,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 925,
+      "forced_weight": 280,
+      "forced_slots": 2,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 925,
+      "forced_weight": 280,
+      "forced_slots": 2,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 925,
+      "forced_weight": 280,
+      "forced_slots": 2,
+      "gate": false,
+      "eligible_tool": null,
+      "changed": false,
+      "allocations": []
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe (weapon in hand)",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 1,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe (weapon in hand)",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe (weapon in hand)",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe (weapon in hand)",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe (weapon in hand)",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe (weapon in hand)",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe (weapon in hand)",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 2,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe (weapon in hand)",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 2,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 2,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    },
+    {
+      "capacity": 950,
+      "forced_weight": 370,
+      "forced_slots": 5,
+      "gate": true,
+      "eligible_tool": "a pick-axe",
+      "changed": true,
+      "allocations": [
+        {
+          "item": "2 scrolls labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "2 sky blue potions",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 2,
+          "tool": false
+        },
+        {
+          "item": "3 scrolls labeled ETAOIN SHRDLU",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 3,
+          "tool": false
+        },
+        {
+          "item": "4 scrolls labeled JUYED AWK YACC",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 4,
+          "tool": false
+        },
+        {
+          "item": "a bubbly potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a dark green potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a fizzy potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a hexagonal wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a looking glass",
+          "category": 6,
+          "weight": 13,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a pick-axe",
+          "category": 6,
+          "weight": 100,
+          "old": 0,
+          "new": 1,
+          "tool": true
+        },
+        {
+          "item": "a pink potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a purple-red potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a runed wand",
+          "category": 11,
+          "weight": 7,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled FOOBIE BLETCH",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled GNIK SISI VLE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled HACKEM MUCHE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled KERNOD WEL",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a scroll labeled PRIRUTSENIE",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an emerald potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an iron hook",
+          "category": 6,
+          "weight": 30,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an orange potion",
+          "category": 8,
+          "weight": 20,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "an unlabeled scroll",
+          "category": 9,
+          "weight": 5,
+          "old": 0,
+          "new": 1,
+          "tool": false
+        },
+        {
+          "item": "a crystal plate mail",
+          "category": 3,
+          "weight": 450,
+          "old": 1,
+          "new": 0,
+          "tool": false
+        }
+      ]
+    }
+  ]
+}
