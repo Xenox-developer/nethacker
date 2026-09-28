@@ -1,0 +1,16 @@
+test_changed_price_after_travel (__main__.FoodBoundary.test_changed_price_after_travel) ... ok
+test_cleanup_after_timeout_threat (__main__.FoodBoundary.test_cleanup_after_timeout_threat) ... ok
+test_eight_turn_boundary (__main__.FoodBoundary.test_eight_turn_boundary) ... ok
+test_full_cooldown_from_failed_exit (__main__.FoodBoundary.test_full_cooldown_from_failed_exit) ... ok
+test_hostile_after_travel_and_cooldown (__main__.FoodBoundary.test_hostile_after_travel_and_cooldown) ... ok
+test_no_tool_original_branch (__main__.FoodBoundary.test_no_tool_original_branch) ... ok
+test_offshop_unreachable (__main__.FoodBoundary.test_offshop_unreachable) ... ok
+test_rejected_food_and_affordability (__main__.FoodBoundary.test_rejected_food_and_affordability) ... ok
+test_tool_flag_off (__main__.FoodBoundary.test_tool_flag_off) ... ok
+test_two_steps_unknown_buc (__main__.FoodBoundary.test_two_steps_unknown_buc) ... ok
+test_underfoot (__main__.FoodBoundary.test_underfoot) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.012s
+
+OK

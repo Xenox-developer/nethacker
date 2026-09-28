@@ -1,0 +1,10 @@
+test_actual_lr_branch (__main__.ObservationBoundary.test_actual_lr_branch) ... ok
+test_clear_on_departure_or_erasure (__main__.ObservationBoundary.test_clear_on_departure_or_erasure) ... ok
+test_invalid_pairs (__main__.ObservationBoundary.test_invalid_pairs) ... ok
+test_loss_and_expiry (__main__.ObservationBoundary.test_loss_and_expiry) ... ok
+test_same_turn_loss_not_deferred (__main__.ObservationBoundary.test_same_turn_loss_not_deferred) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.038s
+
+OK

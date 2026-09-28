@@ -1,0 +1,27 @@
+test_changed_price_after_travel (__main__.FoodTests.test_changed_price_after_travel) ... ok
+test_cleanup_after_timeout_threat (__main__.FoodTests.test_cleanup_after_timeout_threat) ... ok
+test_eight_turn_boundary (__main__.FoodTests.test_eight_turn_boundary) ... ok
+test_hostile_after_travel_and_cooldown (__main__.FoodTests.test_hostile_after_travel_and_cooldown) ... ok
+test_no_tool_original_branch (__main__.FoodTests.test_no_tool_original_branch) ... ok
+test_offshop_unreachable (__main__.FoodTests.test_offshop_unreachable) ... ok
+test_rejected_food_and_affordability (__main__.FoodTests.test_rejected_food_and_affordability) ... ok
+test_tool_flag_off (__main__.FoodTests.test_tool_flag_off) ... ok
+test_two_steps_unknown_buc (__main__.FoodTests.test_two_steps_unknown_buc) ... ok
+test_underfoot (__main__.FoodTests.test_underfoot) ... ok
+test_actual_lr_branch (__main__.ProtectionTests.test_actual_lr_branch) ... ok
+test_clear_on_departure_or_erasure (__main__.ProtectionTests.test_clear_on_departure_or_erasure) ... ok
+test_invalid_pairs (__main__.ProtectionTests.test_invalid_pairs) ... ok
+test_loss_and_expiry (__main__.ProtectionTests.test_loss_and_expiry) ... ok
+test_actual_projection_changes_selected_action (__main__.WandTests.test_actual_projection_changes_selected_action) ... ok
+test_bounce_descendant (__main__.WandTests.test_bounce_descendant) ... ok
+test_deterministic_bounce_unchanged (__main__.WandTests.test_deterministic_bounce_unchanged) ... ok
+test_friend_labels (__main__.WandTests.test_friend_labels) ... ok
+test_mirrored (__main__.WandTests.test_mirrored) ... ok
+test_penalties_and_action_rank (__main__.WandTests.test_penalties_and_action_rank) ... ok
+test_sibling_order_and_range (__main__.WandTests.test_sibling_order_and_range) ... ok
+test_straight_unchanged (__main__.WandTests.test_straight_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.114s
+
+OK

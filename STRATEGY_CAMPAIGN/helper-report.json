@@ -1,0 +1,925 @@
+{
+  "config": {
+    "identity": "val-dwa-law-fem",
+    "secret": "public",
+    "evaluation_id": "local",
+    "max_steps": 1000000,
+    "no_progress_timeout": 10000,
+    "action_timeout": 120.0,
+    "max_parallel_evals": 4,
+    "batches": {
+      "public": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "development": [
+        2000,
+        2001,
+        2002,
+        2003,
+        2004
+      ]
+    },
+    "development_is_holdout": false
+  },
+  "baseline_digest": "sha256:e89052b2c79f585bfd8cc718d103d3d55d993d853274be9ff43f00eff0488ea4",
+  "eligible_singles": [
+    "C"
+  ],
+  "required_combinations": [],
+  "missing_combinations": [],
+  "complete": true,
+  "best_single": "C",
+  "selected": "C",
+  "recommended": "C",
+  "best_tested_single": "C",
+  "final_publication_candidate": "C",
+  "comparisons": {
+    "A": {
+      "means": {
+        "public": 0.4750604762864775,
+        "development": 0.2803439441175858
+      },
+      "clean": true,
+      "paired": {
+        "public": [
+          {
+            "seed": 0,
+            "old": 0.4258360748858015,
+            "new": 0.4258360748858015,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 1,
+            "old": 0.5067605633802816,
+            "new": 0.5067605633802816,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2,
+            "old": 0.0507583712345433,
+            "new": 0.0507583712345433,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 3,
+            "old": 0.5067605633802816,
+            "new": 0.5067605633802816,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 4,
+            "old": 0.4258360748858015,
+            "new": 0.4258360748858015,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 5,
+            "old": 0.6465049415992812,
+            "new": 0.6465049415992812,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 6,
+            "old": 0.5543572044866264,
+            "new": 0.5543572044866264,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 7,
+            "old": 0.6465049415992812,
+            "new": 0.6465049415992812,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 8,
+            "old": 0.6015648510382184,
+            "new": 0.6015648510382184,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 9,
+            "old": 0.5543572044866264,
+            "new": 0.5067605633802816,
+            "delta": -0.04759664110634476,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 10,
+            "old": 0.6015648510382184,
+            "new": 0.6015648510382184,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 11,
+            "old": 0.46637631565303056,
+            "new": 0.46637631565303056,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 12,
+            "old": 0.4258360748858015,
+            "new": 0.4258360748858015,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 13,
+            "old": 0.20612854836308672,
+            "new": 0.20612854836308672,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 14,
+            "old": 0.5543572044866264,
+            "new": 0.5543572044866264,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          }
+        ],
+        "development": [
+          {
+            "seed": 2000,
+            "old": 0.11704996473565571,
+            "new": 0.11704996473565571,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2001,
+            "old": 0.6015648510382184,
+            "new": 0.6015648510382184,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2002,
+            "old": 0.0507583712345433,
+            "new": 0.0507583712345433,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2003,
+            "old": 0.5067605633802816,
+            "new": 0.5067605633802816,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2004,
+            "old": 0.12558597019922987,
+            "new": 0.12558597019922987,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          }
+        ]
+      },
+      "public_delta": -0.003173109407089651,
+      "development_delta": 0.0
+    },
+    "B": {
+      "means": {
+        "public": 0.4750604762864775,
+        "development": 0.2803439441175858
+      },
+      "clean": true,
+      "paired": {
+        "public": [
+          {
+            "seed": 0,
+            "old": 0.4258360748858015,
+            "new": 0.4258360748858015,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 1,
+            "old": 0.5067605633802816,
+            "new": 0.5067605633802816,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2,
+            "old": 0.0507583712345433,
+            "new": 0.0507583712345433,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 3,
+            "old": 0.5067605633802816,
+            "new": 0.5067605633802816,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 4,
+            "old": 0.4258360748858015,
+            "new": 0.4258360748858015,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 5,
+            "old": 0.6465049415992812,
+            "new": 0.6465049415992812,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 6,
+            "old": 0.5543572044866264,
+            "new": 0.5543572044866264,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 7,
+            "old": 0.6465049415992812,
+            "new": 0.6465049415992812,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 8,
+            "old": 0.6015648510382184,
+            "new": 0.6015648510382184,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 9,
+            "old": 0.5543572044866264,
+            "new": 0.5067605633802816,
+            "delta": -0.04759664110634476,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 10,
+            "old": 0.6015648510382184,
+            "new": 0.6015648510382184,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 11,
+            "old": 0.46637631565303056,
+            "new": 0.46637631565303056,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 12,
+            "old": 0.4258360748858015,
+            "new": 0.4258360748858015,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 13,
+            "old": 0.20612854836308672,
+            "new": 0.20612854836308672,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 14,
+            "old": 0.5543572044866264,
+            "new": 0.5543572044866264,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          }
+        ],
+        "development": [
+          {
+            "seed": 2000,
+            "old": 0.11704996473565571,
+            "new": 0.11704996473565571,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2001,
+            "old": 0.6015648510382184,
+            "new": 0.6015648510382184,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2002,
+            "old": 0.0507583712345433,
+            "new": 0.0507583712345433,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2003,
+            "old": 0.5067605633802816,
+            "new": 0.5067605633802816,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2004,
+            "old": 0.12558597019922987,
+            "new": 0.12558597019922987,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          }
+        ]
+      },
+      "public_delta": -0.003173109407089651,
+      "development_delta": 0.0
+    },
+    "C": {
+      "means": {
+        "public": 0.4843767681677441,
+        "development": 0.2803439441175858
+      },
+      "clean": true,
+      "paired": {
+        "public": [
+          {
+            "seed": 0,
+            "old": 0.4258360748858015,
+            "new": 0.4258360748858015,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 1,
+            "old": 0.5067605633802816,
+            "new": 0.6465049415992812,
+            "delta": 0.13974437821899954,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2,
+            "old": 0.0507583712345433,
+            "new": 0.0507583712345433,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 3,
+            "old": 0.5067605633802816,
+            "new": 0.5067605633802816,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 4,
+            "old": 0.4258360748858015,
+            "new": 0.4258360748858015,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 5,
+            "old": 0.6465049415992812,
+            "new": 0.6465049415992812,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 6,
+            "old": 0.5543572044866264,
+            "new": 0.5543572044866264,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 7,
+            "old": 0.6465049415992812,
+            "new": 0.6465049415992812,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 8,
+            "old": 0.6015648510382184,
+            "new": 0.6015648510382184,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 9,
+            "old": 0.5543572044866264,
+            "new": 0.5067605633802816,
+            "delta": -0.04759664110634476,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 10,
+            "old": 0.6015648510382184,
+            "new": 0.6015648510382184,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 11,
+            "old": 0.46637631565303056,
+            "new": 0.46637631565303056,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 12,
+            "old": 0.4258360748858015,
+            "new": 0.4258360748858015,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 13,
+            "old": 0.20612854836308672,
+            "new": 0.20612854836308672,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 14,
+            "old": 0.5543572044866264,
+            "new": 0.5543572044866264,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          }
+        ],
+        "development": [
+          {
+            "seed": 2000,
+            "old": 0.11704996473565571,
+            "new": 0.11704996473565571,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2001,
+            "old": 0.6015648510382184,
+            "new": 0.6015648510382184,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2002,
+            "old": 0.0507583712345433,
+            "new": 0.0507583712345433,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2003,
+            "old": 0.5067605633802816,
+            "new": 0.5067605633802816,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2004,
+            "old": 0.12558597019922987,
+            "new": 0.12558597019922987,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          }
+        ]
+      },
+      "public_delta": 0.0061431824741769855,
+      "development_delta": 0.0
+    },
+    "baseline": {
+      "means": {
+        "public": 0.4782335856935671,
+        "development": 0.2803439441175858
+      },
+      "clean": true,
+      "paired": {
+        "public": [
+          {
+            "seed": 0,
+            "old": 0.4258360748858015,
+            "new": 0.4258360748858015,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 1,
+            "old": 0.5067605633802816,
+            "new": 0.5067605633802816,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2,
+            "old": 0.0507583712345433,
+            "new": 0.0507583712345433,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 3,
+            "old": 0.5067605633802816,
+            "new": 0.5067605633802816,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 4,
+            "old": 0.4258360748858015,
+            "new": 0.4258360748858015,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 5,
+            "old": 0.6465049415992812,
+            "new": 0.6465049415992812,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 6,
+            "old": 0.5543572044866264,
+            "new": 0.5543572044866264,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 7,
+            "old": 0.6465049415992812,
+            "new": 0.6465049415992812,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 8,
+            "old": 0.6015648510382184,
+            "new": 0.6015648510382184,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 9,
+            "old": 0.5543572044866264,
+            "new": 0.5543572044866264,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 10,
+            "old": 0.6015648510382184,
+            "new": 0.6015648510382184,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 11,
+            "old": 0.46637631565303056,
+            "new": 0.46637631565303056,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 12,
+            "old": 0.4258360748858015,
+            "new": 0.4258360748858015,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 13,
+            "old": 0.20612854836308672,
+            "new": 0.20612854836308672,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 14,
+            "old": 0.5543572044866264,
+            "new": 0.5543572044866264,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          }
+        ],
+        "development": [
+          {
+            "seed": 2000,
+            "old": 0.11704996473565571,
+            "new": 0.11704996473565571,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2001,
+            "old": 0.6015648510382184,
+            "new": 0.6015648510382184,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2002,
+            "old": 0.0507583712345433,
+            "new": 0.0507583712345433,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2003,
+            "old": 0.5067605633802816,
+            "new": 0.5067605633802816,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          },
+          {
+            "seed": 2004,
+            "old": 0.12558597019922987,
+            "new": 0.12558597019922987,
+            "delta": 0.0,
+            "old_status": "completed",
+            "new_status": "completed"
+          }
+        ]
+      },
+      "public_delta": 0.0,
+      "development_delta": 0.0
+    }
+  },
+  "activation": {
+    "A": {
+      "selected_attempt_counts": {
+        "A.considered": 204033,
+        "C.observations": 330346,
+        "C.suppression_gate": 37,
+        "B.bail_location": 22,
+        "B.bail_stock_hunger": 30,
+        "B.considered": 52,
+        "A.branching": 4447,
+        "A.score_changed": 124,
+        "C.emergency_wand": 8,
+        "C.qualified_loss": 12,
+        "C.emergency_potion": 1
+      },
+      "all_attempts": {
+        "public-0": {
+          "A.considered": 164208,
+          "C.observations": 264974,
+          "C.suppression_gate": 37,
+          "B.bail_location": 14,
+          "B.bail_stock_hunger": 30,
+          "B.considered": 44,
+          "A.branching": 2476,
+          "A.score_changed": 96,
+          "C.emergency_wand": 5,
+          "C.qualified_loss": 8,
+          "C.emergency_potion": 1
+        },
+        "development-0": {
+          "A.branching": 1971,
+          "A.considered": 39825,
+          "C.emergency_wand": 3,
+          "C.observations": 65372,
+          "A.score_changed": 28,
+          "B.bail_location": 8,
+          "B.considered": 8,
+          "C.qualified_loss": 4
+        }
+      },
+      "counts_are_lower_bounds": true,
+      "per_game_attribution": false
+    },
+    "B": {
+      "selected_attempt_counts": {
+        "A.considered": 204889,
+        "C.observations": 333505,
+        "B.bail_location": 22,
+        "B.bail_stock_hunger": 30,
+        "B.considered": 52,
+        "C.suppression_gate": 37,
+        "A.branching": 4455,
+        "A.score_changed": 124,
+        "C.emergency_wand": 9,
+        "C.qualified_loss": 15,
+        "C.emergency_potion": 1
+      },
+      "all_attempts": {
+        "public-0": {
+          "A.considered": 165072,
+          "C.observations": 268202,
+          "B.bail_location": 14,
+          "B.bail_stock_hunger": 30,
+          "B.considered": 44,
+          "C.suppression_gate": 37,
+          "A.branching": 2476,
+          "A.score_changed": 96,
+          "C.emergency_wand": 4,
+          "C.qualified_loss": 8,
+          "C.emergency_potion": 1
+        },
+        "development-0": {
+          "A.branching": 1979,
+          "A.considered": 39817,
+          "A.score_changed": 28,
+          "C.observations": 65303,
+          "C.emergency_wand": 5,
+          "C.qualified_loss": 7,
+          "B.bail_location": 8,
+          "B.considered": 8
+        }
+      },
+      "counts_are_lower_bounds": true,
+      "per_game_attribution": false
+    },
+    "C": {
+      "selected_attempt_counts": {
+        "A.considered": 204897,
+        "C.observations": 333574,
+        "B.bail_location": 22,
+        "B.bail_stock_hunger": 30,
+        "B.considered": 52,
+        "A.branching": 4447,
+        "A.score_changed": 124,
+        "C.suppression_gate": 37,
+        "C.emergency_wand": 7,
+        "C.qualified_loss": 12,
+        "C.emergency_potion": 1
+      },
+      "all_attempts": {
+        "public-0": {
+          "A.considered": 165072,
+          "C.observations": 268202,
+          "B.bail_location": 14,
+          "B.bail_stock_hunger": 30,
+          "B.considered": 44,
+          "A.branching": 2476,
+          "A.score_changed": 96,
+          "C.suppression_gate": 37,
+          "C.emergency_wand": 4,
+          "C.qualified_loss": 8,
+          "C.emergency_potion": 1
+        },
+        "development-0": {
+          "A.branching": 1971,
+          "A.considered": 39825,
+          "A.score_changed": 28,
+          "B.bail_location": 8,
+          "B.considered": 8,
+          "C.emergency_wand": 3,
+          "C.observations": 65372,
+          "C.qualified_loss": 4
+        }
+      },
+      "counts_are_lower_bounds": true,
+      "per_game_attribution": false
+    },
+    "baseline": {
+      "selected_attempt_counts": {
+        "A.considered": 202777,
+        "C.observations": 324116,
+        "C.suppression_gate": 37,
+        "A.branching": 4447,
+        "A.score_changed": 124,
+        "B.bail_location": 34,
+        "B.considered": 127,
+        "B.bail_stock_hunger": 55,
+        "C.emergency_wand": 7,
+        "C.qualified_loss": 11,
+        "B.bail_threat": 38,
+        "C.emergency_potion": 1
+      },
+      "all_attempts": {
+        "public-0": {
+          "A.considered": 162952,
+          "C.observations": 258744,
+          "C.suppression_gate": 37,
+          "A.branching": 2476,
+          "A.score_changed": 96,
+          "B.bail_location": 26,
+          "B.considered": 119,
+          "B.bail_stock_hunger": 55,
+          "C.emergency_wand": 4,
+          "C.qualified_loss": 7,
+          "B.bail_threat": 38,
+          "C.emergency_potion": 1
+        },
+        "development-0": {
+          "A.branching": 1971,
+          "A.considered": 39825,
+          "A.score_changed": 28,
+          "C.observations": 65372,
+          "B.bail_location": 8,
+          "B.considered": 8,
+          "C.emergency_wand": 3,
+          "C.qualified_loss": 4
+        }
+      },
+      "counts_are_lower_bounds": true,
+      "per_game_attribution": false
+    }
+  },
+  "warning": "Development selection only; native Public/gate/publication still required."
+}

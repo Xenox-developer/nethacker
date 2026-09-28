@@ -1,0 +1,356 @@
+--- a/autoascend/agent.py
++++ b/autoascend/agent.py
+@@ -1,3 +1,4 @@
++import campaign_events as ce
+ import contextlib
+ import re
+ import sys
+@@ -1861,6 +1862,7 @@
+                 self.character.parse_enhance_view()
+                 # self.character.parse_spellcast_view()
+ 
++            self._campaign_wand_scores = {}
+             move_priority_heatmap, actions = combat.fight_heur.get_priorities(self)
+             actions.extend(combat.fight_heur.get_move_actions(self, dis, move_priority_heatmap))
+ 
+@@ -1903,6 +1905,18 @@
+                 continue
+ 
+             priority, best_action = max(actions, key=lambda x: x[0]) if actions else None
++            if ce.enabled():
++                def shadow_score(pair):
++                    score, action = pair
++                    if action[0] == 'zap':
++                        return self._campaign_wand_scores.get((action[1], action[2], id(action[3])), score)
++                    return score
++                shadow_action = max(actions, key=shadow_score)[1]
++                if shadow_action is not best_action:
++                    ce.hit('A.chosen_action_changed')
++                    if jf_config.CAMPAIGN_WAND:
++                        ce.hit('A.applied')
++                    ce.sample('chosen_action', actual=best_action[0], counterfactual=shadow_action[0])
+ 
+             with self.env.debug_tiles(move_priority_heatmap, color='turbo', is_heatmap=True):
+                 actions_str = '|'.join([combat.utils.action_str(self, a) for a in sorted(actions, key=lambda x: x[0])])
+@@ -2391,10 +2405,10 @@
+                 engraving = (self.inventory.engraving_below_me or '').lower()
+                 if not any(dive._ignores_elbereth(m[3]) for m in close) and not self.character.prop.blind and \
+                         (engraving == 'elbereth' or self.can_engrave()):
+-                    pass  # optional diagnostic hook
++                    ce.hit('C.suppression_gate')
+                     if jf_config.PROTECTION_FAILURE and dive.protection_failed():
+                         protection_exception = True
+-                        pass  # optional diagnostic hook
++                        ce.hit('C.applied')
+                     else:
+                         adjacent = []
+             if adjacent:
+@@ -2416,8 +2430,8 @@
+                         yield True
+                         self._last_resort_dig_turn = self.blstats.time
+                         self.log(f'LAST RESORT: zapping {wand.text!r} down')
+-                        pass  # optional diagnostic hook
+-                        pass  # optional diagnostic hook
++                        ce.hit('C.emergency_dig')
++                        ce.sample('emergency_action', action='dig', protection_exception=protection_exception)
+                         self.zap(wand, '>')
+                         return
+                 if stairs_ok and here in G.STAIR_DOWN and level.dungeon_number != Level.SOKOBAN:
+@@ -2425,8 +2439,8 @@
+                     self.log('LAST RESORT: down the stairs')
+                     self._last_resort_stairs_turn = self.blstats.time
+                     dive._retreat_blocked_until = self.blstats.time + 20
+-                    pass  # optional diagnostic hook
+-                    pass  # optional diagnostic hook
++                    ce.hit('C.emergency_stairs_down')
++                    ce.sample('emergency_action', action='stairs_down', protection_exception=protection_exception)
+                     self.move('>')
+                     return
+                 # (not the Valley's '<': it leads to the castle's east edge, with no way back down to Gehennom)
+@@ -2435,8 +2449,8 @@
+                     yield True
+                     self.log('LAST RESORT: up the stairs')
+                     self._last_resort_stairs_turn = self.blstats.time
+-                    pass  # optional diagnostic hook
+-                    pass  # optional diagnostic hook
++                    ce.hit('C.emergency_stairs_up')
++                    ce.sample('emergency_action', action='stairs_up', protection_exception=protection_exception)
+                     self.move('<')
+                     return
+                 # DESPERATE_PRAYER_GAP: a prayer that may come too soon beats dying. pray.c fixes critically low HP
+@@ -2458,8 +2472,8 @@
+                     yield True
+                     gap = None if self.last_prayer_turn is None else self.blstats.time - self.last_prayer_turn
+                     self.log(f'LAST RESORT: desperate prayer (gap {gap})')
+-                    pass  # optional diagnostic hook
+-                    pass  # optional diagnostic hook
++                    ce.hit('C.emergency_prayer')
++                    ce.sample('emergency_action', action='prayer', protection_exception=protection_exception)
+                     self.pray()
+                     return
+                 # top-level items only: a wand inside a bag has no inventory letter, and zapping one left the
+@@ -2480,16 +2494,16 @@
+                         yield True
+                         self._last_resort_zapped.add(item.glyphs[0])
+                         self.log(f'LAST RESORT: zapping unknown {item.text!r}')
+-                        pass  # optional diagnostic hook
+-                        pass  # optional diagnostic hook
++                        ce.hit('C.emergency_wand')
++                        ce.sample('emergency_action', action='wand', protection_exception=protection_exception)
+                         self.zap(item, self.calc_direction(y, x, my, mx))
+                         return
+                 for item in items:
+                     if item.category == nh.POTION_CLASS and not item.is_unambiguous():
+                         yield True
+                         self.log(f'LAST RESORT: quaffing unknown {item.text!r}')
+-                        pass  # optional diagnostic hook
+-                        pass  # optional diagnostic hook
++                        ce.hit('C.emergency_potion')
++                        ce.sample('emergency_action', action='potion', protection_exception=protection_exception)
+                         self.inventory.quaff(item)
+                         return
+                 for item in items:
+@@ -2497,8 +2511,8 @@
+                         yield True
+                         self.log(f'LAST RESORT: reading unknown {item.text!r}')
+                         with self.atom_operation():
+-                            pass  # optional diagnostic hook
+-                            pass  # optional diagnostic hook
++                            ce.hit('C.emergency_scroll')
++                            ce.sample('emergency_action', action='scroll', protection_exception=protection_exception)
+                             self.step(A.Command.READ)
+                             self.type_text(self.inventory.items.get_letter(item))
+                         return
+--- a/autoascend/combat/fight_heur.py
++++ b/autoascend/combat/fight_heur.py
+@@ -1,3 +1,4 @@
++import campaign_events as ce
+ from collections import defaultdict
+ from itertools import product
+ 
+@@ -182,7 +183,7 @@
+ 
+     states = get_next_states(agent, wand, y, x, dy, dx)
+     if len(states) > 1:
+-        pass  # optional diagnostic hook
++        ce.hit('A.branching')
+     for y, x, dy, dx, next_prob, range_penalty in states:
+         remaining = range_left - range_penalty
+         monster = [m for m in monsters if m[1] == y and m[2] == x]
+@@ -261,6 +262,15 @@
+             if agent.inventory.engraving_below_me.lower() == 'elbereth':
+                 priority -= 100
+             ret.append((priority, ('zap', dy, dx, item, targeted_monsters)))
++    if corrected is None and ce.enabled():
++        ce.hit('A.considered')
++        shadow = get_potential_wand_usages(agent, monsters, dy, dx, not jf_config.CAMPAIGN_WAND)
++        for (score, action), (other, _) in zip(ret, shadow):
++            agent._campaign_wand_scores[(dy, dx, id(action[3]))] = other
++            if score != other:
++                ce.hit('A.score_changed')
++                ce.sample('wand_score', direction=[dy, dx], wand=action[3].text,
++                          actual=score, counterfactual=other)
+     return ret
+ 
+ 
+--- a/autoascend/dive_logic.py
++++ b/autoascend/dive_logic.py
+@@ -1,3 +1,4 @@
++import campaign_events as ce
+ """Depth-first plan for the BALROG progression score.
+ 
+ The episode score is the best milestone ever reached (death costs nothing):
+--- a/autoascend/item/inventory.py
++++ b/autoascend/item/inventory.py
+@@ -1,3 +1,4 @@
++import campaign_events as ce
+ import contextlib
+ import re
+ from functools import partial
+@@ -1684,13 +1685,13 @@
+         a = self.agent
+         start = a.blstats.time
+         key = a.current_level().key()
+-        pass  # optional diagnostic hook
++        ce.hit('B.considered')
+         reason = self._reserve_gate(key, start)
+         if reason:
+-            pass  # optional diagnostic hook
+-            yield False
+-            return
+-        pass  # optional diagnostic hook
++            ce.hit('B.bail_' + reason)
++            yield False
++            return
++        ce.hit('B.eligible')
+         if not hasattr(self, '_reserve_failed'):
+             self._reserve_failed = {}
+         paths = self._reserve_paths()
+@@ -1702,7 +1703,7 @@
+             if item is not None:
+                 candidates.append((800 / item.price - (len(path) - 1) / 1000, target))
+         if not candidates:
+-            pass  # optional diagnostic hook
++            ce.hit('B.bail_no_target')
+             yield False
+             return
+         target = max(candidates, key=lambda pair: pair[0])[1]
+@@ -1710,7 +1711,7 @@
+             yield False
+             return
+         yield True
+-        pass  # optional diagnostic hook
++        ce.hit('B.started')
+         before = a.carried_food_nutrition()
+         # A failed/interrupted invocation stays suppressed, including AgentPanic/preemption.
+         self._reserve_failed[key, target] = start + 100
+@@ -1719,38 +1720,39 @@
+             while True:
+                 reason = self._reserve_gate(key, start)
+                 if reason:
+-                    pass  # optional diagnostic hook
++                    ce.hit('B.bail_' + reason)
+                     return
+                 paths = self._reserve_paths()
+                 path = paths.get(target)
+                 if path is None or len(path) - 1 > 2 - moves:
+-                    pass  # optional diagnostic hook
++                    ce.hit('B.bail_path')
+                     return
+                 stock = self.items_below_me if len(path) == 1 else a.current_level().items[target]
+                 item = self._reserve_item(stock)
+                 if item is None:
+-                    pass  # optional diagnostic hook
++                    ce.hit('B.bail_price_item')
+                     return
+                 if len(path) == 1:
+                     break
+                 a.move(*path[1])
+                 moves += 1
+             if item.status == Item.UNKNOWN:
+-                pass  # optional diagnostic hook
++                ce.hit('B.unknown_buc')
+             try:
+                 self.pickup(item, 1)
+             finally:
+                 # Debt cleanup is never gated by elapsed time or a newly seen hostile.
+-                pass  # optional diagnostic hook
++                ce.hit('B.settlement')
+                 self.pay_or_drop_unpaid()
+                 if a.blstats.time - start > 8:
+-                    pass  # optional diagnostic hook
++                    ce.hit('B.settlement_overrun')
+             if a.carried_food_nutrition() > before and not any(
+                     i.shop_status == Item.UNPAID for i in flatten_items(self.items)):
+-                pass  # optional diagnostic hook
++                ce.hit('B.purchased')
+                 self._reserve_failed.pop((key, target), None)
+         finally:
+-            pass  # optional diagnostic hook
++            ce.sample('food_transaction', start=int(start), elapsed=int(a.blstats.time - start),
++                      stock_before=int(before), stock_after=int(a.carried_food_nutrition()))
+ 
+     @utils.debug_log('inventory.buy_food')
+     @Strategy.wrap
+@@ -1766,7 +1768,7 @@
+             yield True
+             self.pay_or_drop_unpaid()
+             return
+-        if agent._carries_digging_tool() and jf_config.TOOL_SHOP_RESERVE:
++        if agent._carries_digging_tool() and (jf_config.TOOL_SHOP_RESERVE or ce.enabled()):
+             yield from self._buy_tool_reserve()
+             return
+         if self.carried_nutrition() >= jf_config.BUY_FOOD_UNTIL or agent._carries_digging_tool() or \
+--- a/autoascend/protection_failure.py
++++ b/autoascend/protection_failure.py
+@@ -1,4 +1,5 @@
+ """Narrow observed-protection evidence; independent of existing damage policies."""
++import campaign_events as ce
+ 
+ class ProtectionFailure:
+     def __init__(self):
+@@ -6,7 +7,7 @@
+         self.failure = None
+ 
+     def observe(self, turn, location, hp, maxhp, intact, polymorph):
+-        pass  # optional diagnostic hook
++        ce.hit('C.observations')
+         current = (turn, location, hp, maxhp, intact, polymorph)
+         if self.failure and (location != self.failure[1] or not intact or polymorph
+                              or turn - self.failure[0] > 3 or (self.previous and maxhp != self.previous[3])):
+@@ -20,8 +21,8 @@
+         if prev and turn == prev[0] + 1 and location == prev[1] and intact and prev[4] \
+                 and not polymorph and not prev[5] and maxhp == prev[3] and hp < prev[2]:
+             self.failure = (turn, location)
+-            pass  # optional diagnostic hook
+-            pass  # optional diagnostic hook
++            ce.hit('C.qualified_loss')
++            ce.sample('protected_hp_loss', turn=int(turn), hp=int(hp), previous_hp=int(prev[2]))
+         self.previous = current
+ 
+     def active(self, turn, location, intact, polymorph):
+--- a/campaign_events.py
++++ b/campaign_events.py
+@@ -0,0 +1,62 @@
++"""Optional action-neutral activation evidence; no-op outside campaign evals.
++
++Call hit('A.considered') at a gate and hit('A.applied') only when behavior
++changes. Counts are checkpointed at powers of two to bound diagnostic I/O.
++Without an explicit flush() at normal shutdown they are LOWER BOUNDS, not exact
++totals. Never use these counts or the environment setting to choose actions.
++"""
++import json
++import os
++from pathlib import Path
++
++_directory = os.environ.get("NETHACKERS_CAMPAIGN_EVENTS_DIR")
++_counts = {}
++_writes = 0
++_MAX_NAMES = 64
++_MAX_WRITES = 512
++
++
++def flush(*, exact=False):
++    global _writes
++    if not _directory or _writes >= _MAX_WRITES:
++        return
++    try:
++        directory = Path(_directory)
++        directory.mkdir(parents=True, exist_ok=True)
++        destination = directory / f"events-{os.getpid()}.json"
++        temporary = destination.with_suffix(".tmp")
++        temporary.write_text(json.dumps({
++            "pid": os.getpid(), "counts": _counts,
++            "counts_are_lower_bounds": not exact, "writes": _writes + 1,
++        }, sort_keys=True))
++        os.replace(temporary, destination)
++        _writes += 1
++    except OSError:
++        pass  # Diagnostics must never alter action selection or crash the bot.
++
++
++def hit(name):
++    if not _directory or not isinstance(name, str) or len(name) > 80:
++        return
++    if name not in _counts and len(_counts) >= _MAX_NAMES:
++        return
++    count = _counts[name] = _counts.get(name, 0) + 1
++    if count & (count - 1) == 0:
++        flush()
++
++
++def enabled():
++    return bool(_directory)
++
++_samples = []
++def sample(kind, **fields):
++    """Bounded aggregate process log; never attributed to a trajectory."""
++    if not _directory or len(_samples) >= 128 or sum(s["kind"] == kind for s in _samples) >= 16:
++        return
++    try:
++        _samples.append(dict(kind=kind, **fields))
++        directory = Path(_directory)
++        directory.mkdir(parents=True, exist_ok=True)
++        (directory / f"samples-{os.getpid()}.json").write_text(json.dumps(_samples))
++    except (OSError, TypeError, ValueError):
++        pass

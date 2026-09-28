@@ -1,0 +1,22 @@
+--- a/autoascend/item/inventory.py
++++ b/autoascend/item/inventory.py
+@@ -1751,6 +1751,8 @@
+                 ce.hit('B.purchased')
+                 self._reserve_failed.pop((key, target), None)
+         finally:
++            if (key, target) in self._reserve_failed:
++                self._reserve_failed[key, target] = a.blstats.time + 100
+             ce.sample('food_transaction', start=int(start), elapsed=int(a.blstats.time - start),
+                       stock_before=int(before), stock_after=int(a.carried_food_nutrition()))
+ 
+--- a/autoascend/jf_config.py
++++ b/autoascend/jf_config.py
+@@ -286,7 +286,7 @@
+ 
+ # hypothesis: independently test ray bookkeeping, local food reserve, and observed protection failure.
+ CAMPAIGN_WAND = False
+-TOOL_SHOP_RESERVE = False
++TOOL_SHOP_RESERVE = True
+ PROTECTION_FAILURE = False
+ 
+ _raw = os.environ.get('JF_CFG')

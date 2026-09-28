@@ -1,0 +1,11 @@
+--- a/autoascend/jf_config.py
++++ b/autoascend/jf_config.py
+@@ -285,7 +285,7 @@
+ WAND_STAIRS_FIX = True
+ 
+ # hypothesis: independently test ray bookkeeping, local food reserve, and observed protection failure.
+-CAMPAIGN_WAND = False
++CAMPAIGN_WAND = True
+ TOOL_SHOP_RESERVE = False
+ PROTECTION_FAILURE = False
+ 

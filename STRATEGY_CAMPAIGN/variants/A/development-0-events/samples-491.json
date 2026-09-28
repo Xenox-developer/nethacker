@@ -1,0 +1,1 @@
+[{"kind": "wand_score", "direction": [-1, 1], "wand": "a wand of magic missile", "actual": -119.95265625, "counterfactual": -146.025}, {"kind": "wand_score", "direction": [-1, -1], "wand": "a wand of magic missile", "actual": -11.75, "counterfactual": -6.5}]

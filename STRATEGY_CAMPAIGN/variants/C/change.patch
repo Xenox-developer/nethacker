@@ -1,0 +1,23 @@
+--- a/autoascend/jf_config.py
++++ b/autoascend/jf_config.py
+@@ -287,7 +287,7 @@
+ # hypothesis: independently test ray bookkeeping, local food reserve, and observed protection failure.
+ CAMPAIGN_WAND = False
+ TOOL_SHOP_RESERVE = False
+-PROTECTION_FAILURE = False
++PROTECTION_FAILURE = True
+ 
+ _raw = os.environ.get('JF_CFG')
+ if _raw:
+--- a/autoascend/protection_failure.py
++++ b/autoascend/protection_failure.py
+@@ -15,8 +15,7 @@
+         prev = self.previous
+         if prev and turn == prev[0]:
+             # Same-turn callbacks cannot establish or extend consecutive-turn evidence.
+-            if location != prev[1] or not intact or polymorph or maxhp != prev[3]:
+-                self.previous = None
++            self.previous = current
+             return
+         if prev and turn == prev[0] + 1 and location == prev[1] and intact and prev[4] \
+                 and not polymorph and not prev[5] and maxhp == prev[3] and hp < prev[2]:
